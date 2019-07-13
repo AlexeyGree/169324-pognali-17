@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Гридасов](https://up.htmlacademy.ru/adaptive/17/user/169324).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Глаголь](https://htmlacademy.ru/profile/dariaglagol).
 
 ---
 
