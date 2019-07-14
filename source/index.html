@@ -129,9 +129,10 @@
         <p class="companions__text text text--color-white">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="companions__text text text--color-white text--bold">Теперь можно легко найти единомышленников!</p>
 
+        <!-- Изменены названия классов в целях сокращения css кода в дальнешем -->
         <ul class="companions__list">
           <li class="companions__item">
-            <div class="companions__box">
+            <div class="companions__box companions__box--main">
               <h3 class="companions__name">Таня Фирсова</h3>
               <ul class="companions__tags tags">
                 <!-- Возможно потребуется добавить ссылки -->
@@ -143,6 +144,13 @@
                 <li class="tags__item">#смузи</li>
                 <!-- Возможно потребуется добавить ссылки -->
               </ul>
+              <ul class="companions__flags flags">
+                <!-- Возможно потребуется добавить ссылки -->
+                <li class="flags__item">Шри-Ланка</li>
+                <li class="flags__item">Тайланд</li>
+                <li class="flags__item">Сейшелы</li>
+                <!-- Возможно потребуется добавить ссылки -->
+              </ul>
               <ul class="companions__transport transport">
                 <!-- Возможно потребуется добавить ссылки -->
                 <li class="transport__item">Авиатранспорт</li>
@@ -151,22 +159,17 @@
                 <li class="transport__item">Попутный транспорт</li>
                 <!-- Возможно потребуется добавить ссылки -->
               </ul>
-              <ul class="companions__flags flags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="flags__item">Шри-Ланка</li>
-                <li class="flags__item">Тайланд</li>
-                <li class="flags__item">Сейшелы</li>
-                <!-- Возможно потребуется добавить ссылки -->
-              </ul>
             </div>
-            <img src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
+            <div class="companions__box companions__box--square">
+              <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
+            </div>
             <p class="companions__level level">
               <span class="level__num">99</span>
               <span class="level__text">level</span>
             </p>
           </li>
           <li class="companions__item">
-            <div class="companions__box">
+            <div class="companions__box companions__box--main">
               <h3 class="companions__name">Петя Демин</h3>
               <ul class="companions__tags tags">
                 <!-- Возможно потребуется добавить ссылки -->
@@ -177,6 +180,12 @@
                 <li class="tags__item">#крафт</li>
                 <!-- Возможно потребуется добавить ссылки -->
               </ul>
+              <ul class="companions__flags flags">
+                <!-- Возможно потребуется добавить ссылки -->
+                <li class="flags__item">Бельгия</li>
+                <li class="flags__item">Чехия</li>
+                <!-- Возможно потребуется добавить ссылки -->
+              </ul>
               <ul class="companions__transport transport">
                 <!-- Возможно потребуется добавить ссылки -->
                 <li class="transport__item">Авиатранспорт</li>
@@ -185,20 +194,18 @@
                 <li class="transport__item">Попутный транспорт</li>
                 <!-- Возможно потребуется добавить ссылки -->
               </ul>
-              <ul class="companions__flags flags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="flags__item">Бельгия</li>
-                <li class="flags__item">Чехия</li>
-                <!-- Возможно потребуется добавить ссылки -->
-              </ul>
             </div>
-            <img src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
+            <div class="companions__box companions__box--square">
+              <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
+            </div>
             <p class="companions__level level">
                 <span class="level__num">80</span>
                 <span class="level__text">level</span>
               </p>
           </li>
         </ul>
+        <!-- Изменены названия классов в целях сокращения css кода в дальнешем -->
+
         <a class="companions__btn btn" href="companions.html">Показать всех</a>
       </section>
 
