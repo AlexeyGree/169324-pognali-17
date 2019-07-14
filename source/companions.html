@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали. Попутчики</title>
   </head>
-  <body class="page inner">
+  <body class="page inner-page">
 
     <header class="header">
       <div class="header__top">
@@ -26,7 +26,7 @@
             <a class="navigation__link" href="companions.html">Попутчики</a>
           </li>
         </ul>
-        <a class="dropdown__authorization authorization" href="authorization.html">Авторизация</a><!-- Заменить текст на aria -->
+        <a class="dropdown__authorization authorization" href="authorization.html">Авторизация</a>
         <ul class="dropdown__our-contacts our-contacts">
           <li class="our-contacts__item">
             <a class="our-contacts__link our-phone" href="phone-num.html">8 800 555-86-28</a><!-- Заменить текст на aria -->
@@ -52,167 +52,235 @@
 
     <main class="content">
       <!-- Блоки из бонусного задания добавлю после основного -->
-      <section class="filters"></section>
+      <section class="filters">Фильтры</section>
       <!-- Блоки из бонусного задания добавлю после основного -->
 
       <section class="companions">
         <ul class="companions__list">
           <li class="companions__item">
-            <h3 class="companions__name">Таня Фирсова</h3>
+            <a class="companions__link" href="user-account.html">
+              <h3 class="companions__name">Таня Фирсова</h3>
+            </a>
             <p class="companions__subscribers">1.5m</p>
             <ul class="companions__tags tags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="tags__item">#ЗОЖ</li>
-              <li class="tags__item">#ПП</li>
-              <li class="tags__item">#Фитнес</li>
-              <li class="tags__item">#пляж</li>
-              <li class="tags__item">#авокадо</li>
-              <li class="tags__item">#смузи</li>
-              <!-- Возможно потребуется добавить ссылки -->
+              <li class="tags__item">
+                <a class="tags__link" href="#">#ЗОЖ</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#ПП</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#Фитнес</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#пляж</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#авокадо</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#смузи</a>
+              </li>
             </ul>
-            <ul class="companions__flags flags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="flags__item">Шри-Ланка</li>
-              <li class="flags__item">Тайланд</li>
-              <li class="flags__item">Сейшелы</li>
-              <!-- Возможно потребуется добавить ссылки -->
-            </ul>
-            <div class="companions__box companions__box--inner">
-              <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
+            <section class="companions__box companions__box--inner">
+              <h4 class="companions__section-name">Хочет посетить:</h4>
+              <ul class="companions__flags flags">
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Шри-Ланка</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Таиланд</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Сейшелы</a>
+                </li>
               </ul>
+            </section>
+            <div class="companions__box companions__box--columns">
+              <section class="companions__box companions__box--inner">
+                <h4 class="companions__section-name">Транспорт:</h4>
+                <ul class="companions__transport transport">
+                  <li class="transport__item">Авиатранспорт</li>
+                  <li class="transport__item">Наземный транспорт</li>
+                  <li class="transport__item">Велотранспорт</li>
+                  <li class="transport__item">Попутный транспорт</li>
+                </ul>
+              </section>
               <p class="companions__level level">
                 <span class="level__num">99</span>
                 <span class="level__text">level</span>
               </p>
             </div>
-            <div class="companions__box companions__box--circle">
+            <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
-            </div>
+            </a>
             <a class="companions__btn btn" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
-            <h3 class="companions__name">Петя Демин</h3>
+            <a class="companions__link" href="user-account.html">
+              <h3 class="companions__name">Петя Демин</h3>
+            </a>
             <p class="companions__subscribers">500</p>
             <ul class="companions__tags tags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="tags__item">#бургер</li>
-              <li class="tags__item">#бар</li>
-              <li class="tags__item">#футбол</li>
-              <li class="tags__item">#концерт</li>
-              <li class="tags__item">#крафт</li>
-              <!-- Возможно потребуется добавить ссылки -->
+              <li class="tags__item">
+                <a class="tags__link" href="#">#бургер</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#бар</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#футбол</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#концерт</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#крафт</a>
+              </li>
             </ul>
-            <ul class="companions__flags flags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="flags__item">Бельгия</li>
-              <li class="flags__item">Чехия</li>
-              <!-- Возможно потребуется добавить ссылки -->
-            </ul>
-            <div class="companions__box companions__box--inner">
-              <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
+            <section class="companions__box companions__box--inner">
+              <h4 class="companions__section-name">Хочет посетить:</h4>
+              <ul class="companions__flags flags">
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Бельгия</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Чехия</a>
+                </li>
               </ul>
+            </section>
+            <div class="companions__box companions__box--columns">
+              <section class="companions__box companions__box--inner">
+                <h4 class="companions__section-name">Транспорт:</h4>
+                <ul class="companions__transport transport">
+                  <li class="transport__item">Авиатранспорт</li>
+                  <li class="transport__item">Наземный транспорт</li>
+                  <li class="transport__item">Велотранспорт</li>
+                  <li class="transport__item">Попутный транспорт</li>
+                </ul>
+              </section>
               <p class="companions__level level">
                 <span class="level__num">80</span>
                 <span class="level__text">level</span>
               </p>
             </div>
-            <div class="companions__box companions__box--circle">
+            <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
-            </div>
+            </a>
             <a class="companions__btn btn" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
-            <h3 class="companions__name">Марк Смолов</h3>
+            <a class="companions__link" href="user-account.html">
+              <h3 class="companions__name">Марк Смолов</h3>
+            </a>
             <p class="companions__subscribers">1700</p>
             <ul class="companions__tags tags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="tags__item">#рэп</li>
-              <li class="tags__item">#тату</li>
-              <li class="tags__item">#хайпбист</li>
-              <li class="tags__item">#кроссовки</li>
-              <li class="tags__item">#суприм</li>
-              <!-- Возможно потребуется добавить ссылки -->
+              <li class="tags__item">
+                <a class="tags__link" href="#">#рэп</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#тату</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#хайпбист</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#кроссовки</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#суприм</a>
+              </li>
             </ul>
-            <ul class="companions__flags flags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="flags__item">США</li>
-              <li class="flags__item">Австралия</li>
-              <li class="flags__item">Доминикана</li>
-              <!-- Возможно потребуется добавить ссылки -->
-            </ul>
-            <div class="companions__box companions__box--inner">
-              <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
+            <section class="companions__box companions__box--inner">
+              <h4 class="companions__section-name">Хочет посетить:</h4>
+              <ul class="companions__flags flags">
+                <li class="flags__item">
+                  <a class="flags__link" href="#">США</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Австралия</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Доминикана</a>
+                </li>
               </ul>
+            </section>
+            <div class="companions__box companions__box--columns">
+              <section class="companions__box companions__box--inner">
+                <h4 class="companions__section-name">Транспорт:</h4>
+                <ul class="companions__transport transport">
+                  <li class="transport__item">Авиатранспорт</li>
+                  <li class="transport__item">Наземный транспорт</li>
+                  <li class="transport__item">Велотранспорт</li>
+                  <li class="transport__item">Попутный транспорт</li>
+                </ul>
+              </section>
               <p class="companions__level level">
                 <span class="level__num">25</span>
                 <span class="level__text">level</span>
               </p>
             </div>
-            <div class="companions__box companions__box--circle">
+            <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
-            </div>
+            </a>
             <a class="companions__btn btn" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
-            <h3 class="companions__name">Лариса Роговая</h3>
+            <a class="companions__link" href="user-account.html">
+              <h3 class="companions__name">Лариса Роговая</h3>
+            </a>
             <p class="companions__subscribers">23</p>
             <ul class="companions__tags tags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="tags__item">#Образование</li>
-              <li class="tags__item">#карьера</li>
-              <li class="tags__item">#учеба</li>
-              <li class="tags__item">#линкедин</li>
-              <!-- Возможно потребуется добавить ссылки -->
+              <li class="tags__item">
+                <a class="tags__link" href="#">#Образование</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#карьера</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#учеба</a>
+              </li>
+              <li class="tags__item">
+                <a class="tags__link" href="#">#линкедин</a>
+              </li>
             </ul>
-            <ul class="companions__flags flags">
-              <!-- Возможно потребуется добавить ссылки -->
-              <li class="flags__item">Великобритания</li>
-              <li class="flags__item">Германия</li>
-              <!-- Возможно потребуется добавить ссылки -->
-            </ul>
-            <div class="companions__box companions__box--inner">
-              <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
+            <section class="companions__box companions__box--inner">
+              <h4 class="companions__section-name">Хочет посетить:</h4>
+              <ul class="companions__flags flags">
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Великобритания</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Германия</a>
+                </li>
               </ul>
+            </section>
+            <div class="companions__box companions__box--columns">
+              <section class="companions__box companions__box--inner">
+                <h4 class="companions__section-name">Транспорт:</h4>
+                <ul class="companions__transport transport">
+                  <li class="transport__item">Авиатранспорт</li>
+                  <li class="transport__item">Наземный транспорт</li>
+                  <li class="transport__item">Велотранспорт</li>
+                  <li class="transport__item">Попутный транспорт</li>
+                </ul>
+              </section>
               <p class="companions__level level">
                 <span class="level__num">50</span>
                 <span class="level__text">level</span>
               </p>
             </div>
-            <div class="companions__box companions__box--circle">
+            <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
-            </div>
+            </a>
             <a class="companions__btn btn" href="companions-item.html">Позвать</a>
           </li>
         </ul>
 
         <a class="companions__btn companions__btn--inner btn" href="#">Показать еще</a>
         <div class="pagination">
-          <button class="pagination__btn pagination__prev"></button>
-          <button class="pagination__btn pagination__next"></button>
+          <button class="pagination__btn pagination__prev" aria-label="Назад"></button>
+          <button class="pagination__btn pagination__next" aria-label="Вперед"></button>
         </div>
       </section>
     </main>

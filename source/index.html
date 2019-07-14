@@ -26,7 +26,7 @@
             <a class="navigation__link" href="companions.html">Попутчики</a>
           </li>
         </ul>
-        <a class="dropdown__authorization authorization" href="authorization.html">Авторизация</a><!-- Заменить текст на aria -->
+        <a class="dropdown__authorization authorization" href="authorization.html">Авторизация</a>
         <ul class="dropdown__our-contacts our-contacts">
           <li class="our-contacts__item">
             <a class="our-contacts__link our-phone" href="phone-num.html">8 800 555-86-28</a><!-- Заменить текст на aria -->
@@ -62,10 +62,10 @@
         </div>
         <blockquote class="feedback">
           <p class="feedback__quote">"Лучшее предложение, что я видел в жизни!"</p>
-          <cite class="feedback__author">
-            <span class="feedback__author-name">Мурат Эльтазин</span>
+          <p class="feedback__author">
+            <cite class="feedback__author-name">Мурат Эльтазин</cite>
             <span class="feedback__author-profession">Главный редактор газеты <q>гаджетлайф</q></span>
-          </cite>
+          </p>
         </blockquote>
       </div>
       <div class="header__bot">
@@ -93,12 +93,12 @@
           <li class="directions__item">
             <div class="directions__holder">
               <div class="directions__box">
-                <h3 class="directions__country">Тайланд</h3>
+                <h3 class="directions__country">Таиланд</h3>
                 <p class="directions__slogan">Джунгли зовут!</p>
               </div>
               <p class="directions__rating">18321</p>
             </div>
-            <img src="http://placehold.it/270x110" width="270" height="110" alt="Тайланд">
+            <img src="http://placehold.it/270x110" width="270" height="110" alt="Таиланд">
           </li>
           <li class="directions__item">
             <div class="directions__holder">
@@ -129,35 +129,46 @@
         <p class="companions__text text text--color-white">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="companions__text text text--color-white text--bold">Теперь можно легко найти единомышленников!</p>
 
-        <!-- Изменены названия классов в целях сокращения css кода в дальнешем -->
         <ul class="companions__list">
           <li class="companions__item">
             <div class="companions__box companions__box--main">
               <h3 class="companions__name">Таня Фирсова</h3>
               <ul class="companions__tags tags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="tags__item">#ЗОЖ</li>
-                <li class="tags__item">#ПП</li>
-                <li class="tags__item">#Фитнес</li>
-                <li class="tags__item">#пляж</li>
-                <li class="tags__item">#авокадо</li>
-                <li class="tags__item">#смузи</li>
-                <!-- Возможно потребуется добавить ссылки -->
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#ЗОЖ</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#ПП</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#Фитнес</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#пляж</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#авокадо</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#смузи</a>
+                </li>
               </ul>
               <ul class="companions__flags flags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="flags__item">Шри-Ланка</li>
-                <li class="flags__item">Тайланд</li>
-                <li class="flags__item">Сейшелы</li>
-                <!-- Возможно потребуется добавить ссылки -->
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Шри-Ланка</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Таиланд</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Сейшелы</a>
+                </li>
               </ul>
               <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
                 <li class="transport__item">Авиатранспорт</li>
                 <li class="transport__item">Наземный транспорт</li>
                 <li class="transport__item">Велотранспорт</li>
                 <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
               </ul>
             </div>
             <div class="companions__box companions__box--square">
@@ -172,27 +183,35 @@
             <div class="companions__box companions__box--main">
               <h3 class="companions__name">Петя Демин</h3>
               <ul class="companions__tags tags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="tags__item">#бургер</li>
-                <li class="tags__item">#бар</li>
-                <li class="tags__item">#футбол</li>
-                <li class="tags__item">#концерт</li>
-                <li class="tags__item">#крафт</li>
-                <!-- Возможно потребуется добавить ссылки -->
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#бургер</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#бар</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#футбол</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#концерт</a>
+                </li>
+                <li class="tags__item">
+                  <a class="tags__link" href="#">#крафт</a>
+                </li>
               </ul>
               <ul class="companions__flags flags">
-                <!-- Возможно потребуется добавить ссылки -->
-                <li class="flags__item">Бельгия</li>
-                <li class="flags__item">Чехия</li>
-                <!-- Возможно потребуется добавить ссылки -->
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Бельгия</a>
+                </li>
+                <li class="flags__item">
+                  <a class="flags__link" href="#">Чехия</a>
+                </li>
               </ul>
               <ul class="companions__transport transport">
-                <!-- Возможно потребуется добавить ссылки -->
                 <li class="transport__item">Авиатранспорт</li>
                 <li class="transport__item">Наземный транспорт</li>
                 <li class="transport__item">Велотранспорт</li>
                 <li class="transport__item">Попутный транспорт</li>
-                <!-- Возможно потребуется добавить ссылки -->
               </ul>
             </div>
             <div class="companions__box companions__box--square">
@@ -253,8 +272,8 @@
       </section>
 
       <!-- Блоки из бонусного задания добавлю после основного -->
-      <section class="sign-in"></section>
-      <section class="get-directions"></section>
+      <section class="sign-in">Зарегистрироваться</section>
+      <section class="get-directions">Выбрать направление</section>
       <!-- Блоки из бонусного задания добавлю после основного -->
     </main>
 
