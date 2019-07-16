@@ -12,7 +12,7 @@
         <a class="logo" href="index.html">
           <img src="http://placehold.it/100x19" width="100" height="19" alt="Логотип">
         </a>
-        <a class="header__toggle" href="#">меню</a>
+        <a class="header__toggle" href="#">меню</a><!-- Заменить текст на aria -->
       </div>
       <nav class="dropdown">
         <ul class="dropdown__navigation navigation">
@@ -51,9 +51,304 @@
     </header>
 
     <main class="content">
-      <!-- Блоки из бонусного задания добавлю после основного -->
-      <section class="filters">Фильтры</section>
-      <!-- Блоки из бонусного задания добавлю после основного -->
+      <section class="filters">
+        <h2 class="filters__headline">Фильтрация по странам</h2>
+        <a class="filters__toggle" href="#">фильтры</a><!-- Заменить текст на aria -->
+        <form class="filters__form country-form" action="https://echo.htmlacademy.ru">
+          <ul class="country-form__list continent">
+            <li class="continent__item">
+              <label class="continent__label" for="europe-radio">Европа</label>
+              <input class="continent__input" type="radio" name="radio" value="europe" id="europe-radio">
+            </li>
+            <li class="continent__item">
+              <label class="continent__label" for="asia-radio">Азия</label>
+              <input class="continent__input" type="radio" name="radio" value="asia" id="asia-radio">
+            </li>
+            <li class="continent__item">
+              <label class="continent__label" for="america-radio">Америка</label>
+              <input class="continent__input" type="radio" name="radio" value="america" id="america-radio">
+            </li>
+            <li class="continent__item">
+              <label class="continent__label" for="islands-radio">Острова</label>
+              <input class="continent__input" type="radio" name="radio" value="islands" id="islands-radio">
+            </li>
+          </ul>
+          <!-- Возможно стоит поменять значения поля value и имена полей id -->
+          <table class="filters__form alphabet">
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-1">А</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="1" id="alphabet-1">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-2">Б</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="2" id="alphabet-2">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-3">В</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="3" id="alphabet-3">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-4">Г</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="4" id="alphabet-4">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-5">Д</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="5" id="alphabet-5">
+              </td>
+            </tr>
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-6">Е</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="6" id="alphabet-6">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-7">Ё</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="7" id="alphabet-7">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-8">Ж</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="8" id="alphabet-8">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-9">З</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="9" id="alphabet-9">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-10">И</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="10" id="alphabet-10">
+              </td>
+            </tr>
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-11">Й</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="11" id="alphabet-11">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-12">К</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="12" id="alphabet-12">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-13">Л</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="13" id="alphabet-13">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-14">М</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="14" id="alphabet-14">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-15">Н</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="15" id="alphabet-15">
+              </td>
+            </tr>
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-16">О</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="16" id="alphabet-16">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-17">П</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="17" id="alphabet-17">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-18">Р</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="18" id="alphabet-18">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-19">С</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="19" id="alphabet-19">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-20">Т</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="20" id="alphabet-20">
+              </td>
+            </tr>
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-21">У</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="21" id="alphabet-21">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-22">Ф</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="22" id="alphabet-22">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-23">Х</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="23" id="alphabet-23">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-24">Ц</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="24" id="alphabet-24">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-25">Ч</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="25" id="alphabet-25">
+              </td>
+            </tr>
+            <tr class="alphabet__row">
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-26">Ш</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="26" id="alphabet-26">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-27">Щ</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="27" id="alphabet-27">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-28">Э</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="28" id="alphabet-28">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-29">Ю</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="29" id="alphabet-29">
+              </td>
+              <td class="alphabet__item">
+                <label class="alphabet__label" for="alphabet-30">Я</label>
+                <input class="alphabet__input" type="radio" name="radio-1" value="30" id="alphabet-30">
+              </td>
+            </tr>
+          </table>
+          <ul class="filters__form countries">
+            <li class="countries__item">
+              <label class="continent__label" for="country-1">Афганистан</label>
+              <input class="continent__input" type="radio" name="radio-2" value="1" id="country-1">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-2">Албания</label>
+              <input class="continent__input" type="radio" name="radio-2" value="2" id="country-2">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-3">Алжир</label>
+              <input class="continent__input" type="radio" name="radio-2" value="3" id="country-3">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-4">Андорра</label>
+              <input class="continent__input" type="radio" name="radio-2" value="4" id="country-4">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-5">Аргентина</label>
+              <input class="continent__input" type="radio" name="radio-2" value="5" id="country-5">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-6">Армения</label>
+              <input class="continent__input" type="radio" name="radio-2" value="6" id="country-6">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-7">Австралия</label>
+              <input class="continent__input" type="radio" name="radio-2" value="7" id="country-7">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-8">Австрия</label>
+              <input class="continent__input" type="radio" name="radio-2" value="8" id="country-8">
+            </li>
+            <li class="countries__item">
+              <label class="continent__label" for="country-9">Азербайджан</label>
+              <input class="continent__input" type="radio" name="radio-2" value="9" id="country-9">
+            </li>
+          </ul>
+          <!-- Возможно стоит поменять значения поля value и имена полей id -->
+          <button class="country-form__btn inner-btn inner-btn--asphalt">Свернуть</button>
+        </form>
+      </section>
+
+      <section class="pick-companion">
+        <h2 class="pick-companion__headline">Подберите идеального попутчика</h2>
+        <form class="pick-companion__form companion-form" action="https://echo.htmlacademy.ru">
+          <ul class="companion-form__list">
+            <li class="companion-form__item">
+              <span>Хобби</span>
+              <ul class="companion-form__sublist companion-sublist">
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="dance-field">Танцы</label>
+                  <input class="companion-sublist__input" type="checkbox" name="dance" value="1" id="dance-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="book-field">Книги</label>
+                  <input class="companion-sublist__input" type="checkbox" name="books" value="1" id="book-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="films-field">Фильмы</label>
+                  <input class="companion-sublist__input" type="checkbox" name="films" value="1" id="films-field">
+                </li>
+              </ul>
+            </li>
+            <li class="companion-form__item">
+              <span>Музыка</span>
+              <ul class="companion-form__sublist companion-sublist">
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="rock-field">Тяжелый рок</label>
+                  <input class="companion-sublist__input" type="checkbox" name="rock" value="1" id="rock-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="ru-rap-field">Русский рэп</label>
+                  <input class="companion-sublist__input" type="checkbox" name="ru-rap" value="1" id="ru-rap-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="eurodance-field">Евроденс</label>
+                  <input class="companion-sublist__input" type="checkbox" name="eurodance" value="1" id="eurodance-field">
+                </li>
+              </ul>
+            </li>
+            <li class="companion-form__item">
+              <span>Еда</span>
+              <ul class="companion-form__sublist companion-sublist">
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="fruits-field">Фрукты</label>
+                  <input class="companion-sublist__input" type="checkbox" name="fruits" value="1" id="fruits-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="vegetables-field">Овощи</label>
+                  <input class="companion-sublist__input" type="checkbox" name="vegetables" value="1" id="vegetables-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="meat-field">Мясо</label>
+                  <input class="companion-sublist__input" type="checkbox" name="meat" value="1" id="meat-field">
+                </li>
+              </ul>
+            </li>
+            <li class="companion-form__item">
+              <span>Транспорт</span>
+              <ul class="companion-form__sublist companion-sublist">
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="aviatransport-field">Авиатранспорт</label>
+                  <input class="companion-sublist__input" type="checkbox" name="aviatransport" value="1" id="aviatransport-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="groundtransport-field">Наземный транспорт</label>
+                  <input class="companion-sublist__input" type="checkbox" name="groundtransport" value="1" id="groundtransport-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="cycling-field">Велотранспорт</label>
+                  <input class="companion-sublist__input" type="checkbox" name="cycling" value="1" id="cycling-field">
+                </li>
+                <li class="companion-sublist__item">
+                  <label class="companion-sublist__label" for="hiking-field">Попутный транспорт</label>
+                  <input class="companion-sublist__input" type="checkbox" name="hiking" value="1" id="hiking-field">
+                </li>
+              </ul>
+            </li>
+            <li class="companion-form__item">
+              <span>Левел</span>
+              <div class="companion-form__range-box range-box">
+                <div class="range-box__wrapper">
+                  <p class="range-box__paragraph">
+                    <label class="range-box__label" for="minimal-range-field">Минимальный уровень</label>
+                    <input class="range-box__input" type="text" name="min-range" id="minimal-range-filed">
+                  </p>
+                  <p class="range-box__paragraph">
+                    <label class="range-box__label" for="maximal-range-field">Максимальный уровень</label>
+                    <input class="range-box__input" type="text" name="max-range" id="maximal-range-filed">
+                  </p>
+                </div>
+                <div class="range-box__wrapper">
+                  <span class="range-box__line"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="companion-form__btn inner-btn inner-btn--white" type="submit">Показать</button>
+        </form>
+      </section>
 
       <section class="companions">
         <ul class="companions__list">
@@ -106,7 +401,7 @@
                   <li class="transport__item">Попутный транспорт</li>
                 </ul>
               </div>
-              <p class="companions__level level">
+              <p class="level">
                 <span class="level__num">99</span>
                 <span class="level__text">level</span>
               </p>
@@ -114,7 +409,7 @@
             <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
             </a>
-            <a class="companions__btn btn" href="companions-item.html">Позвать</a>
+            <a class="companions__btn inner-btn inner-btn--yellow" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
             <a class="companions__link" href="user-account.html">
@@ -159,7 +454,7 @@
                   <li class="transport__item">Попутный транспорт</li>
                 </ul>
               </div>
-              <p class="companions__level level">
+              <p class="level">
                 <span class="level__num">80</span>
                 <span class="level__text">level</span>
               </p>
@@ -167,7 +462,7 @@
             <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
             </a>
-            <a class="companions__btn btn" href="companions-item.html">Позвать</a>
+            <a class="companions__btn inner-btn inner-btn--yellow" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
             <a class="companions__link" href="user-account.html">
@@ -215,7 +510,7 @@
                   <li class="transport__item">Попутный транспорт</li>
                 </ul>
               </div>
-              <p class="companions__level level">
+              <p class="level">
                 <span class="level__num">25</span>
                 <span class="level__text">level</span>
               </p>
@@ -223,7 +518,7 @@
             <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
             </a>
-            <a class="companions__btn btn" href="companions-item.html">Позвать</a>
+            <a class="companions__btn inner-btn inner-btn--yellow" href="companions-item.html">Позвать</a>
           </li>
           <li class="companions__item">
             <a class="companions__link" href="user-account.html">
@@ -265,7 +560,7 @@
                   <li class="transport__item">Попутный транспорт</li>
                 </ul>
               </div>
-              <p class="companions__level level">
+              <p class="level">
                 <span class="level__num">50</span>
                 <span class="level__text">level</span>
               </p>
@@ -273,7 +568,7 @@
             <a class="companions__box companions__box--circle" href="user-account.html">
               <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
             </a>
-            <a class="companions__btn btn" href="companions-item.html">Позвать</a>
+            <a class="companions__btn inner-btn inner-btn--yellow" href="companions-item.html">Позвать</a>
           </li>
         </ul>
 

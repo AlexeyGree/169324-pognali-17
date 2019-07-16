@@ -12,7 +12,7 @@
         <a class="logo" href="index.html">
           <img src="http://placehold.it/100x19" width="100" height="19" alt="Логотип">
         </a>
-        <a class="header__toggle" href="#">меню</a>
+        <a class="header__toggle" href="#">меню</a><!-- Заменить текст на aria -->
       </div>
       <nav class="dropdown">
         <ul class="dropdown__navigation navigation">
@@ -51,11 +51,362 @@
     </header>
 
     <main class="content">
-      <!-- Блоки из бонусного задания добавлю после основного -->
-      <section class="profile">Профиль</section>
-      <section class="plans">Планы</section>
-      <section class="add-plan">Добавить план</section>
-      <!-- Блоки из бонусного задания добавлю после основного -->
+      <section class="profile">
+        <h2 class="visually-hidden">Профиль</h2>
+        <div class="profile__box profile__box--column">
+          <p class="profile__level level">
+            <span class="level__num">99</span>
+            <span class="level__text">level</span>
+          </p>
+          <a class="profile__box companions__box--circle" href="user-account.html">
+            <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
+          </a>
+        </div>
+        <a class="profile__btn inner-btn inner-btn--asphalt" href="my-profile.html">Сменить фото</a>
+        <div class="companions__box companions__box--inner">
+          <h3 class="profile__section-name">Тэги</h3>
+          <ul class="profile__tags tags">
+            <li class="tags__item">
+              <a class="tags__link" href="#">#ЗОЖ</a>
+            </li>
+            <li class="tags__item">
+              <a class="tags__link" href="#">#ПП</a>
+            </li>
+            <li class="tags__item">
+              <a class="tags__link" href="#">#Фитнес</a>
+            </li>
+            <li class="tags__item">
+              <a class="tags__link" href="#">#пляж</a>
+            </li>
+            <li class="tags__item">
+              <a class="tags__link" href="#">#авокадо</a>
+            </li>
+            <li class="tags__item">
+              <a class="tags__link" href="#">#смузи</a>
+            </li>
+          </ul>
+        </div>
+        <div class="companions__box companions__box--inner">
+          <h3 class="profile__section-name">Транспорт:</h3>
+          <ul class="companions__transport transport">
+            <li class="transport__item">Авиатранспорт</li>
+            <li class="transport__item">Наземный транспорт</li>
+            <li class="transport__item">Велотранспорт</li>
+            <li class="transport__item">Попутный транспорт</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="plans">
+        <h2 class="plans__headline headline-direction">Мои планы:</h2>
+        <ul class="plans__list plan">
+          <li class="plan__item">
+            <h3 class="plan__headline"><span class="plan__num">1.</span> Франция, Италия</h3>
+            <p class="plan__companion"><span class="plan__companion-num">3</span> попутчика</p>
+            <p class="plan__dates">
+              <span class="plan__dates-start">26 мар</span> -
+              <span class="plan__dates-end">29 мар</span>
+            </p>
+            <a class="plans__btn inner-btn" href="#">Изменить</a>
+          </li>
+          <li class="plan__item">
+            <h3 class="plan__headline"><span class="plan__num">2.</span> Таиланд, Индонезия</h3>
+            <p class="plan__companion"><span class="plan__companion-num">1</span> попутчик</p>
+            <p class="plan__dates">
+              <span class="plan__dates-start">1 июл</span> -
+              <span class="plan__dates-end">15 июл</span>
+            </p>
+            <a class="plans__btn inner-btn" href="#">Изменить</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="add-plan">
+        <h2 class="add-plan__headline headline-direction">Добавить план:</h2>
+        <form class="add-plan__form" action="https://echo.htmlacademy.ru">
+          <div class="step-1">
+            <h3 class="step-1__headline headline-add-plan">
+              <span class="step-1__num" id="#step1">Шаг 1.</span>
+              Даты пребывания
+            </h3>
+            <p class="step-1__text text text--color-black">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <p class="step-1__paragraph">
+              <label class="step-1__label" for="companions-num-field">Ищу попутчиков:</label>
+              <div class="step-1__input-box input-box">
+                <input class="input-box__input" type="text" name="companions-num" id="companions-num-field">
+                <span class="input-box__btn input-box__minus">-</span>
+                <span class="input-box__btn input-box__plus">+</span>
+              </div>
+            </p>
+            <p class="step-1__paragraph">
+              <label class="step-1__label" for="duration-field">Длительность:</label>
+              <div class="step-1__input-box input-box">
+                <input class="input-box__input" type="text" name="duration" id="duration-field">
+                <span class="input-box__btn input-box__minus">-</span>
+                <span class="input-box__btn input-box__plus">+</span>
+              </div>
+            </p>
+            <p class="step-1__paragraph">
+              <input class="step-1__input" type="checkbox" name="child" id="child-field">
+              <label class="step-1__label" for="child-field">Можно с детьми</label>
+            </p>
+            <div class="step-1__date-picker">
+              <!-- Пока в общих чертах -->
+              <div class="step-1__month-slider month-slider">
+                <div class="month-slider__view">
+                  <span class="month-slider__slide"></span>
+                </div>
+                <button class="month-slider__btn month-slider--back">Назад</button><!-- Заменить текст на aria -->
+                <button class="month-slider__btn month-slider--next">Вперед</button><!-- Заменить текст на aria -->
+              </div>
+              <!-- Пока в общих чертах -->
+              <table class="step-1__table date-table">
+                <tr class="date-table__row">
+                  <th class="date-table__col date-table__head">П</th>
+                  <th class="date-table__col date-table__head">В</th>
+                  <th class="date-table__col date-table__head">С</th>
+                  <th class="date-table__col date-table__head">Ч</th>
+                  <th class="date-table__col date-table__head">П</th>
+                  <th class="date-table__col date-table__head">С</th>
+                  <th class="date-table__col date-table__head">В</th>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="24-feb-field">24</label>
+                    <input class="date-table__input" type="checkbox" name="24-day" id="24-feb-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="25-feb-field">25</label>
+                    <input class="date-table__input" type="checkbox" name="25-day" id="25-feb-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="26-feb-field">26</label>
+                    <input class="date-table__input" type="checkbox" name="26-day" id="26-feb-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="27-feb-field">27</label>
+                    <input class="date-table__input" type="checkbox" name="27-day" id="27-feb-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="28-feb-field">28</label>
+                    <input class="date-table__input" type="checkbox" name="28-day" id="28-feb-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="1-mar-field">1</label>
+                    <input class="date-table__input" type="checkbox" name="1-day" id="1-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="2-mar-field">2</label>
+                    <input class="date-table__input" type="checkbox" name="2-day" id="2-mar-field">
+                  </td>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="3-mar-field">3</label>
+                    <input class="date-table__input" type="checkbox" name="3-day" id="3-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="4-mar-field">4</label>
+                    <input class="date-table__input" type="checkbox" name="4-day" id="4-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="5-mar-field">5</label>
+                    <input class="date-table__input" type="checkbox" name="5-day" id="5-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="6-mar-field">6</label>
+                    <input class="date-table__input" type="checkbox" name="6-day" id="6-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="7-mar-field">7</label>
+                    <input class="date-table__input" type="checkbox" name="7-day" id="7-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="8-mar-field">8</label>
+                    <input class="date-table__input" type="checkbox" name="8-day" id="8-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="9-mar-field">9</label>
+                    <input class="date-table__input" type="checkbox" name="9-day" id="9-mar-field">
+                  </td>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="10-mar-field">10</label>
+                    <input class="date-table__input" type="checkbox" name="10-day" id="10-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="11-mar-field">11</label>
+                    <input class="date-table__input" type="checkbox" name="11-day" id="11-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="12-mar-field">12</label>
+                    <input class="date-table__input" type="checkbox" name="12-day" id="12-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="13-mar-field">13</label>
+                    <input class="date-table__input" type="checkbox" name="13-day" id="13-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="14-mar-field">14</label>
+                    <input class="date-table__input" type="checkbox" name="14-day" id="14-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="15-mar-field">15</label>
+                    <input class="date-table__input" type="checkbox" name="15-day" id="15-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="16-mar-field">16</label>
+                    <input class="date-table__input" type="checkbox" name="16-day" id="16-mar-field">
+                  </td>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="17-mar-field">17</label>
+                    <input class="date-table__input" type="checkbox" name="17-day" id="17-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="18-mar-field">18</label>
+                    <input class="date-table__input" type="checkbox" name="18-day" id="18-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="19-mar-field">19</label>
+                    <input class="date-table__input" type="checkbox" name="19-day" id="19-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="20-mar-field">20</label>
+                    <input class="date-table__input" type="checkbox" name="20-day" id="20-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="21-mar-field">21</label>
+                    <input class="date-table__input" type="checkbox" name="21-day" id="21-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="22-mar-field">22</label>
+                    <input class="date-table__input" type="checkbox" name="22-day" id="22-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="23-mar-field">23</label>
+                    <input class="date-table__input" type="checkbox" name="23-day" id="23-mar-field">
+                  </td>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="24-mar-field">24</label>
+                    <input class="date-table__input" type="checkbox" name="24-day" id="24-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="25-mar-field">25</label>
+                    <input class="date-table__input" type="checkbox" name="25-day" id="25-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label" for="26-mar-field">26</label>
+                    <input class="date-table__input" type="checkbox" name="26-day" id="26-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="27-mar-field">27</label>
+                    <input class="date-table__input" type="checkbox" name="27-day" id="27-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="28-mar-field">28</label>
+                    <input class="date-table__input" type="checkbox" name="28-day" id="28-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="29-mar-field">29</label>
+                    <input class="date-table__input" type="checkbox" name="29-day" id="29-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="30-mar-field">30</label>
+                    <input class="date-table__input" type="checkbox" name="30-day" id="30-mar-field">
+                  </td>
+                </tr>
+                <tr class="date-table__row">
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="31-mar-field">31</label>
+                    <input class="date-table__input" type="checkbox" name="31-day" id="31-mar-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="1-apr-field">1</label>
+                    <input class="date-table__input" type="checkbox" name="1-day" id="1-apr-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="2-apr-field">2</label>
+                    <input class="date-table__input" type="checkbox" name="2-day" id="2-apr-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="3-apr-field">3</label>
+                    <input class="date-table__input" type="checkbox" name="3-day" id="3-apr-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="4-apr-field">4</label>
+                    <input class="date-table__input" type="checkbox" name="4-day" id="4-apr-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="5-apr-field">5</label>
+                    <input class="date-table__input" type="checkbox" name="5-day" id="5-apr-field">
+                  </td>
+                  <td class="date-table__col">
+                    <label class="date-table__label date-table__current-month" for="6-apr-field">6</label>
+                    <input class="date-table__input" type="checkbox" name="6-day" id="6-apr-field">
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step2">Следющий шаг</a>
+          </div>
+          <div class="step-2">
+            <h3 class="step-2__headline headline-add-plan" id="#step2">
+              <span class="step-2__num" id="#step1">Шаг 2.</span>
+              Маршрут
+            </h3>
+            <p class="step-2__text text text--color-black">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+            <p class="step-2__paragraph">
+              <select class="step-2__select">
+                <option class="step-2__option">Босния и Герцеговина</option>
+                <option class="step-2__option">Чехословакия</option>
+                <option class="step-2__option">Германия</option>
+                <option class="step-2__option">Франция</option>
+              </select>
+              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+            </p>
+            <p class="step-2__paragraph">
+              <select class="step-2__select">
+                <option class="step-2__option">Босния и Герцеговина</option>
+                <option class="step-2__option">Чехословакия</option>
+                <option class="step-2__option">Германия</option>
+                <option class="step-2__option">Франция</option>
+              </select>
+              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+            </p>
+            <p class="step-2__paragraph">
+              <select class="step-2__select">
+                <option class="step-2__option">Босния и Герцеговина</option>
+                <option class="step-2__option">Чехословакия</option>
+                <option class="step-2__option">Германия</option>
+                <option class="step-2__option">Франция</option>
+              </select>
+              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+            </p>
+            <button class="step-2__add-country">Добавить страну</button>
+
+            <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step3">Следющий шаг</a>
+            <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step1">Предыдущий шаг</a>
+          </div>
+          <div class="step-3">
+            <h3 class="step-3__headline headline-add-plan" id="#step3">
+              <span class="step-3__num" id="#step1">Шаг 3.</span>
+              Развлечения
+            </h3>
+            <p class="step-3__text text text--color-black">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <textarea class="step-3__area step-3__area--start" placeholder="План действий"></textarea>
+            <textarea class="step-3__area step-3__area--start" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+
+            <button class="step-3__btn inner-btn inner-btn--yellow" type="submit">Отправить</button>
+            <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step2">Предыдущий шаг</a>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">

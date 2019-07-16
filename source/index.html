@@ -12,7 +12,7 @@
         <a class="logo">
           <img src="http://placehold.it/100x19" width="100" height="19" alt="Логотип">
         </a>
-        <a class="header__toggle" href="#">меню</a>
+        <a class="header__toggle" href="#">меню</a><!-- Заменить текст на aria -->
       </div>
       <nav class="dropdown">
         <ul class="dropdown__navigation navigation">
@@ -223,7 +223,6 @@
               </p>
           </li>
         </ul>
-        <!-- Изменены названия классов в целях сокращения css кода в дальнешем -->
 
         <a class="companions__btn btn" href="companions.html">Показать всех</a>
       </section>
@@ -271,10 +270,40 @@
         </div>
       </section>
 
-      <!-- Блоки из бонусного задания добавлю после основного -->
-      <section class="sign-in">Зарегистрироваться</section>
-      <section class="get-directions">Выбрать направление</section>
-      <!-- Блоки из бонусного задания добавлю после основного -->
+      <section class="sign-in">
+        <h2 class="visually-hidden">Регистрация</h2>
+        <p class="sign-in__headline headline">Зарегистрировались?</p>
+        <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
+        <form class="sign-in__form" action="https://echo.htmlacademy.ru">
+          <p class="sign-in__paragraph">
+            <label class="visually-hidden" for="sign-in-email-field">Ваш email</label>
+            <input class="sign-in__input" type="email" name="email" id="sign-in-email-field">
+            <button class="sign-in__btn btn" type="submit" aria-label="Отправить"></button>
+          </p>
+        </form>
+        <p class="sign-in__text text text--color-white">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="sign-in__our-contacts our-contacts">
+          <li class="our-contacts__item">
+            <a class="our-contacts__link our-phone" href="phone-num.html">8 800 555-86-28</a><!-- Заменить текст на aria -->
+          </li>
+          <li class="our-contacts__item">
+            <a class="our-contacts__link our-mail" href="mail.html">mail@htmlacademy.ru</a><!-- Заменить текст на aria -->
+          </li>
+        </ul>
+      </section>
+
+      <section class="get-directions">
+        <h2 class="visually-hidden">Выбираем маршрут</h2>
+        <div class="get-directions__box">
+          <p class="get-directions__text text">ул. Большая Конюшенная, 19/8</p>
+          <a class="get-directions__btn btn" href="get-directions.html">Проложить маршрут</a>
+        </div>
+        <div class="get-directions__map">
+          <!-- Заменю на карту когда начну стилизовать -->
+          <img class="get-directions__img" src="http://placehold.it/320x546" width="320" height="546" alt="Карта">
+          <!-- Заменю на карту когда начну стилизовать -->
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
