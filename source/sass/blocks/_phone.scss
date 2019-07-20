@@ -1,0 +1,18 @@
+.phone {
+  &:hover,
+  &:focus {
+    .phone__icon {
+      background-color: $orange-dark;
+    }
+  }
+
+  &:active {
+    .phone__icon {
+      background-color: $orange-dark;
+    }
+
+    path {
+      opacity: 0.3;
+    }
+  }
+}

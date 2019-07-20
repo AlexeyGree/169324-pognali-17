@@ -1,0 +1,18 @@
+.email {
+  &:hover,
+  &:focus {
+    .email__icon {
+      background-color: $orange;
+    }
+  }
+
+  &:active {
+    .email__icon {
+      background-color: $orange;
+    }
+
+    path {
+      opacity: 0.3;
+    }
+  }
+}

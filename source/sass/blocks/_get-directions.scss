@@ -1,0 +1,24 @@
+.get-directions {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.get-directions__box {
+  padding-top: 60px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  background-color: $yellow;
+}
+
+.get-directions__text {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-left: 62px;
+  padding-right: 50px;
+}
+
+.get-directions__btn {
+  border: 3px solid $darkblue;
+}

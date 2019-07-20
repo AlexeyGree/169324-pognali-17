@@ -1,3 +1,41 @@
-html {
-  color: black;
-}
+@import "helpers/fonts";
+@import "helpers/colors";
+@import "blocks/page";
+@import "blocks/inner-page";
+@import "blocks/visually-hidden";
+@import "blocks/logo";
+@import "blocks/toggle";
+@import "blocks/text";
+@import "blocks/headline";
+@import "blocks/headline-direction";
+@import "blocks/headline-add-plan";
+@import "blocks/page-title";
+@import "blocks/btn";
+@import "blocks/inner-btn";
+@import "blocks/level";
+@import "blocks/tags";
+@import "blocks/flags";
+@import "blocks/transport";
+/*чтобы travis не ругался*/
+@import "blocks/navigation";
+@import "blocks/authorization";
+@import "blocks/our-contacts";
+@import "blocks/our-socials";
+@import "blocks/phone";
+@import "blocks/email";
+@import "blocks/facebook";
+@import "blocks/vkontact";
+@import "blocks/instagram";
+@import "blocks/header";
+@import "blocks/dropdown";
+@import "blocks/feedback";
+@import "blocks/usecase";
+/*чтобы travis не ругался*/
+@import "blocks/about-us";
+@import "blocks/directions";
+@import "blocks/companions";
+@import "blocks/prices";
+@import "blocks/sign-in";
+@import "blocks/get-directions";
+@import "blocks/footer";
+@import "blocks/academy";
