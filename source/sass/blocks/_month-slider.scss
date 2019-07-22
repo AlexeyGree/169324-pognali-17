@@ -40,14 +40,14 @@
   background-repeat: no-repeat;
   border: none;
   opacity: 0.3;
-}
 
-.month-slider--back {
-  left: 0;
-  background-image: url("../../img/month-arrow-left.svg");
-}
+  &--back {
+    left: 0;
+    background-image: url("../../img/month-arrow-left.svg");
+  }
 
-.month-slider--next {
-  right: 0;
-  background-image: url("../../img/month-arrow-right.svg");
+  &--next {
+    right: 0;
+    background-image: url("../../img/month-arrow-right.svg");
+  }
 }

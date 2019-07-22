@@ -15,20 +15,20 @@
   line-height: 18px;
 
   border-radius: 5px;
-}
 
-.usecase__step:nth-child(1) {
-  background-color: $orange;
-}
+  &:nth-child(1) {
+    background-color: $orange;
+  }
 
-.usecase__step:nth-child(2) {
-  background-color: $orange-light;
-}
+  &:nth-child(2) {
+    background-color: $orange-light;
+  }
 
-.usecase__step:nth-child(3) {
-  background-color: $orange-lightness;
-}
+  &:nth-child(3) {
+    background-color: $orange-lightness;
+  }
 
-.usecase__step:nth-child(4) {
-  background-color: $yellow;
+  &:nth-child(4) {
+    background-color: $yellow;
+  }
 }

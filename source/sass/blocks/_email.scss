@@ -1,18 +1,16 @@
-.email {
-  &:hover,
-  &:focus {
-    .email__icon {
-      background-color: $orange;
-    }
+.email:hover,
+.email:focus {
+  .email__icon {
+    background-color: $orange;
+  }
+}
+
+.email:active {
+  .email__icon {
+    background-color: $orange;
   }
 
-  &:active {
-    .email__icon {
-      background-color: $orange;
-    }
-
-    path {
-      opacity: 0.3;
-    }
+  path {
+    opacity: 0.3;
   }
 }

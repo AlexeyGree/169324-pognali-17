@@ -10,10 +10,10 @@
   padding-right: 25px;
   padding-left: 25px;
   border-collapse: collapse;
-}
 
-.alphabet tbody {
-  width: 100%;
+  & tbody {
+    width: 100%;
+  }
 }
 
 .alphabet__row {

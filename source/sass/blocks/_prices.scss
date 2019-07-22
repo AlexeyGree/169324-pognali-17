@@ -51,18 +51,18 @@
   padding-top: 12px;
   padding-bottom: 12px;
   border-top: 1px solid $darkgrey;
-}
 
-.prices__item:last-child {
-  border-bottom: 1px solid $darkgrey;
-}
+  &:last-child {
+    border-bottom: 1px solid $darkgrey;
+  }
 
-.prices__item span {
-  display: block;
-  font-size: 16px;
-  font-weight: 200;
-  line-height: 22px;
-  color: $darkgrey;
+  & span {
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    color: $darkgrey;
+  }
 }
 
 .prices__toggle {
@@ -84,13 +84,13 @@
   padding-bottom: 30px;
   background-color: white;
   border-radius: 10px;
-}
 
-.prices__business .prices__headline {
-  margin-bottom: 30px;
-  padding: 0;
-}
+  .prices__headline {
+    margin-bottom: 30px;
+    padding: 0;
+  }
 
-.prices__business .prices__list {
-  padding-right: 25px;
+  .prices__list {
+    padding-right: 25px;
+  }
 }

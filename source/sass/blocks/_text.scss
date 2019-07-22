@@ -3,20 +3,20 @@
   font-weight: 200;
   font-family: "bloggersans", "Arial", sans-serif;
   line-height: 22px;
-}
 
-.text--color-white {
-  color: $white;
-}
+  &--color-white {
+    color: $white;
+  }
 
-.text--color-black {
-  color: $darkgrey;
-}
+  &--color-black {
+    color: $darkgrey;
+  }
 
-.text--color-blue {
-  color: $darkblue;
-}
+  &--color-blue {
+    color: $darkblue;
+  }
 
-.text--bold {
-  font-weight: 700;
+  &--bold {
+    font-weight: 700;
+  }
 }

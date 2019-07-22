@@ -47,24 +47,21 @@
   display: inline-block;
   width: 21px;
   height: 21px;
-}
 
-.our-socials__icon--grey {
-  path {
+  &--grey path {
     fill: $grey;
   }
 
-  circle {
+  &--grey circle {
     fill: $grey;
   }
-}
 
-.our-socials__icon--blue {
-  path {
+
+  &--blue path {
     fill: $darkblue-light;
   }
 
-  circle {
+  &--blue circle {
     fill: $darkblue-light;
   }
 }

@@ -12,10 +12,10 @@
   align-items: center;
 
   background-color: transparent;
-}
 
-.header__top--scroll {
-  background-color: $white;
+  &--scroll {
+    background-color: $white;
+  }
 }
 
 .header__mid {

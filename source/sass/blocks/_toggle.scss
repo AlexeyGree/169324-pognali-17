@@ -9,30 +9,35 @@
 
 .toggle__menu {
   width: 100%;
-}
 
-.toggle__menu path {
-  fill: $white;
-}
+  & path {
+    fill: $white;
+  }
 
-.toggle__menu--scroll path {
-  fill: $grey;
+  &--scroll path {
+    fill: $grey;
+  }
 }
 
 .toggle__menu-close {
   display: none;
+  width: 100%;
+
+  & path {
+    fill: $grey;
+  }
 }
 
 .toggle--active {
   width: 18px;
   height: 18px;
   padding: 27.5px 29.5px;
-}
 
-.toggle--active .toggle__menu {
-  display: none;
-}
+  .toggle__menu {
+    display: none;
+  }
 
-.toggle--active .toggle__menu-close {
-  display: block;
+  .toggle__menu-close {
+    display: block;
+  }
 }

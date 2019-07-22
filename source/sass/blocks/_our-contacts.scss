@@ -33,21 +33,17 @@
     color: $darkestblue;
   }
 
-  &:hover .our-contacts__icon--yellow-blue,
-  &:focus .our-contacts__icon--yellow-blue {
-    path {
-      fill: $orange-lightness;
-    }
+  &:hover .our-contacts__icon--yellow-blue path,
+  &:focus .our-contacts__icon--yellow-blue path {
+    fill: $orange-lightness;
   }
 
   &:active {
     color: transparentize($darkblue, 0.7);
   }
 
-  &:active .our-contacts__icon--yellow-blue {
-    path {
-      fill: transparentize($yellow, 0.7);
-    }
+  &:active .our-contacts__icon--yellow-blue path {
+    fill: transparentize($yellow, 0.7);
   }
 }
 
@@ -71,7 +67,7 @@
   }
 }
 
-.our-contacts__icon--yellow-blue {
+.our-contacts--yellow-blue {
   background-color: $darkblue;
 
   path {
@@ -79,7 +75,7 @@
   }
 }
 
-.our-contacts__icon--yellow-darkblue {
+.our-contacts--yellow-darkblue {
   background-color: $darkestblue;
 
   path {
@@ -87,7 +83,7 @@
   }
 }
 
-.our-contacts__icon--blue-yellow {
+.our-contacts--blue-yellow {
   background-color: $orange-lightness;
 
   path {
@@ -95,7 +91,7 @@
   }
 }
 
-.our-contacts__icon--blue-orange {
+.our-contacts--blue-orange {
   background-color: $orange;
 
   path {
