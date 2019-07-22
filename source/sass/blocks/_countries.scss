@@ -1,1 +1,27 @@
-/*чтобы travis не ругался*/
+.countries {
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  list-style: none;
+}
+
+.countries__item {
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.countries__label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $darkgrey;
+}
+
+.countries__input {
+  display: none;
+}

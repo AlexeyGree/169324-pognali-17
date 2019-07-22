@@ -1,1 +1,13 @@
-/*чтобы travis не ругался*/
+.plans {
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 55px;
+  padding-left: 25px;
+
+  background-color: $asphalt;
+}
+
+.plans__headline {
+  margin: 0;
+  margin-bottom: 30px;
+}

@@ -1,1 +1,38 @@
-/*чтобы travis не ругался*/
+.add-plan {
+  padding-top: 26px;
+  padding-right: 25px;
+  padding-bottom: 70px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  background-color: $darkestasphalt;
+}
+
+.add-plan__headline {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.add-plan__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.add-plan__step {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.add-plan__btn {
+  margin-top: 22px;
+}

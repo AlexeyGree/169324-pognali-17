@@ -1,1 +1,35 @@
-/*чтобы travis не ругался*/
+.continent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  list-style: none;
+}
+
+.continent__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.continent__label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $darkblue-light-tr;
+
+  &--active {
+    color: $darkblue-light;
+  }
+}
+
+.continent__input {
+  display: none;
+}

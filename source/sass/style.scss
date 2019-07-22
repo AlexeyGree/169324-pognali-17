@@ -16,6 +16,19 @@
 @import "blocks/tags";
 @import "blocks/flags";
 @import "blocks/transport";
+@import "blocks/plan";
+@import "blocks/input-box";
+@import "blocks/month-slider";
+@import "blocks/date-table";
+@import "blocks/step-1";
+@import "blocks/step-2";
+@import "blocks/step-3";
+@import "blocks/continent";
+@import "blocks/alphabet";
+@import "blocks/countries";
+@import "blocks/country-form";
+@import "blocks/companion-sublist";
+@import "blocks/companion-form";
 /*чтобы travis не ругался*/
 @import "blocks/navigation";
 @import "blocks/authorization";
@@ -39,3 +52,9 @@
 @import "blocks/get-directions";
 @import "blocks/footer";
 @import "blocks/academy";
+@import "blocks/profile";
+@import "blocks/content";
+@import "blocks/plans";
+@import "blocks/add-plan";
+@import "blocks/filters";
+@import "blocks/pick-companion";

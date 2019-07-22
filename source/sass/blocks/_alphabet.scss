@@ -1,1 +1,50 @@
-/*чтобы travis не ругался*/
+.alphabet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-collapse: collapse;
+}
+
+.alphabet tbody {
+  width: 100%;
+}
+
+.alphabet__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.alphabet__item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 5);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $white;
+  border: 1px solid $darkasphalt;
+}
+
+.alphabet__label {
+  padding: 7px 8px;
+  font-size: 14px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  color: $darkblue-lightest;
+}
+
+.alphabet__input {
+  display: none;
+}

@@ -1,1 +1,93 @@
-/*чтобы travis не ругался*/
+.step-2 {
+  margin: 0;
+}
+
+.step-2__headline {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.step-2__num {
+  display: block;
+}
+
+.step-2__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.step-2__paragraph {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.step-2__select {
+  width: 100%;
+  height: 42px;
+  padding-top: 12px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $darkblue-lightest;
+  border: 1px solid $lightestblue;
+  border-radius: 3px;
+
+  &--small {
+    width: calc(100% - 53px);
+  }
+}
+
+// .step-2__option {
+//   height: 50px;
+//   font-size: 14px;
+//   font-family: "bloggersans", "Arial", sans-serif;
+//   font-weight: 500;
+//   line-height: 18px;
+//   text-transform: uppercase;
+//   color: $darkblue-lightest;
+// }
+
+.step-2__flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 1px solid $lightestblue;
+  border-radius: 3px;
+}
+
+.step-2__btn {
+  display: none;
+}
+
+.step-2__add-country {
+  width: 100%;
+  height: 42px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $darkblue-lightest;
+  background-color: transparent;
+  border: 1px solid $lightestblue;
+  border-radius: 3px;
+}

@@ -33,4 +33,14 @@
 
 .inner-btn--asphalt {
   background-color: $asphalt;
+
+  &:hover,
+  &:focus {
+    background-color: $darkasphalt;
+  }
+
+  &:active {
+    background-color: $darkasphalt;
+    color: $darkblue-tr;
+  }
 }

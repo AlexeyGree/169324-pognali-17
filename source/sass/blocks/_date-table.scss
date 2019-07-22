@@ -1,1 +1,47 @@
-/*чтобы travis не ругался*/
+.date-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  // border: 1px solid $lightestblue;
+}
+
+.date-table tbody {
+  width: 100%;
+}
+
+.date-table__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.date-table__col {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  margin: 0;
+  padding: 7px 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $darkgrey-tr;
+  border: 1px solid $lightestblue;
+}
+
+.date-table__head {
+  padding-bottom: 5px;
+  color: $darkgrey;
+  border: none;
+}
+
+.date-table__head--weekend {
+  color: $orange-darkest;
+}

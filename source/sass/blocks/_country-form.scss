@@ -1,1 +1,13 @@
-/*чтобы travis не ругался*/
+.country-form {
+  padding: 27px 25px;
+  background-color: $asphalt;
+}
+
+.country-form__list {
+  margin-bottom: 20px;
+}
+
+.country-form__btn {
+  background-color: $darkestasphalt;
+  border: none;
+}

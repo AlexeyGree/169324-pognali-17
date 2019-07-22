@@ -73,7 +73,7 @@
         </ul>
         <ul class="dropdown__our-socials our-socials">
           <li class="our-socials__item">
-            <a class="our-socials__link" href="facebook.com" aria-label="Фейсбук">
+            <a class="our-socials__link" href="facebook.com" title="Фейсбук" aria-label="Фейсбук">
               <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                 <g>
                   <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="our-socials__item">
-            <a class="our-socials__link" href="vk.com" aria-label="Вконтакте">
+            <a class="our-socials__link" href="vk.com" title="Вконтакте" aria-label="Вконтакте">
               <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                 <g>
                   <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
@@ -108,7 +108,7 @@
             </a>
           </li>
           <li class="our-socials__item">
-            <a class="our-socials__link" href="instagram.com" aria-label="Инстаграм">
+            <a class="our-socials__link" href="instagram.com" title="Инстаграм" aria-label="Инстаграм">
               <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                 <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                   M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
@@ -126,17 +126,17 @@
     <main class="content">
       <section class="profile">
         <h2 class="visually-hidden">Профиль</h2>
-        <div class="profile__box profile__box--column">
+        <div class="profile__top companions__box companions__box--column">
           <p class="profile__level level">
             <span class="level__num level__num--color-blue level__num--size-large">99</span>
             <span class="level__text">level</span>
           </p>
-          <a class="profile__box companions__box--circle" href="user-account.html">
-            <img class="companions__avatar" src="http://placehold.it/270x270" width="270" height="270" alt="Фотография">
-          </a>
+          <div class="companions__box companions__box--circle" href="user-account.html">
+            <img class="companions__avatar" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фотография">
+          </div>
         </div>
         <a class="profile__btn inner-btn inner-btn--asphalt" href="my-profile.html">Сменить фото</a>
-        <div class="companions__box companions__box--inner">
+        <div class="profile__box companions__box companions__box--inner">
           <h3 class="profile__section-name">Тэги</h3>
           <ul class="profile__tags tags">
             <li class="tags__item">
@@ -180,7 +180,7 @@
               <span class="plan__dates-start">26 мар</span> -
               <span class="plan__dates-end">29 мар</span>
             </p>
-            <a class="plans__btn inner-btn" href="#">Изменить</a>
+            <a class="plan__btn" href="#">Изменить</a>
           </li>
           <li class="plan__item">
             <h3 class="plan__headline"><span class="plan__num">2.</span> Таиланд, Индонезия</h3>
@@ -189,7 +189,7 @@
               <span class="plan__dates-start">1 июл</span> -
               <span class="plan__dates-end">15 июл</span>
             </p>
-            <a class="plans__btn inner-btn" href="#">Изменить</a>
+            <a class="plan__btn" href="#">Изменить</a>
           </li>
         </ul>
       </section>
@@ -197,40 +197,40 @@
       <section class="add-plan">
         <h2 class="add-plan__headline headline-direction">Добавить план:</h2>
         <form class="add-plan__form" action="https://echo.htmlacademy.ru">
-          <div class="step-1">
+          <div class="add-plan__step step-1">
             <h3 class="step-1__headline headline-add-plan">
               <span class="step-1__num" id="#step1">Шаг 1.</span>
               Даты пребывания
             </h3>
             <p class="step-1__text text text--color-black">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <p class="step-1__paragraph">
-              <label class="step-1__label" for="companions-num-field">Ищу попутчиков:</label>
+            <div class="step-1__paragraph">
+              <label class="step-1__label step-1__people" for="companions-num-field">Ищу попутчиков:</label>
               <div class="step-1__input-box input-box">
                 <input class="input-box__input" type="text" name="companions-num" id="companions-num-field">
                 <span class="input-box__btn input-box__minus">-</span>
                 <span class="input-box__btn input-box__plus">+</span>
               </div>
-            </p>
-            <p class="step-1__paragraph">
-              <label class="step-1__label" for="duration-field">Длительность:</label>
+            </div>
+            <div class="step-1__paragraph">
+              <label class="step-1__label step-1__days" for="duration-field">Длительность:</label>
               <div class="step-1__input-box input-box">
                 <input class="input-box__input" type="text" name="duration" id="duration-field">
                 <span class="input-box__btn input-box__minus">-</span>
                 <span class="input-box__btn input-box__plus">+</span>
               </div>
-            </p>
-            <p class="step-1__paragraph">
-              <input class="step-1__input" type="checkbox" name="child" id="child-field">
-              <label class="step-1__label" for="child-field">Можно с детьми</label>
-            </p>
+            </div>
+            <div class="step-1__paragraph step-1__child-box">
+              <input class="step-1__check" type="checkbox" name="child" id="child-field">
+              <label class="step-1__label step-1__child" for="child-field">Можно с детьми</label>
+            </div>
             <div class="step-1__date-picker">
               <!-- Пока в общих чертах -->
               <div class="step-1__month-slider month-slider">
                 <div class="month-slider__view">
                   <span class="month-slider__slide">Март 2019</span>
                 </div>
-                <button class="month-slider__btn month-slider--back">Назад</button><!-- Заменить текст на aria -->
-                <button class="month-slider__btn month-slider--next">Вперед</button><!-- Заменить текст на aria -->
+                <button class="month-slider__btn month-slider--back" aria-label="Назад"></button>
+                <button class="month-slider__btn month-slider--next" aria-label="Вперед"></button>
               </div>
               <!-- Пока в общих чертах -->
               <table class="step-1__table date-table">
@@ -240,8 +240,8 @@
                   <th class="date-table__col date-table__head">С</th>
                   <th class="date-table__col date-table__head">Ч</th>
                   <th class="date-table__col date-table__head">П</th>
-                  <th class="date-table__col date-table__head">С</th>
-                  <th class="date-table__col date-table__head">В</th>
+                  <th class="date-table__col date-table__head date-table__head--weekend">С</th>
+                  <th class="date-table__col date-table__head date-table__head--weekend">В</th>
                 </tr>
                 <tr class="date-table__row">
                   <td class="date-table__col">
@@ -386,28 +386,30 @@
 
             <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step2">Следющий шаг</a>
           </div>
-          <div class="step-2">
+          <div class="add-plan__step step-2">
             <h3 class="step-2__headline headline-add-plan" id="#step2">
               <span class="step-2__num" id="#step1">Шаг 2.</span>
               Маршрут
             </h3>
             <p class="step-2__text text text--color-black">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
             <p class="step-2__paragraph">
-              <select class="step-2__select">
+              <select class="step-2__select step-2__select--small">
                 <option class="step-2__option">Босния и Герцеговина</option>
                 <option class="step-2__option">Чехословакия</option>
                 <option class="step-2__option">Германия</option>
                 <option class="step-2__option">Франция</option>
               </select>
+              <span class="step-2__flag"></span>
               <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
             </p>
             <p class="step-2__paragraph">
-              <select class="step-2__select">
+              <select class="step-2__select step-2__select--small">
                 <option class="step-2__option">Босния и Герцеговина</option>
                 <option class="step-2__option">Чехословакия</option>
                 <option class="step-2__option">Германия</option>
                 <option class="step-2__option">Франция</option>
               </select>
+              <span class="step-2__flag"></span>
               <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
             </p>
             <p class="step-2__paragraph">
@@ -424,7 +426,7 @@
             <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step3">Следющий шаг</a>
             <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step1">Предыдущий шаг</a>
           </div>
-          <div class="step-3">
+          <div class="add-plan__step step-3">
             <h3 class="step-3__headline headline-add-plan" id="#step3">
               <span class="step-3__num" id="#step1">Шаг 3.</span>
               Развлечения
@@ -439,7 +441,7 @@
               <textarea class="step-3__area step-3__area--start" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
             </p>
 
-            <button class="step-3__btn inner-btn inner-btn--yellow" type="submit">Отправить</button>
+            <button class="add-plan__btn step-3__btn inner-btn inner-btn--yellow" type="submit">Отправить</button>
             <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step2">Предыдущий шаг</a>
           </div>
         </form>
@@ -447,24 +449,61 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__top">
-          <a class="footer__logo logo" href="index.html" aria-label="Логотип"></a>
-          <ul class="footer__our-socials our-socials">
-            <li class="our-socials__item">
-              <a class="our-socials__link facebook" href="facebook.com">Фейсбук</a><!-- Заменить текст на aria -->
-            </li>
-            <li class="our-socials__item">
-              <a class="our-socials__link vkontact" href="vk.com">Вконтакте</a><!-- Заменить текст на aria -->
-            </li>
-            <li class="our-socials__item">
-              <a class="our-socials__link instagram" href="instagram.com">Инстаграм</a><!-- Заменить текст на aria -->
-            </li>
-          </ul>
-        </div>
-        <div class="footer__bot">
-          <p class="footer__developers">Разработано</p>
-          <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a><!-- Заменить текст на aria -->
-        </div>
-      </footer>
+      <div class="footer__top">
+        <a class="footer__logo logo" href="index.html" aria-label="Логотип"></a>
+        <ul class="footer__our-socials our-socials">
+          <li class="our-socials__item">
+            <a class="our-socials__link our-socials__link--yellow" href="facebook.com" title="Фейсбук" aria-label="Фейсбук">
+              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                <g>
+                  <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                  V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="our-socials__item">
+            <a class="our-socials__link our-socials__link--yellow" href="vk.com" title="Вконтакте" aria-label="Вконтакте">
+              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                <g>
+                  <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                    c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                    c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                    c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                    C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                    c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                    c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                    c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                    c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                    c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                    c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                    c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                    c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                    c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                    C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                    C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="our-socials__item">
+            <a class="our-socials__link our-socials__link--yellow" href="instagram.com" title="Инстаграм" aria-label="Инстаграм">
+              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                  M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                  c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+                <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <p class="academy__developers">Разработано</p>
+        <img class="academy__image" src="img/htmlacademy.svg">
+      </a>
+    </footer>
   </body>
 </html>

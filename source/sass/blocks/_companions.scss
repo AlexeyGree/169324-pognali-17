@@ -21,9 +21,9 @@
   padding-left: 25px;
 }
 
-.companions__text:nth-child(4) {
-  margin-bottom: 56px;
-}
+// .companions__text:last-of-type {
+//   margin-bottom: 56px;
+// }
 
 .companions__list {
   display: flex;
@@ -42,9 +42,15 @@
   border-radius: 10px;
 }
 
-.companions__name {
+.companions__link {
   margin: 0;
   margin-bottom: 16px;
+  text-decoration: none;
+  color: $darkblue-lightest;
+}
+
+.companions__name {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -52,22 +58,47 @@
 
 .companions__box {
   display: flex;
+  align-items: center;
   box-sizing: border-box;
+}
+
+.companions__box--margin {
+  margin-bottom: 14px;
 }
 
 .companions__box--main {
   position: relative;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   padding: 20px 25px;
 }
 
 .companions__box--square {
   justify-content: center;
-  align-items: center;
   width: 270px;
   height: 270px;
+}
+
+.companions__box--circle {
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.companions__box--column {
+  justify-content: space-between;
+}
+
+.companions__box--inner {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  border: 1px solid $darkgrey;
+  border-radius: 10px;
 }
 
 .companions__avatar {
@@ -77,4 +108,31 @@
 
 .companions__tags {
   margin-bottom: 16px;
+}
+
+.companions__btn {
+  margin-top: 20px;
+}
+
+.companions__subscribers {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: uppercase;
+  color: $darkblue;
+}
+
+.companions__section-name {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $darkgrey;
+}
+
+.companions__item--inner {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
 }
