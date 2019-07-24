@@ -41,6 +41,6 @@
 
   &:active {
     background-color: $darkasphalt;
-    color: $darkblue-tr;
+    color: transparentize($darkblue, 0.7);
   }
 }

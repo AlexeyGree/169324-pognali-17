@@ -46,10 +46,10 @@
   }
 
   &:active {
-    color: $orange-lightness-tr;
+    color: transparentize($orange-lightness, 0.7);
   }
 
   &:active path {
-    fill: $orange-lightness-tr;
+    fill: transparentize($orange-lightness, 0.7);
   }
 }

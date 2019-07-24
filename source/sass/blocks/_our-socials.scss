@@ -39,7 +39,7 @@
 
   &:active path,
   &:active circle {
-    fill: $white-tr;
+    fill: transparentize($white, 0.7);
   }
 }
 

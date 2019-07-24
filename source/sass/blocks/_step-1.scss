@@ -45,7 +45,7 @@
   &::after {
     content: "Чел:";
     margin-left: auto;
-    color: $darkblue-lightest-tr;
+    color: transparentize($darkblue-lightest, 0.7);
   }
 }
 
@@ -53,7 +53,7 @@
   &::after {
     content: "Дн:";
     margin-left: auto;
-    color: $darkblue-lightest-tr;
+    color: transparentize($darkblue-lightest, 0.7);
   }
 }
 

@@ -25,5 +25,5 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 40px;
-  color: $darkgrey-light-tr;
+  color: transparentize($darkgrey-light, 0.7);
 }

@@ -57,14 +57,14 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  color: $black-tr3;
+  color: transparentize($black, 0.7);
 
   &:hover,
   &:focus {
-    color: $black-tr6;
+    color: transparentize($black, 0.4);
   }
 
   &:active {
-    color: $black-tr1;
+    color: transparentize($black, 0.9);
   }
 }

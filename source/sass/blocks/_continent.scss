@@ -23,13 +23,9 @@
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
-  color: $darkblue-light-tr;
+  color: transparentize($darkblue-light, 0.7);
 
   &--active {
     color: $darkblue-light;
   }
-}
-
-.continent__input {
-  display: none;
 }

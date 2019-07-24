@@ -52,14 +52,14 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 .directions__rating {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 .directions__btn {

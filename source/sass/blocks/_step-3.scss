@@ -40,19 +40,19 @@
 }
 
 ::-webkit-input-placeholder {
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 ::-moz-placeholder {
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 :-ms-input-placeholder {
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 :-moz-placeholder {
-  color: $darkgrey-tr;
+  color: transparentize($darkgrey, 0.7);
 }
 
 .step-3__btn {
