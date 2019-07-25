@@ -1,0 +1,46 @@
+.inner-btn {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 11px;
+  padding-bottom: 7px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $darkblue;
+
+  border-radius: 25px;
+}
+
+.inner-btn--yellow {
+  background-color: $yellow;
+
+  &:hover,
+  &:focus {
+    background-color: $orange-lightness;
+  }
+
+  &:active {
+    background-color: $orange-lightness;
+    color: transparentize($darkblue, 0.7);
+  }
+}
+
+.inner-btn--asphalt {
+  background-color: $asphalt;
+
+  &:hover,
+  &:focus {
+    background-color: $darkasphalt;
+  }
+
+  &:active {
+    background-color: $darkasphalt;
+    color: transparentize($darkblue, 0.7);
+  }
+}

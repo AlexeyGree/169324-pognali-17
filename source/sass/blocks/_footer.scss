@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 35px;
+  padding-right: 25px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  background-color: $white;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 36px;
+  border-bottom: 1px solid $grey;
+}
+
+.footer__logo {
+  margin: 0;
+  background-image: url("../../img/logo-mobile-blue@1x.png");
+}
+
+.footer__our-socials {
+  width: 180px;
+}

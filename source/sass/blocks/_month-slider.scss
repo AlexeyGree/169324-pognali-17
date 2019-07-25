@@ -1,0 +1,53 @@
+.month-slider {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+}
+
+.month-slider__view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  // padding-top: 10px;
+  // padding-right: 18px;
+  // padding-bottom: 10px;
+  // padding-left: 18px;
+  box-sizing: border-box;
+}
+
+.month-slider__slide {
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $darkblue-lightest;
+}
+
+.month-slider__btn {
+  position: absolute;
+  top: 50%;
+  width: 9px;
+  height: 16px;
+  margin-top: -8px;
+
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 0.3;
+
+  &--back {
+    left: 0;
+    background-image: url("../../img/month-arrow-left.svg");
+  }
+
+  &--next {
+    right: 0;
+    background-image: url("../../img/month-arrow-right.svg");
+  }
+}

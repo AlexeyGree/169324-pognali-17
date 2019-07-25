@@ -1,0 +1,43 @@
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 11px;
+  padding: 31px 26px;
+}
+
+.toggle__menu {
+  width: 100%;
+
+  & path {
+    fill: $white;
+  }
+
+  &--scroll path {
+    fill: $grey;
+  }
+}
+
+.toggle__menu-close {
+  display: none;
+  width: 100%;
+
+  & path {
+    fill: $grey;
+  }
+}
+
+.toggle--active {
+  width: 18px;
+  height: 18px;
+  padding: 27.5px 29.5px;
+
+  .toggle__menu {
+    display: none;
+  }
+
+  .toggle__menu-close {
+    display: block;
+  }
+}

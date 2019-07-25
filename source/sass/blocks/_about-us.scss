@@ -1,0 +1,27 @@
+.about-us {
+  padding-top: 28px;
+  padding-right: 25px;
+  padding-bottom: 80px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  background-color: $darkblue-light;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-us__headline {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.about-us__text {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

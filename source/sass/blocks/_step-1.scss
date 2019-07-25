@@ -1,0 +1,70 @@
+.step-1 {
+  margin: 0;
+}
+
+.step-1__headline {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.step-1__num {
+  display: block;
+}
+
+.step-1__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.step-1__paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+
+.step-1__child-box {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-1__label {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $darkblue-lightest;
+}
+
+.step-1__people {
+  &::after {
+    content: "Чел:";
+    margin-left: auto;
+    color: transparentize($darkblue-lightest, 0.7);
+  }
+}
+
+.step-1__days {
+  &::after {
+    content: "Дн:";
+    margin-left: auto;
+    color: transparentize($darkblue-lightest, 0.7);
+  }
+}
+
+.step-1__child {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  color: $darkgrey;
+}
+
+.step-1__month-slider {
+  margin-bottom: 25px;
+}

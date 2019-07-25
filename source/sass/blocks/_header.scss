@@ -1,0 +1,72 @@
+.header {
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  background-color: $darkblue;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: transparent;
+
+  &--scroll {
+    background-color: $white;
+  }
+}
+
+.header__mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 110px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+.header__lead {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: $white;
+  background-image: url("../../img/traveller-illustration-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__mid-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__mid-our-contacts {
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__mid-our-contacts__link {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  font-size: 0;
+}
+
+.header__mid-authorization {
+  flex-grow: 1;
+}
+
+.header__bot {
+  background-color: $darkblue-light;
+}
