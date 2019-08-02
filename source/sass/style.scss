@@ -1,6 +1,8 @@
 @import "helpers/fonts";
 @import "helpers/colors";
 @import "blocks/page";
+@import "blocks/layout";
+@import "blocks/flex";
 @import "blocks/inner-page";
 @import "blocks/visually-hidden";
 @import "blocks/logo";
@@ -46,12 +48,13 @@
 @import "blocks/usecase";
 @import "blocks/about-us";
 @import "blocks/directions";
+@import "blocks/companions-short";
 @import "blocks/companions";
 @import "blocks/prices";
 @import "blocks/sign-in";
 @import "blocks/get-directions";
-@import "blocks/footer";
 @import "blocks/academy";
+@import "blocks/footer";
 @import "blocks/profile";
 @import "blocks/content";
 @import "blocks/plans";

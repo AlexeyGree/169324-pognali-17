@@ -1,9 +1,52 @@
 .flags {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-
   list-style: none;
+}
+
+.flags__item {
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.flags__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--thailand::before {
+    background-image: url("../../img/thailand-icon.png");
+  }
+
+  &--sri-lanka::before {
+    background-image: url("../../img/sri-lanka-icon.png");
+  }
+
+  &--seychelles::before {
+    background-image: url("../../img/seychelles-icon.png");
+  }
+
+  &--czech::before {
+    background-image: url("../../img/czech-icon.png");
+  }
+
+  &--belgium::before {
+    background-image: url("../../img/belgium-icon.png");
+  }
 }

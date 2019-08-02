@@ -1,15 +1,21 @@
 .footer {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  margin-top: -40px;
+  padding-top: 35px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 28px 28px 0 0;
+}
+
+.footer__layout {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  padding-top: 35px;
-  padding-right: 25px;
-  padding-bottom: 14px;
-  padding-left: 25px;
   box-sizing: border-box;
-  background-color: $white;
 }
 
 .footer__top {
@@ -24,9 +30,41 @@
 
 .footer__logo {
   margin: 0;
+  margin-bottom: 38px;
   background-image: url("../img/logo-mobile-blue@1x.png");
 }
 
-.footer__our-socials {
-  width: 180px;
+.footer__academy {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: -66px;
+    padding-top: 48px;
+    padding-bottom: 46px;
+    border-radius: 56px 56px 0 0;
+  }
+
+  .footer__layout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(50% + 90px);
+    padding: 0;
+    border: 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+    background-image: url("../../img/logo-tablet-blue@1x.png");
+  }
+
+  .footer__academy {
+    width: auto;
+  }
 }

@@ -1,0 +1,22 @@
+.layout {
+  min-width: 270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    max-width: 1024px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .layout {
+    max-width: 1440px;
+    width: 1440px;
+    padding: 0 60px;
+  }
+}

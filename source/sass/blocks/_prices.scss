@@ -1,14 +1,16 @@
 .prices {
+  position: relative;
+  z-index: 7;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: -30px;
   padding-top: 80px;
-  padding-right: 25px;
-  padding-bottom: 35px;
-  padding-left: 25px;
+  padding-bottom: 15px;
   box-sizing: border-box;
   background-color: $lightblue;
+  border-radius: 0 0 28px 28px;
 }
 
 .prices__top {
@@ -29,6 +31,10 @@
   flex-shrink: 0;
   width: 99px;
   height: 99px;
+  background-image: url("../../img/rates@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .prices__list {
@@ -42,36 +48,91 @@
   padding-left: 25px;
   padding-right: 45px;
   box-sizing: border-box;
-
   list-style: none;
+
+  &--business {
+    padding-right: 25px;
+  }
 }
 
 .prices__item {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
-  border-top: 1px solid $darkgrey;
+  border-top: 1px solid $grey;
 
   &:last-child {
-    border-bottom: 1px solid $darkgrey;
-  }
-
-  & span {
-    display: block;
-    font-size: 16px;
-    font-weight: 200;
-    line-height: 22px;
-    color: $darkgrey;
+    border-bottom: 1px solid $grey;
   }
 }
 
-.prices__toggle {
-  padding: 25px;
+.prices__span {
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22px;
+  color: $darkgrey;
+}
+
+.prices__name {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: -44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    margin-top: -17px;
+    padding: 0;
+    padding-top: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    background-color: $lightblue;
+    border-radius: 50%;
+  }
+
+  &--one::before {
+    content: "1";
+    background-color: $orange-light;
+  }
+
+  &--two::before {
+    content: "2";
+    background-color: $orange-lightness;
+  }
+
+  &--three::before {
+    content: "3";
+    background-color: $yellow;
+  }
+}
+
+.prices__btn {
+  display: block;
+  padding: 20px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 16px;
+  text-align: center;
+  line-height: 24px;
   text-decoration: none;
   color: $darkblue;
+
+  &--close {
+    width: 100%;
+    margin-top: 35px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: $whiteblue;
+  }
 }
 
 .prices__business {
@@ -81,16 +142,211 @@
   align-items: center;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  box-sizing: border-box;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 transparentize($darkblue-lightest, 0.9);
 
   .prices__headline {
     margin-bottom: 30px;
     padding: 0;
   }
+}
 
-  .prices__list {
-    padding-right: 25px;
+@media screen and (min-width: 768px) {
+  .prices {
+    margin-top: -56px;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    border-radius: 0 0 56px 56px;
+  }
+
+  .prices__top {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .prices__headline {
+    text-align: center;
+  }
+
+  .prices__avatar {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .prices__list--person {
+    position: relative;
+    z-index: 0;
+    padding-right: 30px;
+    padding-left: 90px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      z-index: -1;
+      top: -44px;
+      right: 0;
+      width: 190px;
+      height: calc(100% + 88px);
+      background-color: $asphalt;
+      border-radius: 20px;
+    }
+
+    &::after {
+      bottom: -118px;
+      right: 45px;
+      width: 100px;
+      height: 100px;
+      background-image: url("../../img/rates@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .prices__item {
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+
+  .prices__span {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 33px;
+    color: $darkgrey;
+  }
+
+  .prices__name {
+    width: 60%;
+
+    &::before {
+      right: auto;
+      left: -90px;
+      width: 67px;
+      height: 67px;
+      margin-top: -33.5px;
+      padding-top: 8px;
+      font-size: 28px;
+      font-weight: 200;
+      line-height: 33px;
+    }
+  }
+
+  .prices__price {
+    width: 30%;
+    text-align: right;
+  }
+
+  .prices__btn--open {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 24px;
+    padding-right: 35px;
+    padding-bottom: 24px;
+    padding-left: 90px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    color: $blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      margin-top: -33.5px;
+      background-color: $asphalt;
+      background-image: url("../../img/business.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30%;
+      border-radius: 50%;
+    }
+  }
+
+  .prices__business {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 45px;
+    border-radius: 30px;
+
+    .prices__headline {
+      padding-right: 90px;
+      padding-left: 90px;
+      margin-bottom: 40px;
+    }
+
+    .prices__span {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+
+  .prices__list--business {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  .prices__btn--close {
+    margin-top: 50px;
+    padding: 35px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .prices__top {
+    margin-bottom: 130px;
+  }
+
+  .prices__list--person {
+    padding-right: 340px;
+    padding-left: 160px;
+
+    &::before {
+      top: -50px;
+      right: 174px;
+      width: 444px;
+      height: calc(100% + 100px);
+    }
+
+    &::after {
+      top: 50%;
+      right: 74px;
+      bottom: auto;
+      width: 198px;
+      height: 198px;
+      margin-top: -99px;
+    }
+  }
+
+  .prices__btn--open {
+    padding-right: 160px;
+    padding-left: 160px;
+
+    &::before {
+      left: 70px;
+    }
   }
 }

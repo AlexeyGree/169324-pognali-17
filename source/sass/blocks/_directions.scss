@@ -1,22 +1,27 @@
 .directions {
+  position: relative;
+  z-index: 9;
+  margin-top: -30px;
   padding-top: 100px;
-  padding-right: 25px;
   padding-bottom: 30px;
-  padding-left: 25px;
-
   background-color: $lightblue;
+  border-radius: 0 0 28px 28px;
+}
+
+.directions__text-box {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 62px;
+  box-sizing: border-box;
 }
 
 .directions__headline {
   margin: 0;
   margin-bottom: 18px;
-  padding-right: 25px;
-  padding-left: 25px;
 }
 
 .directions__text {
-  padding-right: 25px;
-  padding-left: 25px;
+  margin: 0;
 }
 
 .directions__list {
@@ -32,16 +37,59 @@
 }
 
 .directions__item {
+  position: relative;
+  z-index: 0;
   width: 100%;
+  margin-bottom: 10px;
+  padding-top: 100px;
   background-color: $white;
   border-radius: 10px;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .directions__holder {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
   padding: 25px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 25px;
+    width: 35px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--thailand::before {
+    background-image: url("../img/thailand-icon.png");
+  }
+
+  &--france::before {
+    background-image: url("../img/france-icon.png");
+  }
+
+  &--czech::before {
+    background-image: url("../img/czech-icon.png");
+  }
 }
 
 .directions__country {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -49,6 +97,7 @@
 }
 
 .directions__slogan {
+  margin: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -56,12 +105,297 @@
 }
 
 .directions__rating {
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   color: transparentize($darkgrey, 0.7);
 }
 
+.directions__rating-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  margin-top: -6.5px;
+
+  & path {
+    fill: transparentize($darkblue-light, 0.9);
+  }
+
+  & ellipse {
+    fill: transparentize($darkblue-light, 0.9);
+  }
+}
+
+.directions__img-box {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 110px;
+}
+
+.directions__image {
+  width: 100%;
+  height: auto;
+
+  &--large {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .directions__btn {
   margin-top: 30px;
+
+  &--desktop {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .directions {
+    margin-top: -56px;
+    padding-top: 126px;
+    padding-bottom: 80px;
+    border-radius: 0 0 56px 56px;
+  }
+
+  .directions__text-box {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 110px;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 289px;
+      height: 575px;
+      background-image: url("../../img/flags-back@1x.png");
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .directions__headline {
+    margin-bottom: 58px;
+  }
+
+  .directions__list {
+    position: relative;
+    z-index: 0;
+    padding-right: 35px;
+    padding-left: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -39px;
+      left: 0;
+      width: 141px;
+      height: 141px;
+      background-color: $asphalt;
+      border-radius: 16px;
+    }
+  }
+
+  .directions__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .directions__holder {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% - 186px);
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+
+    &::before {
+      top: 16px;
+      left: auto;
+      right: -35px;
+      width: 70px;
+      height: 47px;
+    }
+
+    &--thailand::before {
+      background-image: url("../img/thailand-icon-large.png");
+    }
+
+    &--france::before {
+      background-image: url("../img/france-icon-large.png");
+    }
+
+    &--czech::before {
+      background-image: url("../img/czech-icon-large.png");
+    }
+  }
+
+  .directions__box {
+    margin-bottom: 16px;
+  }
+
+  .directions__country {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .directions__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .directions__rating {
+    padding-left: 30px;
+    font-size: 20px;
+  }
+
+  .directions__rating-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: -12px;
+  }
+
+  .directions__img-box {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    flex-shrink: 0;
+    width: 186px;
+    // height: 140px;
+    height: auto;
+  }
+
+  .directions__image {
+    &--small {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    &--large {
+      position: static;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      clip: auto;
+      overflow: visible;
+      object-fit: cover;
+    }
+  }
+
+  .directions__btn-box {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .directions__btn {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .directions {
+    padding-top: 216px;
+    padding-bottom: 88px;
+  }
+
+  .directions__layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    // margin-bottom: 120px;
+    margin-bottom: 40px;
+  }
+
+  .directions__text-box {
+    order: 2;
+    width: 45%;
+    margin: 0;
+    margin-top: -60px;
+    padding-top: 70px;
+    padding-right: 170px;
+    padding-left: 70px;
+  }
+
+  .directions__text {
+    margin-bottom: 100px;
+  }
+
+  .directions__list {
+    order: 1;
+    width: 55%;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .directions__btn-box {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .directions__btn {
+    order: 3;
+
+    &--desktop {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      border: 0;
+      padding-top: 28px;
+      padding-right: 82px;
+      padding-bottom: 28px;
+      padding-left: 34px;
+      clip: auto;
+      overflow: visible;
+    }
+  }
 }

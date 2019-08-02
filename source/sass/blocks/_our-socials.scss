@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 124px;
+  width: 135px;
 
   margin: 0 auto;
   padding: 0;
@@ -14,15 +14,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   box-sizing: border-box;
   border-radius: 50%;
 }
 
 .our-socials__link--yellow {
-  width: 60px;
-  height: 60px;
   background-color: $yellow;
 
   &:hover,
@@ -56,12 +54,58 @@
     fill: $grey;
   }
 
-
   &--blue path {
     fill: $darkblue-light;
   }
 
   &--blue circle {
     fill: $darkblue-light;
+  }
+
+  &--facebook {
+    width: 11px;
+    height: 21px;
+  }
+
+  &--vkontact {
+    width: 23px;
+    height: 12px;
+  }
+
+  &--instagram {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-socials {
+    width: 180px;
+    margin: 0;
+  }
+
+  .our-socials__link {
+    width: 60px;
+    height: 60px;
+  }
+
+  .our-socials__icon {
+    width: 24px;
+    height: 24px;
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vkontact {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
