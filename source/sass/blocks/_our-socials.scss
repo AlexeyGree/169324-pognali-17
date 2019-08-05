@@ -10,11 +10,14 @@
   list-style: none;
 }
 
+.our-socials__item {
+  flex-basis: 45px;
+}
+
 .our-socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
   height: 45px;
   box-sizing: border-box;
   border-radius: 50%;
@@ -84,8 +87,11 @@
     margin: 0;
   }
 
+  .our-socials__item {
+    flex-basis: 60px;
+  }
+
   .our-socials__link {
-    width: 60px;
     height: 60px;
   }
 

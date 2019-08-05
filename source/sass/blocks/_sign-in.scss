@@ -25,8 +25,10 @@
 
 .sign-in__text {
   margin: 0;
-  padding-right: 45px;
-  padding-left: 45px;
+  // padding-right: 45px;
+  // padding-left: 45px;
+  padding-right: 40px;
+  padding-left: 40px;
   text-align: center;
 }
 
@@ -108,7 +110,7 @@
     width: 10px;
     height: 14px;
     margin-top: -7px;
-    background-image: url("../../img/triangle-arrow-right.svg");
+    background-image: url("../img/triangle-arrow-right.svg");
     background-position: center;
     background-repeat: no-repeat;
   }

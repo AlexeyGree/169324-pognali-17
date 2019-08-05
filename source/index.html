@@ -11,10 +11,10 @@
     <header class="header">
 
       <div class="header__top">
-        <div class="layout flex flex--row flex--sb">
+        <div class="header__top-layout layout">
           <div class="header__logo-a-nav">
             <a class="header__logo logo" aria-label="Логотип"></a>
-            <a class="header__toggle toggle" href="#" aria-label="Меню">
+            <button class="header__toggle toggle" aria-label="Меню">
               <svg class="toggle__menu" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
               <g>
                 <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
@@ -29,7 +29,7 @@
                 L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
                 L10.3,9z"/>
               </svg>
-            </a>
+            </button>
             <ul class="header__top-navigation navigation navigation--top">
               <li class="navigation__item">
                 <a class="navigation__link navigation__link--top" href="about-us.html">О сервисе</a>
@@ -219,10 +219,10 @@
       </div>
       <div class="header__bot layout">
         <ol class="usecase">
-          <li class="usecase__step">Выберите направление</li>
-          <li class="usecase__step">Изучите идеи путешественников</li>
-          <li class="usecase__step">Находите тех, кто похож на вас</li>
-          <li class="usecase__step">Путешествуйте вместе!</li>
+          <li class="usecase__step"><span>Выберите направление</span></li>
+          <li class="usecase__step"><span>Изучите идеи путешественников</span></li>
+          <li class="usecase__step"><span>Находите тех, кто похож на вас</span></li>
+          <li class="usecase__step"><span>Путешествуйте вместе!</span></li>
         </ol>
       </div>
     </header>
@@ -237,7 +237,6 @@
             <p class="about-us__text text text--color-white text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
             <a class="about-us__btn btn" href="about-us.html">Подробнее</a>
           </div>
-          <div class="about-us__img-box"></div>
         </div>
       </section>
       <section class="directions">
@@ -573,7 +572,8 @@
         <div class="sign-in__layout layout">
           <h2 class="visually-hidden">Регистрация</h2>
           <p class="sign-in__headline headline">Зарегистрировались?</p>
-          <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
+          <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно!</p>
+          <p class="sign-in__text text text--color-white">Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
           <form class="sign-in__form" action="https://echo.htmlacademy.ru">
             <p class="sign-in__paragraph">
               <label class="visually-hidden" for="sign-in-email-field">Ваш email</label>

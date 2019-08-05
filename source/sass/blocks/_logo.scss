@@ -19,10 +19,10 @@
     width: 166px;
     height: 42px;
     // padding: 45px;
-    background-image: url("../../img/logo-tablet-white@1x.png");
+    background-image: url("../img/logo-tablet-white@1x.png");
 
     &--scroll {
-      background-image: url("../../img/logo-tablet-blue@1x.png");
+      background-image: url("../img/logo-tablet-blue@1x.png");
     }
   }
 }
@@ -31,10 +31,10 @@
   .logo {
     width: 200px;
     height: 52px;
-    background-image: url("../../img/logo-desktop-white@1x.png");
+    background-image: url("../img/logo-desktop-white@1x.png");
 
     &--scroll {
-      background-image: url("../../img/logo-desktop-blue@1x.png");
+      background-image: url("../img/logo-desktop-blue@1x.png");
     }
   }
 }
