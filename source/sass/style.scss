@@ -2,7 +2,6 @@
 @import "helpers/colors";
 @import "blocks/page";
 @import "blocks/layout";
-@import "blocks/inner-page";
 @import "blocks/visually-hidden";
 @import "blocks/logo";
 @import "blocks/toggle";
@@ -29,6 +28,7 @@
 @import "blocks/countries";
 @import "blocks/country-form";
 @import "blocks/companion-sublist";
+@import "blocks/range";
 @import "blocks/companion-form";
 @import "blocks/companions-box";
 @import "blocks/avatar";
@@ -48,6 +48,7 @@
 @import "blocks/about-us";
 @import "blocks/directions";
 @import "blocks/companions-short";
+@import "blocks/subscribers";
 @import "blocks/companions";
 @import "blocks/prices";
 @import "blocks/sign-in";
@@ -60,3 +61,5 @@
 @import "blocks/add-plan";
 @import "blocks/filters";
 @import "blocks/pick-companion";
+@import "blocks/inner-page";
+@import "blocks/pagination";

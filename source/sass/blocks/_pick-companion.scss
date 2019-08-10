@@ -1,12 +1,8 @@
 .pick-companion {
-  padding: 0 25px;
-  margin-bottom: 28px;
-}
-
-.pick-companion__bg {
   padding: 20px 25px;
   background-color: $yellow;
-  border-radius: 10px;
+  border-radius: 20px;
+  margin-bottom: 28px;
 }
 
 .pick-companion__headline {
@@ -16,4 +12,34 @@
   font-weight: 700;
   line-height: 23px;
   color: $darkblue-lightest;
+}
+
+@media screen and (min-width: 768px) {
+  .pick-companion {
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    padding-left: 35px;
+  }
+
+  .pick-companion__headline {
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pick-companion {
+    order: 1;
+    max-width: 285px;
+    margin-bottom: 0;
+    padding: 45px;
+    box-sizing: border-box;
+  }
+
+  .pick-companion__headline {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

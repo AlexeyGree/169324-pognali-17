@@ -17,6 +17,15 @@
   font-size: 0;
   line-height: 0;
 
+  &--inner {
+    width: 32px;
+    height: 32px;
+    margin-right: 0;
+    box-sizing: border-box;
+    background-color: $lightblue;
+    border-radius: 50%;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -47,5 +56,51 @@
   &--run svg {
     width: 20px;
     height: 21px;
+  }
+
+  &--inner svg {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .transport__item--inner {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+
+    &-plane svg {
+      width: 19px;
+      height: 21px;
+    }
+
+    &-bus svg {
+      width: 17px;
+      height: 21px;
+    }
+
+    &-bicycle svg {
+      width: 24px;
+      height: 21px;
+    }
+
+    &-run svg {
+      width: 20px;
+      height: 21px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .transport__item--inner {
+    margin-bottom: 0;
+    margin-right: 14px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

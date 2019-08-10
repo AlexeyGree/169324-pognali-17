@@ -141,6 +141,17 @@
   padding-top: 0;
 }
 
+.header__main-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     background-color: $darkblue-light;
@@ -227,6 +238,46 @@
 
   .header__bot {
     margin-bottom: 0;
+  }
+
+  .header__title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__main-link {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-right: 75px;
+    border: 0;
+    padding: 0;
+    padding-top: 86px;
+    padding-right: 60px;
+    padding-bottom: 62px;
+    padding-left: 20px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 32px;
+      height: 16px;
+      background-image: url("../img/return.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
