@@ -61,14 +61,7 @@
 }
 
 .alphabet__list {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  @include visually-hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,14 +73,7 @@
     border: none;
 
     &--excess-tablet {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
+      @include visually-hidden;
     }
 
     &:nth-child(1),
@@ -170,14 +156,7 @@
     }
 
     &--excess-desktop {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      clip: rect(0 0 0 0);
-      overflow: hidden;
+      @include visually-hidden;
     }
   }
 

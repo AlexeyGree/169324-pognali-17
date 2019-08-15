@@ -8,7 +8,7 @@
   </head>
   <body class="page inner-page">
 
-    <header class="header">
+    <header class="header inner-page__header">
       <div class="header__top">
         <div class="header__top-layout layout">
           <div class="header__logo-a-nav">
@@ -169,334 +169,491 @@
         </ul>
       </nav>
       <h1 class="page-title">Направления</h1>
+      <div class="header-profile__top companions-box companions-box--column">
+        <p class="profile__level level">
+          <span class="profile__level-num level__num level__num--color-blue level__num--size-large">80</span>
+          <span class="profile__level-text level__text">level</span>
+        </p>
+        <div class="profile__avatar companions-box companions-box--circle" href="user-account.html">
+          <img class="avatar avatar--desktop" src="img/demin-desktop@1x.jpg" width="190" height="190" alt="Фотография">
+        </div>
+      </div>
     </header>
 
     <main class="content">
       <section class="profile">
-        <h2 class="visually-hidden">Профиль</h2>
-        <div class="profile__top companions-box companions-box--column">
-          <p class="profile__level level">
-            <span class="level__num level__num--color-blue level__num--size-large">99</span>
-            <span class="level__text">level</span>
-          </p>
-          <div class="companions-box companions-box--circle" href="user-account.html">
-            <img class="avatar" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фотография">
+        <div class="profile__layout layout layout--directions">
+          <h2 class="visually-hidden">Профиль</h2>
+          <div class="profile__item profile__top companions-box companions-box--column">
+            <p class="profile__level level">
+              <span class="profile__level-num level__num level__num--color-blue level__num--size-large">80</span>
+              <span class="profile__level-text level__text">level</span>
+            </p>
+            <div class="profile__avatar companions-box companions-box--circle" href="user-account.html">
+              <img class="avatar avatar--mobile" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фотография">
+              <img class="avatar avatar--tablet" src="img/demin-tablet@1x.jpg" width="95" height="95" alt="Фотография">
+              <img class="avatar avatar--desktop" src="img/demin-desktop@1x.jpg" width="190" height="190" alt="Фотография">
+            </div>
           </div>
-        </div>
-        <a class="profile__btn inner-btn inner-btn--asphalt" href="my-profile.html">Сменить фото</a>
-        <div class="profile__margin companions-box companions-box--inner">
-          <h3 class="profile__section-name">Тэги</h3>
-          <ul class="profile__tags tags">
-            <li class="tags__item">
-              <a class="tags__link" href="#">#ЗОЖ</a>
-            </li>
-            <li class="tags__item">
-              <a class="tags__link" href="#">#ПП</a>
-            </li>
-            <li class="tags__item">
-              <a class="tags__link" href="#">#Фитнес</a>
-            </li>
-            <li class="tags__item">
-              <a class="tags__link" href="#">#пляж</a>
-            </li>
-            <li class="tags__item">
-              <a class="tags__link" href="#">#авокадо</a>
-            </li>
-            <li class="tags__item">
-              <a class="tags__link" href="#">#смузи</a>
-            </li>
-          </ul>
-        </div>
-        <div class="companions-box companions-box--inner">
-          <h3 class="profile__section-name">Транспорт:</h3>
-          <ul class="transport">
-            <li class="transport__item">Авиатранспорт</li>
-            <li class="transport__item">Наземный транспорт</li>
-            <li class="transport__item">Велотранспорт</li>
-            <li class="transport__item">Попутный транспорт</li>
-          </ul>
+          <a class="profile__item profile__btn inner-btn inner-btn--asphalt" href="my-profile.html">фото</a>
+          <div class="profile__item profile__tags-box companions-box companions-box--inner">
+            <div class="profile__section-box">
+              <h3 class="profile__section-name">Тэги</h3>
+            </div>
+            <ul class="profile__tags tags">
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#ЗОЖ</a>
+              </li>
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#ПП</a>
+              </li>
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#Фитнес</a>
+              </li>
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#пляж</a>
+              </li>
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#авокадо</a>
+              </li>
+              <li class="profile__tags-item tags__item">
+                <a class="tags__link" href="#">#смузи</a>
+              </li>
+            </ul>
+          </div>
+          <div class="profile__item profile__transport-box companions-box companions-box--inner">
+            <div class="profile__section-box">
+              <h3 class="profile__section-name">Транспорт</h3>
+            </div>
+            <ul class="profile__transport transport">
+              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-plane transport__item--plane transport__item--active">
+                <span>Авиатранспорт</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                </svg>
+              </li>
+              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-bus transport__item--bus transport__item--active">
+                <span>Наземный транспорт</span>
+                <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                </svg>
+              </li>
+              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-bicycle transport__item--bicycle">
+                <span>Велотранспорт</span>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                </svg>
+              </li>
+              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-run transport__item--run transport__item--active">
+                <span>Попутный транспорт</span>
+                <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                  <g>
+                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                      C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                      c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                      c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                      z"/>
+                  </g>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="plans">
-        <h2 class="plans__headline headline-direction">Мои планы:</h2>
-        <ul class="plans__list plan">
-          <li class="plan__item">
-            <h3 class="plan__headline"><span class="plan__num">1.</span> Франция, Италия</h3>
-            <p class="plan__companion"><span class="plan__companion-num">3</span> попутчика</p>
-            <p class="plan__dates">
-              <span class="plan__dates-start">26 мар</span> -
-              <span class="plan__dates-end">29 мар</span>
-            </p>
-            <a class="plan__btn" href="#">Изменить</a>
-          </li>
-          <li class="plan__item">
-            <h3 class="plan__headline"><span class="plan__num">2.</span> Таиланд, Индонезия</h3>
-            <p class="plan__companion"><span class="plan__companion-num">1</span> попутчик</p>
-            <p class="plan__dates">
-              <span class="plan__dates-start">1 июл</span> -
-              <span class="plan__dates-end">15 июл</span>
-            </p>
-            <a class="plan__btn" href="#">Изменить</a>
-          </li>
-        </ul>
+        <div class="plans__layout layout layout--directions">
+          <h2 class="plans__headline headline-direction">Мои планы:</h2>
+          <ul class="plans__list plan">
+            <li class="plan__item">
+              <h3 class="plan__headline"><span class="plan__num">1.</span> Франция, Италия</h3>
+              <div class="plan__box">
+                <div class="plan__text">
+                  <p class="plan__companion"><span class="plan__companion-num">3</span> попутчика</p>
+                  <p class="plan__dates">
+                    <span class="plan__dates-start">26 мар</span> -
+                    <span class="plan__dates-end">29 мар</span>
+                  </p>
+                </div>
+                <a class="plan__btn" href="#">Изменить</a>
+              </div>
+            </li>
+            <li class="plan__item">
+              <h3 class="plan__headline"><span class="plan__num">2.</span> Таиланд, Индонезия</h3>
+              <div class="plan__box">
+                <div class="plan__text">
+                  <p class="plan__companion"><span class="plan__companion-num">1</span> попутчик</p>
+                  <p class="plan__dates">
+                    <span class="plan__dates-start">1 июл</span> -
+                    <span class="plan__dates-end">15 июл</span>
+                  </p>
+                </div>
+                <a class="plan__btn" href="#">Изменить</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="add-plan">
-        <h2 class="add-plan__headline headline-direction">Добавить план:</h2>
-        <form class="add-plan__form" action="https://echo.htmlacademy.ru">
-          <div class="add-plan__step step-1">
-            <h3 class="step-1__headline headline-add-plan">
-              <span class="step-1__num" id="#step1">Шаг 1.</span>
-              Даты пребывания
-            </h3>
-            <p class="step-1__text text text--color-black">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <div class="step-1__paragraph">
-              <label class="step-1__label step-1__people" for="companions-num-field">Ищу попутчиков:</label>
-              <div class="step-1__input-box input-box">
-                <input class="input-box__input" type="text" name="companions-num" id="companions-num-field">
-                <span class="input-box__btn input-box__minus">-</span>
-                <span class="input-box__btn input-box__plus">+</span>
-              </div>
-            </div>
-            <div class="step-1__paragraph">
-              <label class="step-1__label step-1__days" for="duration-field">Длительность:</label>
-              <div class="step-1__input-box input-box">
-                <input class="input-box__input" type="text" name="duration" id="duration-field">
-                <span class="input-box__btn input-box__minus">-</span>
-                <span class="input-box__btn input-box__plus">+</span>
-              </div>
-            </div>
-            <div class="step-1__paragraph step-1__child-box">
-              <input class="step-1__check" type="checkbox" name="child" id="child-field">
-              <label class="step-1__label step-1__child" for="child-field">Можно с детьми</label>
-            </div>
-            <div class="step-1__date-picker">
-              <!-- Пока в общих чертах -->
-              <div class="step-1__month-slider month-slider">
-                <div class="month-slider__view">
-                  <span class="month-slider__slide">Март 2019</span>
+        <div class="add-plan__layout layout layout--steps">
+          <h2 class="add-plan__headline headline-direction">Добавить план:</h2>
+          <form class="add-plan__form" action="https://echo.htmlacademy.ru">
+            <div class="add-plan__step step-1">
+              <div class="add-plan__step-text">
+                <div class="add-plan__step-text-item">
+                  <h3 class="step-1__headline headline-add-plan">
+                    <span class="step-1__num" id="#step1">Шаг 1.</span>
+                    Даты пребывания
+                  </h3>
+                  <p class="step-1__text add-plan__text text text--color-black">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 </div>
-                <button class="month-slider__btn month-slider__btn--back" aria-label="Назад"></button>
-                <button class="month-slider__btn month-slider__btn--next" aria-label="Вперед"></button>
+                <div class="add-plan__step-text-item">
+                  <ul class="add-plan__step-indicator">
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Даты</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Маршрут</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Развлечения</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <!-- Пока в общих чертах -->
-              <table class="step-1__table date-table">
-                <tr class="date-table__row">
-                  <th class="date-table__col date-table__head">П</th>
-                  <th class="date-table__col date-table__head">В</th>
-                  <th class="date-table__col date-table__head">С</th>
-                  <th class="date-table__col date-table__head">Ч</th>
-                  <th class="date-table__col date-table__head">П</th>
-                  <th class="date-table__col date-table__head date-table__head--weekend">С</th>
-                  <th class="date-table__col date-table__head date-table__head--weekend">В</th>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label">24</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">25</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">26</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">27</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">28</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">1</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">2</span>
-                  </td>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label">3</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">4</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">5</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">6</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">7</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">8</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">9</span>
-                  </td>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label">10</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">11</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">12</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">13</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">14</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">15</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">16</span>
-                  </td>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label">17</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">18</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">19</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">20</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">21</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">22</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">23</span>
-                  </td>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label">24</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">25</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label">26</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">27</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">28</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">29</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">30</span>
-                  </td>
-                </tr>
-                <tr class="date-table__row">
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">31</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">1</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">2</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">3</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">4</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">5</span>
-                  </td>
-                  <td class="date-table__col">
-                    <span class="date-table__label date-table__current-month">6</span>
-                  </td>
-                </tr>
-              </table>
+              <div class="step-1__input-hover">
+                <div class="step-1__paragraph">
+                  <label class="step-1__label step-1__people" for="companions-num-field">Ищу попутчиков:</label>
+                  <div class="step-1__input-box input-box">
+                    <input class="input-box__input" type="text" name="companions-num" id="companions-num-field" value="2">
+                    <span class="input-box__btn input-box__minus"></span>
+                    <span class="input-box__btn input-box__plus"></span>
+                  </div>
+                </div>
+                <div class="step-1__paragraph">
+                  <label class="step-1__label step-1__days" for="duration-field">Длительность:</label>
+                  <div class="step-1__input-box input-box">
+                    <input class="input-box__input" type="text" name="duration" id="duration-field" value="2">
+                    <span class="input-box__btn input-box__minus"></span>
+                    <span class="input-box__btn input-box__plus"></span>
+                  </div>
+                </div>
+                <div class="step-1__paragraph step-1__child-box">
+                  <input class="step-1__check visually-hidden" type="checkbox" name="child" id="child-field" checked>
+                  <label class="step-1__label step-1__child" for="child-field">Можно с детьми</label>
+                </div>
+              </div>
+              <div class="step-1__date-picker">
+                <!-- Пока в общих чертах -->
+                <div class="step-1__month-slider month-slider">
+                  <div class="month-slider__view">
+                    <span class="month-slider__slide">Март 2019</span>
+                  </div>
+                  <button class="month-slider__btn month-slider__btn--back" aria-label="Назад"></button>
+                  <button class="month-slider__btn month-slider__btn--next" aria-label="Вперед"></button>
+                </div>
+                <!-- Пока в общих чертах -->
+                <table class="step-1__table date-table">
+                  <tr class="date-table__row">
+                    <th class="date-table__col date-table__head">П</th>
+                    <th class="date-table__col date-table__head">В</th>
+                    <th class="date-table__col date-table__head">С</th>
+                    <th class="date-table__col date-table__head">Ч</th>
+                    <th class="date-table__col date-table__head">П</th>
+                    <th class="date-table__col date-table__head date-table__head--weekend">С</th>
+                    <th class="date-table__col date-table__head date-table__head--weekend">В</th>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col">
+                      <span class="date-table__label">24</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">25</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">26</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">27</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">28</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">1</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">2</span>
+                    </td>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col">
+                      <span class="date-table__label">3</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">4</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">5</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">6</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">7</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">8</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">9</span>
+                    </td>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col">
+                      <span class="date-table__label">10</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">11</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">12</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">13</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">14</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">15</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">16</span>
+                    </td>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col">
+                      <span class="date-table__label">17</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">18</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">19</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">20</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">21</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">22</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">23</span>
+                    </td>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col">
+                      <span class="date-table__label">24</span>
+                    </td>
+                    <td class="date-table__col">
+                      <span class="date-table__label">25</span>
+                    </td>
+                    <td class="date-table__col date-table__actual date-table__selected date-table__active">
+                      <span class="date-table__label">26</span>
+                    </td>
+                    <td class="date-table__col date-table__actual date-table__selected">
+                      <span class="date-table__label">27</span>
+                    </td>
+                    <td class="date-table__col date-table__actual date-table__selected">
+                      <span class="date-table__label">28</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">29</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">30</span>
+                    </td>
+                  </tr>
+                  <tr class="date-table__row">
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">31</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">1</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">2</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">3</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">4</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">5</span>
+                    </td>
+                    <td class="date-table__col date-table__actual">
+                      <span class="date-table__label">6</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="add-plan__nav-box">
+                <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step2">Следющий шаг</a>
+              </div>
             </div>
-
-            <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step2">Следющий шаг</a>
-          </div>
-          <div class="add-plan__step step-2">
-            <h3 class="step-2__headline headline-add-plan" id="#step2">
-              <span class="step-2__num" id="#step1">Шаг 2.</span>
-              Маршрут
-            </h3>
-            <p class="step-2__text text text--color-black">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
-            <p class="step-2__paragraph">
-              <select class="step-2__select step-2__select--small">
-                <option class="step-2__option">Босния и Герцеговина</option>
-                <option class="step-2__option">Чехословакия</option>
-                <option class="step-2__option">Германия</option>
-                <option class="step-2__option">Франция</option>
-              </select>
-              <span class="step-2__flag"></span>
-              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
-            </p>
-            <p class="step-2__paragraph">
-              <select class="step-2__select step-2__select--small">
-                <option class="step-2__option">Босния и Герцеговина</option>
-                <option class="step-2__option">Чехословакия</option>
-                <option class="step-2__option">Германия</option>
-                <option class="step-2__option">Франция</option>
-              </select>
-              <span class="step-2__flag"></span>
-              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
-            </p>
-            <p class="step-2__paragraph">
-              <select class="step-2__select">
-                <option class="step-2__option">Босния и Герцеговина</option>
-                <option class="step-2__option">Чехословакия</option>
-                <option class="step-2__option">Германия</option>
-                <option class="step-2__option">Франция</option>
-              </select>
-              <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
-            </p>
-            <button class="step-2__add-country">Добавить страну</button>
-
-            <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step3">Следющий шаг</a>
-            <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step1">Предыдущий шаг</a>
-          </div>
-          <div class="add-plan__step step-3">
-            <h3 class="step-3__headline headline-add-plan" id="#step3">
-              <span class="step-3__num" id="#step1">Шаг 3.</span>
-              Развлечения
-            </h3>
-            <p class="step-3__text text text--color-black">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <p class="step-3__paragraph">
-              <span class="step-3__paragraph-name">Босния и Герцеговина</span>
-              <textarea class="step-3__area step-3__area--start" placeholder="План действий"></textarea>
-            </p>
-            <p class="step-3__paragraph">
-              <span class="step-3__paragraph-name">Чехословакия</span>
-              <textarea class="step-3__area step-3__area--start" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
-            </p>
-
-            <button class="add-plan__btn step-3__btn inner-btn inner-btn--yellow" type="submit">Отправить</button>
-            <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step2">Предыдущий шаг</a>
-          </div>
-        </form>
+            <div class="add-plan__step step-2">
+              <div class="add-plan__step-text">
+                <div class="add-plan__step-text-item">
+                  <h3 class="step-2__headline headline-add-plan" id="#step2">
+                    <span class="step-2__num" id="#step1">Шаг 2.</span>
+                    Маршрут
+                  </h3>
+                  <p class="step-2__text add-plan__text text text--color-black">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+                </div>
+                <div class="add-plan__step-text-item">
+                  <ul class="add-plan__step-indicator">
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Даты</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Маршрут</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Развлечения</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="add-plan__step-country">
+                <div class="step-2__paragraph">
+                  <ul class="step-2__select step-2__select--small">
+                    <li class="step-2__option">
+                      <span class="step-2__option-selected">Босния и Герцеговина</span>
+                      <ul class="step-2__dropdown">
+                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
+                        <li class="step-2__dropdown-option">Чехословакия</li>
+                        <li class="step-2__dropdown-option">Германия</li>
+                        <li class="step-2__dropdown-option">Франция</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="step-2__close-box">
+                    <span class="step-2__flag step-2__flag--active step-2__flag--active-bosnia"></span>
+                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                  </div>
+                </div>
+                <div class="step-2__paragraph">
+                  <ul class="step-2__select step-2__select--small">
+                    <li class="step-2__option">
+                      <span class="step-2__option-selected">Чехословакия</span>
+                      <ul class="step-2__dropdown">
+                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
+                        <li class="step-2__dropdown-option">Чехословакия</li>
+                        <li class="step-2__dropdown-option">Германия</li>
+                        <li class="step-2__dropdown-option">Франция</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="step-2__close-box">
+                    <span class="step-2__flag step-2__flag--active step-2__flag--active-czech"></span>
+                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                  </div>
+                </div>
+                <div class="step-2__paragraph">
+                  <ul class="step-2__select">
+                    <li class="step-2__option">
+                      <span class="step-2__option-selected">Выберите страну</span>
+                      <ul class="step-2__dropdown">
+                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
+                        <li class="step-2__dropdown-option">Чехословакия</li>
+                        <li class="step-2__dropdown-option">Германия</li>
+                        <li class="step-2__dropdown-option">Франция</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="step-2__close-box">
+                    <span class="step-2__flag"></span>
+                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                  </div>
+                </div>
+                <div class="step-2__btn-box">
+                  <button class="step-2__add-country">Добавить страну</button>
+                  <div class="step-2__close-box">
+                    <span class="step-2__flag step-2__flag--btn"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="step-2__nav-box add-plan__nav-box">
+                <a class="add-plan__btn inner-btn inner-btn--yellow" href="#step3">Следющий шаг</a>
+                <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step1">На шаг назад</a>
+              </div>
+            </div>
+            <div class="add-plan__step step-3">
+              <div class="add-plan__step-text">
+                <div class="add-plan__step-text-item">
+                  <h3 class="step-3__headline headline-add-plan" id="#step3">
+                    <span class="step-3__num" id="#step1">Шаг 3.</span>
+                    Развлечения
+                  </h3>
+                  <p class="step-3__text add-plan__text text text--color-black">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                </div>
+                <div class="add-plan__step-text-item">
+                  <ul class="add-plan__step-indicator">
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Даты</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link" href="#">Маршрут</a>
+                    </li>
+                    <li class="add-plan__step-indicator-item">
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Развлечения</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="add-plan__step-notes">
+                <p class="step-3__paragraph">
+                  <span class="step-3__paragraph-name step-3__paragraph-name--bosnia">Босния и Герцеговина</span>
+                  <textarea class="step-3__area step-3__area--start" placeholder="План действий" rows="10"></textarea>
+                </p>
+                <p class="step-3__paragraph">
+                  <span class="step-3__paragraph-name step-3__paragraph-name--czech">Чехословакия</span>
+                  <textarea class="step-3__area step-3__area--start" placeholder="План действий" rows="10">Пить пиво и лазить по старым замкам, наслаждаться аритектурой и вот это все.</textarea>
+                </p>
+              </div>
+              <div class="add-plan__nav-box">
+                <button class="add-plan__btn step-3__btn inner-btn inner-btn--yellow" type="submit">Отправить</button>
+                <a class="add-plan__btn inner-btn inner-btn--transparent" href="#step2">На шаг назад</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer class="footer inner-page__footer">
+    <footer class="footer">
         <div class="footer__layout layout">
           <div class="footer__top">
             <a class="footer__logo logo" aria-label="Логотип"></a>

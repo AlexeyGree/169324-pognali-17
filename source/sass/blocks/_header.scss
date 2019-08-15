@@ -27,14 +27,7 @@
   }
 
   &-navigation {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include visually-hidden;
   }
 }
 
@@ -107,14 +100,7 @@
   }
 
   &--top {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include visually-hidden;
   }
 }
 
@@ -142,14 +128,11 @@
 }
 
 .header__main-link {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  @include visually-hidden;
+}
+
+.header-profile__top {
+  @include visually-hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,14 +160,7 @@
   }
 
   .header__top-our-contacts {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include visually-hidden;
   }
 
   .header__box-our-contacts-link {
@@ -219,14 +195,7 @@
   }
 
   .header__box--mid {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    @include visually-hidden;
   }
 
   .header__lead {
@@ -373,5 +342,20 @@
   .header__bot {
     // margin-bottom: 123px;
     margin-bottom: 156px;
+  }
+
+  .header-profile__top {
+    position: absolute;
+    right: 152px;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    clip: auto;
+    overflow: visible;
   }
 }

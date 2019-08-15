@@ -9,6 +9,14 @@
   .layout {
     max-width: 1024px;
     padding: 0 40px;
+
+    &--directions {
+      padding: 0 75px;
+    }
+
+    &--steps {
+      padding: 0 75px;
+    }
   }
 }
 
@@ -17,5 +25,14 @@
     max-width: 1440px;
     width: 1440px;
     padding: 0 60px;
+
+    &--directions {
+      padding-left: 130px;
+      padding-right: 60px;
+    }
+
+    &--steps {
+      padding: 0 60px;
+    }
   }
 }

@@ -2,7 +2,8 @@
   display: inline-block;
   width: 100%;
   height: auto;
-  padding: 11px;
+  // padding: 11px;
+  padding-top: 14px;
   padding-left: 28px;
   padding-right: 28px;
   padding-bottom: 7px;
@@ -14,7 +15,7 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  color: $darkblue;
+  color: $darkblue-lightest;
 
   border-radius: 25px;
 }
