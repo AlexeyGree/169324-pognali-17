@@ -9,27 +9,76 @@
   <body class="page">
 
     <header class="header">
+
       <div class="header__top">
-        <a class="logo" aria-label="Логотип"></a>
-        <a class="toggle" href="#" aria-label="Меню">
-          <svg class="toggle__menu" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-          <g>
-            <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
-            <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
-          </g>
-          </svg>
-          <svg class="toggle__menu-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-          <style type="text/css">
-            .st0{fill:#606161;}
-          </style>
-          <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
-            L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
-            L10.3,9z"/>
-          </svg>
-        </a>
+        <div class="header__top-layout layout">
+          <div class="header__logo-a-nav">
+            <a class="header__logo logo" aria-label="Логотип"></a>
+            <button class="header__toggle toggle" aria-label="Меню">
+              <svg class="toggle__menu" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+              <g>
+                <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+                <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+              </g>
+              </svg>
+              <svg class="toggle__menu-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill:#606161;}
+              </style>
+              <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
+                L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
+                L10.3,9z"/>
+              </svg>
+            </button>
+            <ul class="header__top-navigation navigation navigation--top">
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--top" href="about-us.html">О сервисе</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--top" href="directions.html">Направления</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--top" href="companions.html">Попутчики</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__box header__box--top">
+            <ul class="header__top-our-contacts header__box-our-contacts our-contacts">
+              <li class="our-contacts__item">
+                <a class="header__box-our-contacts-link our-contacts__link phone" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
+                  <span class="our-contacts__icon--top our-contacts__icon our-contacts__icon--blue-orange phone__icon">
+                    <svg class="our-contacts__phone our-contacts__phone--top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                    <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li class="our-contacts__item">
+                <a class="header__box-our-contacts-link our-contacts__link email" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
+                  <span class="our-contacts__icon--top our-contacts__icon our-contacts__icon--blue-yellow email__icon">
+                    <svg class="our-contacts__mail our-contacts__mail--top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <a class="header__box-authorization authorization inner-btn inner-btn--yellow" href="authorization.html">Авторизация</a>
+          </div>
+        </div>
       </div>
-      <nav class="dropdown">
-        <ul class="dropdown__navigation navigation">
+      <nav class="dropdown layout">
+        <ul class="dropdown__navigation navigation navigation--drop">
           <li class="navigation__item">
             <a class="navigation__link" href="about-us.html">О сервисе</a>
           </li>
@@ -45,7 +94,7 @@
           <li class="our-contacts__item">
             <a class="our-contacts__link" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
               <span class="our-contacts__icon our-contacts__icon--yellow-blue">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                <svg class="our-contacts__phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                 <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
                   c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
                   c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
@@ -61,7 +110,7 @@
           <li class="our-contacts__item">
             <a class="our-contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
               <span class="our-contacts__icon our-contacts__icon--yellow-blue">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                <svg class="our-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                 <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
                   c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
                   L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
@@ -74,7 +123,7 @@
         <ul class="dropdown__our-socials our-socials">
           <li class="our-socials__item">
             <a class="our-socials__link" href="facebook.com" title="Фейсбук" aria-label="Фейсбук">
-              <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+              <svg class="our-socials__icon our-socials__icon--grey our-socials__icon--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                 <g>
                   <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
                   V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
@@ -85,7 +134,7 @@
           </li>
           <li class="our-socials__item">
             <a class="our-socials__link" href="vk.com" title="Вконтакте" aria-label="Вконтакте">
-              <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+              <svg class="our-socials__icon our-socials__icon--grey our-socials__icon--vkontact" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                 <g>
                   <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
                     c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
@@ -109,7 +158,7 @@
           </li>
           <li class="our-socials__item">
             <a class="our-socials__link" href="instagram.com" title="Инстаграм" aria-label="Инстаграм">
-              <svg class="our-socials__icon our-socials__icon--grey" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+              <svg class="our-socials__icon our-socials__icon--grey our-socials__icon--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                 <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                   M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
                 <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
@@ -121,13 +170,419 @@
         </ul>
       </nav>
       <div class="header__mid">
-        <p class="header__lead">В путешествие с крутыми попутчиками</p>
-        <div class="header__mid-box">
-          <ul class="header__mid-our-contacts our-contacts">
+        <div class="header__bg"></div>
+        <div class="header__mid-layout layout">
+          <p class="header__lead">В путешествие с крутыми попутчиками</p>
+          <div class="header__mid-box">
+            <div class="header__box header__box--mid">
+              <ul class="header__box-our-contacts our-contacts">
+                <li class="our-contacts__item">
+                  <a class="header__box-our-contacts-link our-contacts__link phone" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
+                    <span class="our-contacts__icon our-contacts__icon--blue-orange phone__icon">
+                      <svg class="our-contacts__phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                      <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+                <li class="our-contacts__item">
+                  <a class="header__box-our-contacts-link our-contacts__link email" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
+                    <span class="our-contacts__icon our-contacts__icon--blue-yellow email__icon">
+                      <svg class="our-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                      <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <a class="header__box-authorization authorization inner-btn inner-btn--yellow" href="authorization.html">Авторизация</a>
+            </div>
+            <blockquote class="feedback">
+              <p class="feedback__quote">"Лучшее предложение, что я видел в жизни!"</p>
+              <p class="feedback__author">
+                <cite class="feedback__author-name">Мурат Эльтазин</cite>
+                <span class="feedback__author-profession">Главный редактор газеты <q>гаджетлайф</q></span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot layout">
+        <ol class="usecase">
+          <li class="usecase__step"><span>Выберите направление</span></li>
+          <li class="usecase__step"><span>Изучите идеи путешественников</span></li>
+          <li class="usecase__step"><span>Находите тех, кто похож на вас</span></li>
+          <li class="usecase__step"><span>Путешествуйте вместе!</span></li>
+        </ol>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="visually-hidden">Приложение для поиска попутчиков "Погнали".</h1>
+      <section class="about-us">
+        <div class="about-us__layout layout">
+          <div class="about-us__text-box">
+            <h2 class="about-us__headline headline">О сервисе</h2>
+            <p class="about-us__text text text--color-white">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="about-us__text text text--color-white text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="about-us__btn btn" href="about-us.html">Подробнее</a>
+          </div>
+        </div>
+      </section>
+      <section class="directions">
+        <div class="directions__layout layout">
+          <div class="directions__text-box">
+            <h2 class="directions__headline headline">Направления</h2>
+            <p class="directions__text text text--color-black">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <a class="directions__btn directions__btn--desktop btn" href="directions.html">Показать все</a>
+          </div>
+          <ul class="directions__list">
+            <li class="directions__item">
+              <div class="directions__holder directions__holder--thailand">
+                <div class="directions__box">
+                  <h3 class="directions__country">Таиланд</h3>
+                  <p class="directions__slogan">Джунгли зовут!</p>
+                </div>
+                <p class="directions__rating">
+                  <svg class="directions__rating-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <g id="icons">
+                    <g id="user">
+                      <ellipse cx="10" cy="6" rx="5" ry="6"/>
+                      <path d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                        c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z"/>
+                    </g>
+                  </g>
+                  </svg>
+                  <span>18321</span>
+                </p>
+              </div>
+              <div class="directions__img-box">
+                <img class="directions__image directions__image--small" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
+                <img class="directions__image directions__image--large" src="img/thailand-desktop@1x.jpg" width="186" height="140" alt="Таиланд">
+              </div>
+            </li>
+            <li class="directions__item">
+              <div class="directions__holder directions__holder--france">
+                <div class="directions__box">
+                  <h3 class="directions__country">Франция</h3>
+                  <p class="directions__slogan">Трэ бьен, манифик!</p>
+                </div>
+                <p class="directions__rating">
+                  <svg class="directions__rating-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <g id="icons">
+                    <g id="user">
+                      <ellipse cx="10" cy="6" rx="5" ry="6"/>
+                      <path d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                        c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z"/>
+                    </g>
+                  </g>
+                  </svg>
+                  <span>12518</span>
+                </p>
+              </div>
+              <div class="directions__img-box">
+                <img class="directions__image directions__image--small" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
+                <img class="directions__image directions__image--large" src="img/france-desktop@1x.jpg" width="186" height="140" alt="Франция">
+              </div>
+            </li>
+            <li class="directions__item">
+              <div class="directions__holder directions__holder--czech">
+                <div class="directions__box">
+                  <h3 class="directions__country">Чехия</h3>
+                  <p class="directions__slogan">Закоулки старой Европы</p>
+                </div>
+                <p class="directions__rating">
+                  <svg class="directions__rating-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <g id="icons">
+                    <g id="user">
+                      <ellipse cx="10" cy="6" rx="5" ry="6"/>
+                      <path d="M19.8,17.1c-0.9-1.8-2.6-3.3-4.8-4.2c-0.6-0.2-1.3-0.2-1.8,0.1c-1,0.6-2,0.9-3.2,0.9S7.8,13.6,6.8,13
+                        c-0.5-0.2-1.2-0.3-1.8,0c-2.2,0.9-3.9,2.4-4.8,4.2C-0.5,18.5,0.6,20,2.1,20h15.8C19.4,20,20.5,18.5,19.8,17.1z"/>
+                    </g>
+                  </g>
+                  </svg>
+                  <span>5326</span>
+                </p>
+              </div>
+              <div class="directions__img-box">
+                <img class="directions__image directions__image--small" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
+                <img class="directions__image directions__image--large" src="img/czech-desktop@1x.jpg" width="186" height="140" alt="Чехия">
+              </div>
+            </li>
+          </ul>
+          <div class="directions__btn-box">
+            <a class="directions__btn btn" href="directions.html">Показать все</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="companions-short">
+        <div class="companions-short__layout layout">
+          <div class="companions-short__text-box">
+            <h2 class="companions-short__headline headline">Попутчики</h2>
+            <p class="companions-short__text text text--color-white">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions-short__small-bg companions-short__text text text--color-white text--bold">Теперь можно легко найти единомышленников!</p>
+            <a class="companions-short__btn companions-short__btn--desktop btn" href="companions.html">Показать всех</a>
+          </div>
+          <ul class="companions-short__list">
+            <li class="companions-short__item">
+              <div class="companions-short__item-text companions-box companions-box--main">
+                <a class="companions-short__link" href="#">Таня Фирсова</a>
+                <ul class="companions-short__tags tags">
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#ЗОЖ</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#ПП</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#Фитнес</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#пляж</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#авокадо</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#смузи</a>
+                  </li>
+                </ul>
+                <ul class="companions-short__flags flags">
+                  <li class="flags__item">
+                    <a class="flags__link flags__link--sri-lanka" href="#">Шри-Ланка</a>
+                  </li>
+                  <li class="flags__item">
+                    <a class="flags__link flags__link--thailand" href="#">Таиланд</a>
+                  </li>
+                  <li class="flags__item">
+                    <a class="flags__link flags__link--seychelles" href="#">Сейшелы</a>
+                  </li>
+                </ul>
+                <ul class="companions-short__transport transport">
+                  <li class="transport__item transport__item--plane transport__item--active">
+                    <span>Авиатранспорт</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--bus">
+                    <span>Наземный транспорт</span>
+                    <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--bicycle">
+                    <span>Велотранспорт</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--run">
+                    <span>Попутный транспорт</span>
+                    <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g>
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"/>
+                      </g>
+                      </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="companions-short__avatar companions-box companions-box--square">
+                <img class="avatar avatar--mobile" src="img/firsova-tablet@1x.jpg" width="190" height="190" alt="Фотография">
+                <img class="avatar avatar--tablet avatar--tablet-main" src="img/firsova-desktop@1x.jpg" width="285" height="285" alt="Фотография">
+              </div>
+              <p class="companions-short__level level">
+                <span class="companions-short__level-num level__num level__num--color-white level__num--size-medium">99</span>
+                <span class="companions-short__level-text level__text text text--color-white">level</span>
+              </p>
+            </li>
+            <li class="companions-short__item">
+              <div class="companions-short__item-text companions-box companions-box--main">
+                <a class="companions-short__link" href="#">Петя Демин</a>
+                <ul class="companions-short__tags tags">
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#бургер</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#бар</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#футбол</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#концерт</a>
+                  </li>
+                  <li class="tags__item">
+                    <a class="tags__link" href="#">#крафт</a>
+                  </li>
+                </ul>
+                <ul class="companions-short__flags flags">
+                  <li class="flags__item">
+                    <a class="flags__link flags__link--belgium" href="#">Бельгия</a>
+                  </li>
+                  <li class="flags__item">
+                    <a class="flags__link flags__link--czech" href="#">Чехия</a>
+                  </li>
+                </ul>
+                <ul class="companions-short__transport transport">
+                  <li class="transport__item transport__item--plane transport__item--active">
+                    <span>Авиатранспорт</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--bus transport__item--active">
+                    <span>Наземный транспорт</span>
+                    <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--bicycle">
+                    <span>Велотранспорт</span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--run transport__item--active">
+                    <span>Попутный транспорт</span>
+                    <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g>
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"/>
+                      </g>
+                      </svg>
+                  </li>
+                </ul>
+              </div>
+              <div class="companions-short__avatar companions-box companions-box--square">
+                <img class="avatar avatar--mobile" src="img/demin-tablet@1x.jpg" width="190" height="190" alt="Фотография">
+                <img class="avatar avatar--tablet avatar--tablet-main" src="img/demin-desktop@1x.jpg" width="285" height="285" alt="Фотография">
+              </div>
+              <p class="companions-short__level level">
+                  <span class="companions-short__level-num level__num level__num--color-white level__num--size-medium">80</span>
+                  <span class="companions-short__level-text level__text text text--color-white">level</span>
+                </p>
+            </li>
+          </ul>
+          <div class="companions-short__btn-box">
+            <a class="companions-short__btn btn" href="companions.html">Показать всех</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices">
+        <div class="prices__layout layout">
+          <h2 class="visually-hidden">Цены</h2>
+          <div class="prices__top">
+            <p class="prices__headline headline">Добавьте свой профиль!</p>
+            <div class="prices__avatar"></div>
+          </div>
+          <ul class="prices__list prices__list--person">
+            <li class="prices__item">
+              <span class="prices__span prices__name prices__name--one">Базовое размещение</span>
+              <span class="prices__span prices__price">Бесплатно</span></li>
+            <li class="prices__item">
+              <span class="prices__span prices__name prices__name--two">Вывод на первых позициях</span>
+              <span class="prices__span prices__price">99 руб./мес</span>
+            </li>
+            <li class="prices__item">
+              <span class="prices__span prices__name prices__name--three">Кастомный цвет карточки</span>
+              <span class="prices__span prices__price">59 руб./мес</span>
+            </li>
+          </ul>
+          <a class="prices__btn prices__btn--open" href="business-prices.html">Показать тарифы для бизнеса</a>
+          <div class="prices__business">
+            <h3 class="prices__headline headline">Бизнес-тарифы</h3>
+            <ul class="prices__list prices__list--business">
+              <li class="prices__item">
+                <span class="prices__span">Реклама у блоггера</span>
+                <span class="prices__span">300 000 руб./пост</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__span">Накрутка подписчиков</span>
+                <span class="prices__span">от 1 руб./шт.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__span">Лайки от ботов</span>
+                <span class="prices__span">от 20 коп./лайк</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__span">Ваш продакт-плейсмент</span>
+                <span class="prices__span">Индивидуально</span>
+              </li>
+            </ul>
+            <a class="prices__btn prices__btn--close" href="#">Закрыть окно</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sign-in">
+        <div class="sign-in__layout layout">
+          <h2 class="visually-hidden">Регистрация</h2>
+          <p class="sign-in__headline headline">Зарегистрировались?</p>
+          <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно!</p>
+          <p class="sign-in__text text text--color-white">Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
+          <form class="sign-in__form" action="https://echo.htmlacademy.ru">
+            <p class="sign-in__paragraph">
+              <label class="visually-hidden" for="sign-in-email-field">Ваш email</label>
+              <input class="sign-in__input" type="email" name="email" id="sign-in-email-field" placeholder="E-mail">
+              <button class="sign-in__btn btn" type="submit" aria-label="Отправить">Регистрация</button>
+            </p>
+          </form>
+          <p class="sign-in__text text text--color-white">Остались вопросы? Мы с радостью на них ответим!</p>
+          <ul class="sign-in__our-contacts our-contacts">
             <li class="our-contacts__item">
-              <a class="header__mid-our-contacts__link our-contacts__link phone" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
-                <span class="our-contacts__icon our-contacts__icon--blue-orange phone__icon">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+              <a class="sign-in__our-contacts-link our-contacts__link" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
+                <span class="our-contacts__icon our-contacts__icon--yellow-darkblue">
+                  <svg class="our-contacts__phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
                   <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
                     c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
                     c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
@@ -141,9 +596,9 @@
               </a>
             </li>
             <li class="our-contacts__item">
-              <a class="header__mid-our-contacts__link our-contacts__link email" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
-                <span class="our-contacts__icon our-contacts__icon--blue-yellow email__icon">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+              <a class="sign-in__our-contacts-link our-contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
+                <span class="our-contacts__icon our-contacts__icon--yellow-darkblue">
+                  <svg class="our-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
                   <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
                     c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
                     L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
@@ -153,270 +608,16 @@
               </a>
             </li>
           </ul>
-          <a class="header__mid-authorization authorization inner-btn inner-btn--yellow" href="authorization.html">Авторизация</a>
         </div>
-        <blockquote class="feedback">
-          <p class="feedback__quote">"Лучшее предложение, что я видел в жизни!"</p>
-          <p class="feedback__author">
-            <cite class="feedback__author-name">Мурат Эльтазин</cite>
-            <span class="feedback__author-profession">Главный редактор газеты <q>гаджетлайф</q></span>
-          </p>
-        </blockquote>
-      </div>
-      <div class="header__bot">
-        <ol class="usecase">
-          <li class="usecase__step">Выберите направление</li>
-          <li class="usecase__step">Изучите идеи путешественников</li>
-          <li class="usecase__step">Находите тех, кто похож на вас</li>
-          <li class="usecase__step">Путешествуйте вместе!</li>
-        </ol>
-      </div>
-    </header>
-
-    <main class="content">
-      <h1 class="visually-hidden">Приложение для поиска попутчиков "Погнали".</h1>
-      <section class="about-us">
-        <h2 class="about-us__headline headline">О сервисе</h2>
-        <p class="about-us__text text text--color-white">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about-us__text text text--color-white text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-      </section>
-      <section class="directions">
-        <h2 class="directions__headline headline">Направления</h2>
-        <p class="directions__text text text--color-black">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-
-        <ul class="directions__list">
-          <li class="directions__item">
-            <div class="directions__holder">
-              <div class="directions__box">
-                <h3 class="directions__country">Таиланд</h3>
-                <p class="directions__slogan">Джунгли зовут!</p>
-              </div>
-              <p class="directions__rating">18321</p>
-            </div>
-            <img src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Таиланд">
-          </li>
-          <li class="directions__item">
-            <div class="directions__holder">
-              <div class="directions__box">
-                <h3 class="directions__country">Франция</h3>
-                <p class="directions__slogan">Трэ бьен, манифик!</p>
-              </div>
-              <p class="directions__rating">12518</p>
-            </div>
-            <img src="img/france-mobile@1x.jpg" width="270" height="110" alt="Франция">
-          </li>
-          <li class="directions__item">
-            <div class="directions__holder">
-              <div class="directions__box">
-                <h3 class="directions__country">Чехия</h3>
-                <p class="directions__slogan">Закоулки старой Европы</p>
-              </div>
-              <p class="directions__rating">5326</p>
-            </div>
-            <img src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Чехия">
-          </li>
-        </ul>
-        <a class="directions__btn btn" href="directions.html">Показать все</a>
-      </section>
-
-      <section class="companions">
-        <h2 class="companions__headline headline">Попутчики</h2>
-        <p class="companions__text text text--color-white">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__text text text--color-white text--bold">Теперь можно легко найти единомышленников!</p>
-        <ul class="companions__list">
-          <li class="companions__item">
-            <div class="companions-box companions-box--main">
-              <a class="companions__link" href="#">
-                <h3 class="companions__name">Таня Фирсова</h3>
-              </a>
-              <ul class="companions__tags tags">
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#ЗОЖ</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#ПП</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#Фитнес</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#пляж</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#авокадо</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#смузи</a>
-                </li>
-              </ul>
-              <ul class="companions__flags flags">
-                <li class="flags__item">
-                  <a class="flags__link" href="#">Шри-Ланка</a>
-                </li>
-                <li class="flags__item">
-                  <a class="flags__link" href="#">Таиланд</a>
-                </li>
-                <li class="flags__item">
-                  <a class="flags__link" href="#">Сейшелы</a>
-                </li>
-              </ul>
-              <ul class="companions__transport transport">
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-              </ul>
-            </div>
-            <div class="companions-box companions-box--square">
-              <img class="avatar" src="img/firsova-tablet@1x.jpg" width="190" height="270" alt="Фотография">
-            </div>
-            <p class="companions__level level">
-              <span class="level__num level__num--color-white level__num--size-medium">99</span>
-              <span class="level__text">level</span>
-            </p>
-          </li>
-          <li class="companions__item">
-            <div class="companions-box companions-box--main">
-              <a class="companions__link" href="#">
-                <h3 class="companions__name">Петя Демин</h3>
-              </a>
-              <ul class="companions__tags tags">
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#бургер</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#бар</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#футбол</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#концерт</a>
-                </li>
-                <li class="tags__item">
-                  <a class="tags__link" href="#">#крафт</a>
-                </li>
-              </ul>
-              <ul class="companions__flags flags">
-                <li class="flags__item">
-                  <a class="flags__link" href="#">Бельгия</a>
-                </li>
-                <li class="flags__item">
-                  <a class="flags__link" href="#">Чехия</a>
-                </li>
-              </ul>
-              <ul class="companions__transport transport">
-                <li class="transport__item">Авиатранспорт</li>
-                <li class="transport__item">Наземный транспорт</li>
-                <li class="transport__item">Велотранспорт</li>
-                <li class="transport__item">Попутный транспорт</li>
-              </ul>
-            </div>
-            <div class="companions-box companions-box--square">
-              <img class="avatar" src="img/demin-tablet@1x.jpg" width="190" height="270" alt="Фотография">
-            </div>
-            <p class="companions__level level">
-                <span class="level__num level__num--color-white level__num--size-medium">80</span>
-                <span class="level__text">level</span>
-              </p>
-          </li>
-        </ul>
-
-        <a class="companions__btn btn" href="companions.html">Показать всех</a>
-      </section>
-
-      <section class="prices">
-        <h2 class="visually-hidden">Цены</h2>
-        <div class="prices__top">
-          <p class="prices__headline headline">Добавьте свой профиль</p>
-          <div class="prices__avatar"></div>
-        </div>
-        <ul class="prices__list">
-          <li class="prices__item">
-            <span>Базовое размещение</span>
-            <span>Бесплатно</span></li>
-          <li class="prices__item">
-            <span>Вывод на первых позициях</span>
-            <span>99 руб./мес</span>
-          </li>
-          <li class="prices__item">
-            <span>Кастомный цвет карточки</span>
-            <span>59 руб./мес</span>
-          </li>
-        </ul>
-        <a class="prices__toggle" href="business-prices.html">Показать тарифы для бизнеса</a>
-        <div class="prices__business">
-          <h3 class="prices__headline headline">Бизнес-тарифы</h3>
-          <ul class="prices__list">
-            <li class="prices__item">
-              <span>Реклама у блоггера</span>
-              <span>300 000 руб./пост</span>
-            </li>
-            <li class="prices__item">
-              <span>Накрутка подписчиков</span>
-              <span>от 1 руб./шт.</span>
-            </li>
-            <li class="prices__item">
-              <span>Лайки от ботов</span>
-              <span>от 20 коп./лайк</span>
-            </li>
-            <li class="prices__item">
-              <span>Ваш продакт-плейсмент</span>
-              <span>Индивидуально</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="sign-in">
-        <h2 class="visually-hidden">Регистрация</h2>
-        <p class="sign-in__headline headline">Зарегистрировались?</p>
-        <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
-        <form class="sign-in__form" action="https://echo.htmlacademy.ru">
-          <p class="sign-in__paragraph">
-            <label class="visually-hidden" for="sign-in-email-field">Ваш email</label>
-            <input class="sign-in__input" type="email" name="email" id="sign-in-email-field">
-            <button class="sign-in__btn btn" type="submit" aria-label="Отправить"></button>
-          </p>
-        </form>
-        <p class="sign-in__text text text--color-white">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="sign-in__our-contacts our-contacts">
-          <li class="our-contacts__item">
-            <a class="sign-in__our-contacts-link our-contacts__link" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
-              <span class="our-contacts__icon our-contacts__icon--yellow-darkblue">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                  c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                  c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                  c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                  M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                  c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                  c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                  c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                </svg>
-              </span>
-            </a>
-          </li>
-          <li class="our-contacts__item">
-            <a class="sign-in__our-contacts-link our-contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
-              <span class="our-contacts__icon our-contacts__icon--yellow-darkblue">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                  c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                  L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                  c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                </svg>
-              </span>
-            </a>
-          </li>
-        </ul>
       </section>
 
       <section class="get-directions">
         <h2 class="visually-hidden">Выбираем маршрут</h2>
-        <div class="get-directions__box">
+        <div class="get-directions__layout layout">
           <p class="get-directions__text text text--color-blue text--bold">ул. Большая Конюшенная, 19/8</p>
-          <a class="get-directions__btn btn" href="get-directions.html">Проложить маршрут</a>
+          <div class="get-directions__box">
+            <a class="get-directions__btn btn" href="get-directions.html">Проложить маршрут</a>
+          </div>
         </div>
         <div class="get-directions__map">
           <!-- Заменю на карту когда начну стилизовать -->
@@ -427,61 +628,63 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__top">
-        <a class="footer__logo logo" aria-label="Логотип"></a>
-        <ul class="footer__our-socials our-socials">
-          <li class="our-socials__item">
-            <a class="our-socials__link our-socials__link--yellow" href="facebook.com" title="Фейсбук" aria-label="Фейсбук">
-              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
-                <g>
-                  <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
-                  V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
-                  C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="our-socials__item">
-            <a class="our-socials__link our-socials__link--yellow" href="vk.com" title="Вконтакте" aria-label="Вконтакте">
-              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
-                <g>
-                  <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
-                    c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
-                    c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
-                    c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
-                    C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
-                    c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
-                    c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
-                    c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
-                    c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
-                    c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
-                    c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
-                    c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
-                    c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
-                    c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
-                    C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
-                    C18.4,10.9,18.5,10.9,18.6,10.9z"/>
-                </g>
-              </svg>
-            </a>
-          </li>
-          <li class="our-socials__item">
-            <a class="our-socials__link our-socials__link--yellow"  title="Инстаграм" aria-label="Инстаграм">
-              <svg class="our-socials__icon our-socials__icon--blue" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
-                <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
-                  M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
-                <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
-                  c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
-                <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__layout layout">
+        <div class="footer__top">
+          <a class="footer__logo logo" aria-label="Логотип"></a>
+          <ul class="footer__our-socials our-socials">
+            <li class="our-socials__item">
+              <a class="our-socials__link our-socials__link--yellow" href="facebook.com" title="Фейсбук" aria-label="Фейсбук">
+                <svg class="our-socials__icon our-socials__icon--blue our-socials__icon--facebook" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                  <g>
+                    <path d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
+                    V21z M3.4,19.9h3.1v-9.8h3.2V7.5H6.5l0-0.6c0-1.5,0-2.9,0.8-3.4l0.2-0.1h2.3V1.1H7.1C5.9,1.2,4.9,1.6,4.3,2.3
+                    C3.5,3.2,3.2,4.8,3.4,6.9l0.1,0.6H1.2v2.6h2.2V19.9z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="our-socials__item">
+              <a class="our-socials__link our-socials__link--yellow" href="vk.com" title="Вконтакте" aria-label="Вконтакте">
+                <svg class="our-socials__icon our-socials__icon--blue our-socials__icon--vkontact" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                  <g>
+                    <path d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
+                      c0,0.1,0,0.8-0.5,1.2c-0.4,0.4-1.1,0.5-1.2,0.5l-1.9,0c-1,0-4.4-0.2-7.4-3c-3.7-3.4-6.8-9.8-7-10.1C0,2.2-0.1,1.5,0.3,1.1
+                      c0.4-0.4,1.1-0.5,1.4-0.5l4.1,0l0.1,0c0.1,0,0.6,0.1,1,0.3c0.4,0.2,0.6,0.7,0.6,0.7c0,0,0.6,1.4,1.5,2.7c1.3,2,1.9,2.5,2.1,2.6
+                      c0.2-0.4,0.3-1.7,0.2-2.9c0-0.5-0.1-1.1-0.3-1.3c-0.1-0.1-0.4-0.3-0.8-0.3L9.5,1.8c-0.1-0.7,0.6-1.2,1.1-1.4
+                      C11.3,0.1,12.4,0,13.7,0l0.7,0c1.2,0,1.6,0.1,2.1,0.2c1.7,0.4,1.6,1.7,1.6,3.3c0,0.5,0,1,0,1.6c0,0.2,0,0.3,0,0.5
+                      c0,0.4,0,1,0.1,1.3c0.2-0.1,0.9-0.7,2.1-2.5c0.8-1.2,1.4-2.5,1.5-2.8l0,0c0.2-0.4,0.6-0.9,1.6-0.9l4.3,0c0,0,0.2,0,0.4,0
+                      c1,0,1.6,0.3,1.8,0.9c0.3,0.6,0.2,1.7-2.4,4.6c-0.4,0.4-0.7,0.8-1,1.1c-0.6,0.7-1.2,1.4-1.2,1.6C25.4,9,26,9.5,26.6,10
+                      c1.5,1.2,2.5,2.3,3,3.1c0.5,0.8,0.4,1.3,0.3,1.7c-0.4,0.9-1.6,1-1.9,1l-3.8,0C24.1,15.8,24.1,15.8,23.9,15.8z M18.6,10.9
+                      c0.9,0,1.7,0.8,2.5,1.6c0.5,0.5,1,1,1.5,1.3c0.7,0.4,1.3,0.4,1.4,0.4l0.1,0l3.8,0c0.2,0,0.4-0.1,0.5-0.1c0,0,0-0.1-0.1-0.2
+                      c-0.4-0.7-1.4-1.7-2.7-2.7c-1.2-1-1.8-1.5-1.9-2.2c-0.1-0.8,0.5-1.4,1.6-2.7c0.3-0.3,0.6-0.7,1-1.1c1.6-1.8,2-2.6,2.1-3
+                      c-0.2,0-0.6,0-0.7,0l-4.4,0c-0.2,0-0.2,0-0.2,0c-0.2,0.4-0.8,1.8-1.6,3c-1.9,2.8-2.8,3.2-3.4,3.2c-0.2,0-0.4,0-0.6-0.1
+                      c-1-0.6-1-1.8-0.9-2.8c0-0.1,0-0.3,0-0.4c0-0.6,0-1.2,0-1.7c0.1-1.7,0-1.7-0.4-1.8c-0.4-0.1-0.7-0.1-1.9-0.2l-0.7,0
+                      c-0.6,0-1.3,0-1.9,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0.6,0.7,0.6,2,0.6,2.2c0.1,1.6,0.1,3.8-1,4.3c-0.2,0.1-0.4,0.1-0.6,0.1
+                      c-0.9,0-1.9-0.9-3.4-3.3C6.8,3.9,6.1,2.4,6.1,2.3c0,0-0.1-0.1-0.1-0.1C5.9,2.2,5.8,2.1,5.7,2.1l-4,0c0,0,0,0-0.1,0
+                      C2.2,3.3,5,8.7,8.1,11.6c2.7,2.5,5.8,2.6,6.4,2.6l1.9,0c0,0,0.2-0.1,0.3-0.1c0,0,0-0.1,0-0.1c0-0.3,0-2.6,1.6-3
+                      C18.4,10.9,18.5,10.9,18.6,10.9z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="our-socials__item">
+              <a class="our-socials__link our-socials__link--yellow"  title="Инстаграм" aria-label="Инстаграм">
+                <svg class="our-socials__icon our-socials__icon--blue our-socials__icon--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                  <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
+                    M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>
+                  <path class="st0" d="M11.5,7.1c2.4,0,4.4,2,4.4,4.4c0,2.4-2,4.4-4.4,4.4c-2.4,0-4.4-2-4.4-4.4C7.1,9.1,9.1,7.1,11.5,7.1 M11.5,5.6
+                    c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.6,11.5,5.6L11.5,5.6z"/>
+                  <circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          <p class="academy__developers">Разработано</p>
+          <img class="academy__image" src="img/htmlacademy.svg">
+        </a>
       </div>
-      <a class="footer__academy academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-        <p class="academy__developers">Разработано</p>
-        <img class="academy__image" src="img/htmlacademy.svg">
-      </a>
     </footer>
   </body>
 </html>

@@ -1,9 +1,141 @@
 .flags {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
-
   list-style: none;
+}
+
+.flags__item {
+  margin-right: 19px;
+
+  &--inner {
+    flex-shrink: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--inner:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.flags__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+
+  &--inner {
+    padding-left: 41px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $darkblue-lightest;
+  }
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--inner::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 26px;
+    height: 18px;
+    margin-top: -11px;
+  }
+
+  &--thailand::before {
+    background-image: url("../img/thailand-icon.png");
+  }
+
+  &--sri-lanka::before {
+    background-image: url("../img/sri-lanka-icon.png");
+  }
+
+  &--seychelles::before {
+    background-image: url("../img/seychelles-icon.png");
+  }
+
+  &--czech::before {
+    background-image: url("../img/czech-icon.png");
+  }
+
+  &--belgium::before {
+    background-image: url("../img/belgium-icon.png");
+  }
+
+  &--us::before {
+    background-image: url("../img/us-icon.png");
+  }
+
+  &--australia::before {
+    background-image: url("../img/australia-icon.png");
+  }
+
+  &--dominican::before {
+    background-image: url("../img/dominican-icon.png");
+  }
+
+  &--britain::before {
+    background-image: url("../img/britain-icon.png");
+  }
+
+  &--germany::before {
+    background-image: url("../img/germany-icon.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flags__item {
+    &--inner {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    &--inner:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .flags__link {
+    &--inner {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &--inner::before {
+      width: 35px;
+      height: 24px;
+      margin-top: -14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .flags__item {
+    &--inner {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    &--inner:last-child {
+      margin-right: 0;
+    }
+  }
 }

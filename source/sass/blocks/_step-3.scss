@@ -11,50 +11,205 @@
   display: block;
 }
 
-.step-3__text {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
 .step-3__paragraph {
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
+  background-color: $white;
+
+  &:first-child::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -14px;
+    width: 12px;
+    height: calc(100% + 23px);
+    border: 2px solid $darkblue-lightest;
+    border-right: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .step-3__paragraph-name {
-  display: inline-block;
+  position: relative;
+  display: block;
   margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
   color: $darkblue-lightest;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    background-color: $darkblue-lightest;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 84px;
+    height: 24px;
+    margin-top: -12px;
+  }
+
+  &--bosnia::after {
+    background:
+      url("../img/bosnia-icon.png") no-repeat right center,
+      linear-gradient(to left, $white 76%, transparent);
+  }
+
+  &--czech::after {
+    background:
+      url("../img/czech-icon.png") no-repeat right center,
+      linear-gradient(to left, $white 76%, transparent);
+  }
 }
 
 .step-3__area {
+  width: 100%;
+  padding: 10px 14px;
+  box-sizing: border-box;
   font-size: 16px;
+  font-family: "bloggersans", "Arial", sans-serif;
   font-weight: 400;
   line-height: 22px;
   color: $darkgrey;
   border: 1px solid $lightestblue;
   border-radius: 3px;
+
+  &::-webkit-input-placeholder {
+    color: transparentize($darkgrey, 0.7);
+  }
+
+  &::-moz-placeholder {
+    color: transparentize($darkgrey, 0.7);
+  }
+
+  &:-ms-input-placeholder {
+    color: transparentize($darkgrey, 0.7);
+  }
+
+  &:-moz-placeholder {
+    color: transparentize($darkgrey, 0.7);
+  }
 }
 
-::-webkit-input-placeholder {
-  color: transparentize($darkgrey, 0.7);
-}
+// ::-webkit-input-placeholder {
+//   color: transparentize($darkgrey, 0.7);
+// }
 
-::-moz-placeholder {
-  color: transparentize($darkgrey, 0.7);
-}
+// ::-moz-placeholder {
+//   color: transparentize($darkgrey, 0.7);
+// }
 
-:-ms-input-placeholder {
-  color: transparentize($darkgrey, 0.7);
-}
+// :-ms-input-placeholder {
+//   color: transparentize($darkgrey, 0.7);
+// }
 
-:-moz-placeholder {
-  color: transparentize($darkgrey, 0.7);
-}
+// :-moz-placeholder {
+//   color: transparentize($darkgrey, 0.7);
+// }
 
 .step-3__btn {
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .step-3__paragraph {
+    margin-bottom: 44px;
+
+    &:first-child::before {
+      z-index: 1;
+      top: 16px;
+      left: auto;
+      right: -1px;
+      width: 2px;
+      height: calc(100% + 44px);
+      background-color: $darkblue-lightest;
+      border: none;
+    }
+  }
+
+  .step-3__paragraph-name {
+    margin-bottom: 34px;
+    padding-right: 30px;
+    padding-left: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+
+    &::before {
+      left: auto;
+      right: -7.5px;
+      width: 15px;
+      height: 15px;
+      margin-top: -7.5px;
+    }
+
+    &::after {
+      right: 30px;
+      width: 70px;
+      height: 47px;
+      margin-top: -23.5px;
+    }
+
+    &--bosnia::after {
+      background:
+        url("../img/bosnia-icon-large.png") no-repeat right center,
+        linear-gradient(to left, $white 76%, transparent);
+    }
+
+    &--czech::after {
+      background:
+        url("../img/czech-icon-large.png") no-repeat right center,
+        linear-gradient(to left, $white 76%, transparent);
+    }
+  }
+
+  .step-3__area {
+    width: calc(100% - 30px);
+    height: 144px;
+    padding: 20px 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .step-3__paragraph {
+    width: 74%;
+
+    &:first-child::before {
+      right: -42px;
+    }
+  }
+
+  .step-3__paragraph-name {
+    &::before {
+      right: -47.5px;
+    }
+
+    &::after {
+      right: -155px;
+    }
+  }
+
+  .step-3__area {
+    width: 100%;
+  }
 }

@@ -22,8 +22,60 @@
 }
 
 .input-box__btn {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 40px;
-  color: transparentize($darkgrey-light, 0.7);
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  // font-size: 40px;
+  // font-weight: 500;
+  // line-height: 40px;
+  // color: transparentize($darkgrey-light, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.input-box__minus {
+  left: 13px;
+  background-image: url("../img/qty-minus-mobile.svg");
+}
+
+.input-box__plus {
+  right: 13px;
+  background-image: url("../img/qty-plus-mobile.svg");
+}
+
+@media screen and (min-width: 768px) {
+  .input-box__input {
+    height: 70px;
+    padding-top: 23px;
+    padding-right: 50px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .input-box__btn {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+
+  .input-box__minus {
+    left: 23px;
+    background-image: url("../img/qty-minus.svg");
+  }
+
+  .input-box__plus {
+    right: 23px;
+    background-image: url("../img/qty-plus.svg");
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input-box__btn {
+    margin-top: -12px;
+  }
 }

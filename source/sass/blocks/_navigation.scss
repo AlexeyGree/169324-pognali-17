@@ -1,8 +1,21 @@
 .navigation {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  &--top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--drop {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .navigation__item {
@@ -16,4 +29,25 @@
   text-decoration: none;
   line-height: 36px;
   color: $darkblue-light;
+
+  &--top {
+    color: $white;
+  }
+
+  &--scroll {
+    color: $darkblue-light;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    font-size: 60px;
+    line-height: 70px;
+
+    &--top {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
 }

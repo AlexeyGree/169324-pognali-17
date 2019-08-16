@@ -1,0 +1,38 @@
+.layout {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    max-width: 1024px;
+    padding: 0 40px;
+
+    &--directions {
+      padding: 0 75px;
+    }
+
+    &--steps {
+      padding: 0 75px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .layout {
+    max-width: 1440px;
+    width: 1440px;
+    padding: 0 60px;
+
+    &--directions {
+      padding-left: 130px;
+      padding-right: 60px;
+    }
+
+    &--steps {
+      padding: 0 60px;
+    }
+  }
+}

@@ -1,13 +1,22 @@
 .about-us {
-  padding-top: 28px;
-  padding-right: 25px;
+  position: relative;
+  z-index: 10;
+  padding-top: 308px;
   padding-bottom: 80px;
-  padding-left: 25px;
   box-sizing: border-box;
   background-color: $darkblue-light;
-  background-image: url("../img/about-mobile@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image:
+    url("../img/about-mobile@1x.png"),
+    url("../img/about-us-blue-mobile.png");
+  background-position: center bottom, -14px 270px;
+  background-repeat: no-repeat, no-repeat;
+  border-radius: 0 0 28px 28px;
+}
+
+.about-us__text-box {
+  padding-right: 25px;
+  padding-left: 25px;
+  box-sizing: border-box;
 }
 
 .about-us__headline {
@@ -18,10 +27,160 @@
 .about-us__text {
   margin: 0;
   margin-bottom: 18px;
-  padding-right: 25px;
-  padding-left: 25px;
 
-  &:last-child {
+  // &:first-of-type {
+  //   min-height: 110px;
+  // }
+
+  &:last-of-type {
+    // min-height: 66px;
     margin-bottom: 0;
+  }
+}
+
+.about-us__btn {
+  @include visually-hidden;
+}
+
+@media screen and (min-width: 425px) {
+  .about-us {
+    background-image: url("../img/about-mobile@1x.png");
+  }
+
+  .about-us__layout {
+    position: relative;
+    z-index: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      top: -35px;
+      left: 0;
+      right: 0;
+      width: calc(100% - 80px);
+      height: 213px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      background-color: $darkblue;
+      border-radius: 20px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-top: 94px;
+    padding-bottom: 88px;
+    background-image: none;
+    border-radius: 0 0 56px 56px;
+  }
+
+  .about-us__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      width: 376px;
+      height: 548px;
+      background-image: url("../img/about-tablet@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about-us__headline {
+    margin-bottom: 35px;
+  }
+
+  .about-us__text-box {
+    width: 50%;
+    // padding-right: 75px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .about-us__text {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-us__btn {
+    position: static;
+    width: 274px;
+    height: auto;
+    margin: 0;
+    margin-top: 50px;
+    padding-top: 28px;
+    padding-right: 82px;
+    padding-bottom: 28px;
+    padding-left: 34px;
+    border: none;
+    clip: auto;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-us {
+    padding-bottom: 0;
+  }
+
+  .about-us__layout {
+    padding-bottom: 204px;
+
+    &::before {
+      left: 60px;
+      right: auto;
+      top: -56px;
+      width: 213px;
+      height: 213px;
+      margin: 0;
+    }
+
+    &::after {
+      top: -56px;
+      width: 630px;
+      height: 665px;
+      margin-right: 60px;
+      background-image: url("../img/about-desktop@1x.png");
+    }
+  }
+
+  .about-us__text-box {
+    max-width: 682px;
+    width: auto;
+    padding-right: 0;
+    padding-left: 70px;
+  }
+
+  .about-us__headline {
+    margin-bottom: 45px;
+  }
+
+  .about-us__text {
+    margin-bottom: 36px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

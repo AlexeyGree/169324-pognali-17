@@ -1,0 +1,64 @@
+.subscribers {
+  position: relative;
+  z-index: 1;
+}
+
+.subscribers__item-btn {
+  @include visually-hidden;
+}
+
+.subscribers__like {
+  position: absolute;
+  bottom: 4px;
+  left: 50px;
+  width: 31px;
+  height: 31px;
+  background-color: $lightblue;
+  background-image: url("../img/heart.svg");
+  background-position: 56% 56%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border-radius: 50%;
+
+  &--active {
+    background-color: $lightestpink;
+    background-image: url("../img/heart-active.svg");
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .subscribers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .subscribers__item-btn {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 11px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 7px;
+    clip: auto;
+    overflow: visible;
+  }
+
+  .subscribers__like {
+    position: static;
+    bottom: auto;
+    left: auto;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+
+  .subscribers__amount {
+    margin-left: 7px;
+    padding-top: 5px;
+  }
+}

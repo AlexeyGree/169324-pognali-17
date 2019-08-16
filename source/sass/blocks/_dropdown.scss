@@ -1,10 +1,8 @@
 .dropdown {
-  width: 100%;
   padding-top: 73px;
   padding-right: 25px;
   padding-bottom: 41px;
   padding-left: 25px;
-  box-sizing: border-box;
 
   background-color: $white;
 }
@@ -19,4 +17,32 @@
 
 .dropdown__our-socials {
   margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    padding-top: 56px;
+    padding-right: 40px;
+    padding-bottom: 86px;
+    padding-left: 100px;
+  }
+
+  .dropdown__navigation {
+    align-items: flex-start;
+    margin-bottom: 140px;
+  }
+
+  .dropdown__authorization {
+    @include visually-hidden;
+  }
+
+  .dropdown__our-socials {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .dropdown {
+    @include visually-hidden;
+  }
 }

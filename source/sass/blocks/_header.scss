@@ -10,28 +10,77 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 73px;
+  // padding: 27px;
+  box-sizing: border-box;
 
   background-color: transparent;
+
+  &-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &--scroll {
     background-color: $white;
   }
+
+  &-navigation {
+    @include visually-hidden;
+  }
+}
+
+.header__logo-a-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .header__mid {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 110px;
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 30px;
-  padding-left: 25px;
+  position: relative;
   box-sizing: border-box;
+
+  &-box {
+    z-index: 1;
+  }
+
+  &-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+}
+
+.header__bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 405px;
+  background-image:
+    url("../img/traveller-illustration-mobile@1x.png"),
+    url("../img/globe-back-mobile@1x.jpg");
+  background-position: center bottom, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
 }
 
 .header__lead {
+  z-index: 1;
+  width: 260px;
+  margin: 0;
+  margin-bottom: 242px;
   padding-right: 15px;
   padding-left: 15px;
   font-size: 36px;
@@ -39,34 +88,275 @@
   line-height: 40px;
   text-align: center;
   color: $white;
-  background-image: url("../img/traveller-illustration-mobile@1x.png");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.header__mid-box {
+.header__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+
+  &--mid {
+    width: 100%;
+  }
+
+  &--top {
+    @include visually-hidden;
+  }
 }
 
-.header__mid-our-contacts {
+.header__box-our-contacts {
   flex-direction: row;
   align-items: center;
 }
 
-.header__mid-our-contacts__link {
+.header__box-our-contacts-link {
   width: 45px;
   height: 45px;
   padding: 0;
   font-size: 0;
 }
 
-.header__mid-authorization {
+.header__box-authorization {
   flex-grow: 1;
 }
 
 .header__bot {
-  background-color: $darkblue-light;
+  position: relative;
+  z-index: 12;
+  margin-bottom: -224px;
+  padding-top: 0;
+}
+
+.header__main-link {
+  @include visually-hidden;
+}
+
+.header-profile__top {
+  @include visually-hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: $darkblue-light;
+  }
+
+  .header__top {
+    height: 132px;
+  }
+
+  .header__logo-a-nav {
+    width: 50%;
+  }
+
+  .header__box--top {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    clip: auto;
+    overflow: visible;
+  }
+
+  .header__top-our-contacts {
+    @include visually-hidden;
+  }
+
+  .header__box-our-contacts-link {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .header__bg {
+    height: 862px;
+    background-image:
+      url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-position: center bottom, center bottom;
+    background-size: auto, 190%;
+  }
+
+  .header__mid {
+    margin-bottom: 180px;
+
+    &-box {
+      width: 100%;
+    }
+
+    &-layout {
+      padding-top: 34px;
+      padding-right: 40px;
+      padding-bottom: 34px;
+      padding-left: 40px;
+    }
+  }
+
+  .header__box--mid {
+    @include visually-hidden;
+  }
+
+  .header__lead {
+    width: 400px;
+    margin-bottom: 94px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .header__bot {
+    margin-bottom: 0;
+  }
+
+  .header__title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__main-link {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-right: 75px;
+    border: 0;
+    padding: 0;
+    padding-top: 86px;
+    padding-right: 60px;
+    padding-bottom: 62px;
+    padding-left: 20px;
+    clip: auto;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 32px;
+      height: 16px;
+      background-image: url("../img/return.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    // overflow: hidden;
+    padding-bottom: 1px;
+    background-color: $darkblue-light;
+  }
+
+  .header__top {
+    height: auto;
+    // margin-top: 28px;
+    // padding-top: 19px;
+    padding-top: 47px;
+    padding-bottom: 19px;
+    background-color: $darkblue;
+
+    &--scroll {
+      margin-top: 0;
+      padding-top: 19px;
+    }
+
+    &-navigation {
+      position: static;
+      width: 400px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+      clip: auto;
+      overflow: visible;
+    }
+  }
+
+  .header__logo-a-nav {
+    width: auto;
+  }
+
+  .header__logo {
+    margin-right: 40px;
+  }
+
+  .header__toggle {
+    margin-right: 40px;
+  }
+
+  .header__top-our-contacts {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    clip: auto;
+    overflow: visible;
+  }
+
+  .header__bg {
+    height: 640px;
+    background-image:
+      url("../img/traveller-illustration-desktop@1x.png"),
+      url("../img/globe-back-desktop@1x.jpg");
+    background-position: center bottom, center bottom;
+    background-size: auto, cover;
+    border-radius: 0 0 56px 56px;
+  }
+
+  .header__mid {
+    margin: 0 auto;
+
+    &-layout {
+      padding-top: 90px;
+      padding-right: 60px;
+      padding-bottom: 100px;
+      padding-left: 60px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .header__lead {
+    margin: 0;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .header__mid-box {
+    width: auto;
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+
+  .header__bot {
+    // margin-bottom: 123px;
+    margin-bottom: 156px;
+  }
+
+  .header-profile__top {
+    position: absolute;
+    right: 152px;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    clip: auto;
+    overflow: visible;
+  }
 }

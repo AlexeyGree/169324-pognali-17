@@ -1,9 +1,6 @@
 .countries {
   margin: 0;
   padding: 0;
-  padding-right: 25px;
-  padding-left: 25px;
-
   list-style: none;
 }
 
@@ -15,9 +12,26 @@
   }
 }
 
-.countries__label {
+.countries__link {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  text-decoration: none;
   color: $darkgrey;
+
+  &:hover,
+  &:focus {
+    color: transparentize($darkgrey, 0.4);
+  }
+
+  &:active {
+    color: transparentize($darkgrey, 0.7);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .countries__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

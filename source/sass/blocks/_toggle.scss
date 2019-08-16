@@ -4,7 +4,10 @@
   align-items: center;
   width: 25px;
   height: 11px;
-  padding: 31px 26px;
+  // padding: 31px 26px;
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
 }
 
 .toggle__menu {
@@ -39,5 +42,25 @@
 
   .toggle__menu-close {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .toggle {
+    width: 60px;
+    height: 2px;
+    background-color: $white;
+
+    &__menu {
+      display: none;
+    }
+
+    &__menu-close {
+      display: none;
+    }
+
+    &--scroll {
+      background-color: $darkblue-light;
+    }
   }
 }

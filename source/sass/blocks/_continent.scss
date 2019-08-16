@@ -4,9 +4,6 @@
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding-right: 25px;
-  padding-left: 25px;
-
   list-style: none;
 }
 
@@ -18,14 +15,27 @@
   }
 }
 
-.continent__label {
+.continent__link {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
   color: transparentize($darkblue-light, 0.7);
+
+  &:hover,
+  &:focus {
+    color: transparentize($darkblue-light, 0.4);
+  }
 
   &--active {
     color: $darkblue-light;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .continent__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
