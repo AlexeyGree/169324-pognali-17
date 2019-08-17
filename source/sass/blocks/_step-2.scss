@@ -256,7 +256,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 74%;
+    width: calc(100% - 166px);
     height: 70px;
     padding-top: 20px;
     padding-right: 60px;
@@ -283,7 +283,7 @@
   }
 
   .step-2__add-country {
-    width: 74%;
+    width: calc(100% - 166px);
     height: 70px;
     padding-top: 20px;
     padding-right: 60px;
@@ -310,8 +310,8 @@
   .step-2__close-box {
     position: relative;
     flex-shrink: 0;
-    // width: 140px;
-    width: 22%;
+    width: 140px;
+    // width: 22%;
     height: 70px;
   }
 
@@ -389,5 +389,14 @@
 
   .step-2__nav-box {
     margin-top: -80px;
+  }
+
+  .step-2__close-box {
+    width: 22%;
+  }
+
+  .step-2__select,
+  .step-2__add-country {
+    width: 74%;
   }
 }

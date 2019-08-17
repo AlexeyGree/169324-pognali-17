@@ -181,7 +181,8 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 22%;
+      // right: 22%;
+      right: 140px;
       width: 1px;
       height: 100%;
       background: linear-gradient(to bottom, $lightestblue 90%, transparent);
@@ -239,5 +240,9 @@
   .add-plan__step-country {
     padding-top: 64px;
     padding-bottom: 140px;
+
+    &::before {
+      right: 22%;
+    }
   }
 }
