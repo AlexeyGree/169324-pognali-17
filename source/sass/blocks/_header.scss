@@ -135,6 +135,10 @@
   @include visually-hidden;
 }
 
+.header__bottom-layout {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     background-color: $darkblue-light;
@@ -180,7 +184,7 @@
   }
 
   .header__mid {
-    margin-bottom: 180px;
+    margin-bottom: 168px;
 
     &-box {
       width: 100%;
@@ -220,7 +224,8 @@
     width: auto;
     height: auto;
     margin: 0;
-    margin-right: 75px;
+    // margin-right: 75px;
+    margin-right: 35px;
     border: 0;
     padding: 0;
     padding-top: 86px;
@@ -243,6 +248,7 @@
       right: 0;
       width: 32px;
       height: 16px;
+      margin-top: 4px;
       background-image: url("../img/return.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -358,5 +364,9 @@
     padding: 0;
     clip: auto;
     overflow: visible;
+  }
+
+  .header__main-link {
+    margin-right: 65px;
   }
 }

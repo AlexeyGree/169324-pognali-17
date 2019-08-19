@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   display: inline-block;
   width: 100%;
   padding-top: 20px;
@@ -14,6 +15,19 @@
 
   background-color: $yellow;
   border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 34px;
+    width: 10px;
+    height: 14px;
+    margin-top: -7px;
+    background-image: url("../../img/triangle-arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (min-width: 768px) {
