@@ -29,6 +29,7 @@
   line-height: 15px;
   color: $darkgrey;
   cursor: pointer;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -37,12 +38,41 @@
     left: 0;
     width: 18px;
     height: 18px;
-    margin-top: -12px;
+    margin-top: -9px;
     background-color: $white;
+    border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 40%;
     border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: transparentize($darkgrey, 0.4);
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: transparentize($darkgrey, 0.7);
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -60,10 +90,30 @@
   background-color: $white;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 0 transparentize($black, 0.92);
+  }
+
+  &:hover .companion-sublist__svg,
+  &:focus .companion-sublist__svg {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $asphalt;
+  }
+
+  &:active .companion-sublist__svg {
+    opacity: 0.1;
+  }
 }
 
 .companion-sublist__svg {
   opacity: 0.15;
+  transition: all 0.3s;
 }
 
 .companion-sublist__item--transport {
@@ -92,13 +142,30 @@
 }
 
 .companion-sublist__input:checked {
-  & + .companion-sublist__label::before {
+  & + .companion-sublist__label::after {
     background-image: url("../img/tick.svg");
+  }
+
+  & + .companion-sublist__label:active::after {
+    opacity: 0.2;
   }
 
   & + .companion-sublist__label-transport > .companion-sublist__svg {
     opacity: 1;
     fill: $darkblue-lightest;
+  }
+
+  & + .companion-sublist__label-transport:hover,
+  & + .companion-sublist__label-transport:focus {
+    .companion-sublist__svg {
+      opacity: 1;
+    }
+  }
+
+  & + .companion-sublist__label-transport:active {
+    .companion-sublist__svg {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -120,6 +187,7 @@
     &::before {
       width: 20px;
       height: 20px;
+      margin-top: -10px;
     }
   }
 

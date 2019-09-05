@@ -63,9 +63,32 @@
 .profile__tags-box {
   position: relative;
   margin-bottom: 25px;
+}
+
+.profile__tags {
+  width: 100%;
   padding: 23px 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 18px;
+  color: $darkgrey;
+  background-color: transparent;
   border: 1px solid $lightestblue;
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid $lightblue-dark;
+  }
+
+  &:focus {
+    border: 1px solid $darkblue;
+    outline: none;
+  }
 }
 
 .profile__transport-box {
@@ -105,6 +128,7 @@
 .profile__btn {
   position: relative;
   margin-bottom: 33px;
+  transition: all 0.3s;
 
   &::before {
     content: "Сменить ";
@@ -116,7 +140,72 @@
 }
 
 .profile__transport-item {
+  background-color: transparent;
+
+  &:first-child > .profile__transport-label {
+    padding-right: 2px;
+  }
+}
+
+.profile__transport-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  line-height: 0;
+  width: 33px;
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 0 transparentize($black, 0.92);
+  }
+
+  &:hover .profile__transport-svg,
+  &:focus .profile__transport-svg {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $asphalt;
+  }
+
+  &:active .profile__transport-svg {
+    opacity: 0.1;
+  }
+}
+
+.profile__transport-svg {
+  opacity: 0.15;
+  transition: all 0.3s;
+}
+
+.profile__transport-input:checked {
+  & + .profile__transport-label > .profile__transport-svg {
+    opacity: 1;
+    fill: $darkblue-lightest;
+  }
+
+  & + .profile__transport-label:hover,
+  & + .profile__transport-label:focus {
+    .profile__transport-svg {
+      opacity: 1;
+    }
+  }
+
+  & + .profile__transport-label:active {
+    .profile__transport-svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -142,7 +231,7 @@
   .profile__section-name {
     position: absolute;
     top: auto;
-    bottom: -12px;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%);
     font-size: 20px;
@@ -152,12 +241,13 @@
   }
 
   .profile__tags-box {
-    padding: 30px 35px;
+    padding: 0;
   }
 
-  .profile__tags-item {
-    margin-right: 4px;
-    margin-left: 4px;
+  .profile__tags {
+    padding: 28px 35px 38px 35px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .profile__transport-box {
@@ -170,8 +260,6 @@
   }
 
   .profile__transport-item {
-    width: 43px;
-    height: 43px;
     margin-bottom: 0;
     margin-right: 10px;
 
@@ -180,12 +268,24 @@
     }
   }
 
+  .profile__transport-label {
+    width: 43px;
+    height: 43px;
+  }
+
   .profile__avatar {
+    width: 94px;
+    height: 94px;
     border-radius: 10px;
   }
 
   .profile__btn {
-    padding: 35px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .profile__level-text {
+    bottom: 9px;
   }
 }
 
@@ -201,6 +301,11 @@
 
   .profile__top {
     @include visually-hidden;
+  }
+
+  .profile__section-name--tags {
+    left: 22px;
+    transform: none;
   }
 
   .profile__avatar {
@@ -229,6 +334,10 @@
     right: auto;
     margin: 0;
     width: 30%;
+  }
+
+  .profile__transport-item {
+    margin-right: 0;
   }
 
   .profile__btn {

@@ -31,13 +31,19 @@
             </a>
             <ul class="header__top-navigation navigation navigation--top">
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="about-us.html">О сервисе</a>
+                <a class="navigation__link navigation__link--top" href="about-us.html">
+                  <span class="navigation__link--top-span" data-hover="О сервисе">О сервисе</span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="directions.html">Направления</a>
+                <a class="navigation__link navigation__link--top" href="directions.html">
+                  <span class="navigation__link--top-span" data-hover="Направления">Направления</span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="companions.html">Попутчики</a>
+                <a class="navigation__link navigation__link--top" href="companions.html">
+                  <span class="navigation__link--top-span" data-hover="Попутчики">Попутчики</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -199,10 +205,8 @@
           </div>
           <a class="profile__item profile__btn inner-btn inner-btn--asphalt" href="my-profile.html">фото</a>
           <div class="profile__item profile__tags-box companions-box companions-box--inner">
-            <!-- <div class="profile__section-box"> -->
-              <h3 class="profile__section-name">Тэги</h3>
-            <!-- </div> -->
-            <ul class="profile__tags tags">
+            <h3 class="profile__section-name profile__section-name--tags">Тэги</h3>
+            <!-- <ul class="profile__tags tags">
               <li class="profile__tags-item tags__item">
                 <a class="tags__link" href="#">#ЗОЖ</a>
               </li>
@@ -221,60 +225,67 @@
               <li class="profile__tags-item tags__item">
                 <a class="tags__link" href="#">#смузи</a>
               </li>
-            </ul>
+            </ul> -->
+            <input class="profile__tags" type="text" name="tags-list" value="#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи">
           </div>
-          <div class="profile__item profile__transport-box companions-box companions-box--inner">
-            <!-- <div class="profile__section-box"> -->
-              <h3 class="profile__section-name">Транспорт</h3>
-            <!-- </div> -->
+          <form class="profile__item profile__transport-box companions-box companions-box--inner">
+            <h3 class="profile__section-name">Транспорт</h3>
             <ul class="profile__transport transport">
-              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-plane transport__item--plane transport__item--active">
-                <span>Авиатранспорт</span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                </svg>
+              <li class="profile__transport-item transport__item--inner transport__item--inner-plane transport__item--plane">
+                <input class="profile__transport-input visually-hidden" type="checkbox" name="plane" id="plane-field" checked>
+                <label class="profile__transport-label" for="plane-field">
+                  <svg class="profile__transport-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
+                </label>
               </li>
-              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-bus transport__item--bus transport__item--active">
-                <span>Наземный транспорт</span>
-                <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                </svg>
+              <li class="profile__transport-item transport__item--inner transport__item--inner-bus transport__item--bus">
+                <input class="profile__transport-input visually-hidden" type="checkbox" name="bus" id="bus-field" checked>
+                <label class="profile__transport-label" for="bus-field">
+                  <svg class="profile__transport-svg" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
+                </label>
               </li>
-              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-bicycle transport__item--bicycle">
-                <span>Велотранспорт</span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                </svg>
+              <li class="profile__transport-item transport__item--inner transport__item--inner-bicycle transport__item--bicycle">
+                <input class="profile__transport-input visually-hidden" type="checkbox" name="bicycle" id="bicycle-field">
+                <label class="profile__transport-label" for="bicycle-field">
+                  <svg class="profile__transport-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
+                </label>
               </li>
-              <li class="profile__transport-item transport__item transport__item--inner transport__item--inner-run transport__item--run transport__item--active">
-                <span>Попутный транспорт</span>
-                <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                  <g>
-                    <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                    <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                      C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                      c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                      c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                      z"/>
-                  </g>
-                </svg>
+              <li class="profile__transport-item transport__item--inner transport__item--inner-run transport__item--run transport__item--active">
+                <input class="profile__transport-input visually-hidden" type="checkbox" name="run" id="run-field" checked>
+                <label class="profile__transport-label" for="run-field">
+                  <svg class="profile__transport-svg" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                    </g>
+                  </svg>
+                </label>
               </li>
             </ul>
-          </div>
+          </form>
         </div>
       </section>
 
@@ -328,13 +339,13 @@
                 <div class="add-plan__step-text-item">
                   <ul class="add-plan__step-indicator">
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Даты</a>
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#step1">Даты</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Маршрут</a>
+                      <a class="add-plan__step-indicator-link" href="#step2">Маршрут</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Развлечения</a>
+                      <a class="add-plan__step-indicator-link" href="#step3">Развлечения</a>
                     </li>
                   </ul>
                 </div>
@@ -537,67 +548,547 @@
                 <div class="add-plan__step-text-item">
                   <ul class="add-plan__step-indicator">
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Даты</a>
+                      <a class="add-plan__step-indicator-link" href="#step1">Даты</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Маршрут</a>
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#step2">Маршрут</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Развлечения</a>
+                      <a class="add-plan__step-indicator-link" href="#step3">Развлечения</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="add-plan__step-country">
                 <div class="step-2__paragraph">
-                  <ul class="step-2__select step-2__select--small">
-                    <li class="step-2__option">
-                      <span class="step-2__option-selected">Босния и Герцеговина</span>
-                      <ul class="step-2__dropdown">
-                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
-                        <li class="step-2__dropdown-option">Чехословакия</li>
-                        <li class="step-2__dropdown-option">Германия</li>
-                        <li class="step-2__dropdown-option">Франция</li>
+                  <div class="step-2__select step-2__select--small">
+                    <span class="step-2__option-selected">Босния и Герцеговина</span>
+                    <div class="step-2__dropdown">
+                      <ul class="step-2__dropdown-alphabet alphabet alphabet--direction">
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-1" value="a" checked>
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-1">А</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-2" value="b">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-2">Б</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-3" value="v">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-3">В</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-4" value="g">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-4">Г</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-5" value="d">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-5">Д</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-6" value="ye">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-6">Е</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-7" value="jo">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-7">Ё</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-8" value="zh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-8">Ж</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-9" value="z">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-9">З</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-10" value="i">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-10">И</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-11" value="y">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-11">Й</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-12" value="k">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-12">К</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-13" value="l">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-13">Л</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-14" value="m">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-14">М</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-15" value="n">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-15">Н</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-16" value="o">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-16">О</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-17" value="p">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-17">П</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-18" value="r">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-18">Р</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-19" value="s">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-19">С</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-20" value="t">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-20">Т</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-21" value="u">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-21">У</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-22" value="f">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-22">Ф</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-23" value="kh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-23">Х</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-24" value="c">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-24">Ц</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-25" value="ch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-25">Ч</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-26" value="sh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-26">Ш</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-27" value="shch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-27">Щ</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-28" value="e">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-28">Э</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-29" value="yu">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-29">Ю</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-30" value="ya">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-30">Я</label>
+                        </li>
                       </ul>
-                    </li>
-                  </ul>
+                      <div class="step-2__dropdown-country-list">
+                        <ul class="countries">
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австралия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австрия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Азербайджан</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Албания</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Алжир</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Ангола</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Андорра</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Антигуа и Барбуда</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Аргентина</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Армения</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Афганистан</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="step-2__dropdown-close" aria-label="Закрыть выпадающее меню"></button>
+                  </div>
                   <div class="step-2__close-box">
                     <span class="step-2__flag step-2__flag--active step-2__flag--active-bosnia"></span>
-                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                    <span class="step-2__btn">
+                      <svg class="step-2__svg-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                        <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                        C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                        L5.2,4.5z"/>
+                      </svg>
+                    </span>
                   </div>
                 </div>
                 <div class="step-2__paragraph">
-                  <ul class="step-2__select step-2__select--small">
-                    <li class="step-2__option">
-                      <span class="step-2__option-selected">Чехословакия</span>
-                      <ul class="step-2__dropdown">
-                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
-                        <li class="step-2__dropdown-option">Чехословакия</li>
-                        <li class="step-2__dropdown-option">Германия</li>
-                        <li class="step-2__dropdown-option">Франция</li>
+                  <div class="step-2__select step-2__select--small">
+                    <span class="step-2__option-selected">Чехословакия</span>
+                    <div class="step-2__dropdown">
+                      <ul class="step-2__dropdown-alphabet alphabet alphabet--direction">
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-31" value="a" checked>
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-31">А</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-32" value="b">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-32">Б</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-33" value="v">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-33">В</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-34" value="g">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-34">Г</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-35" value="d">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-35">Д</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-36" value="ye">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-36">Е</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-37" value="jo">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-37">Ё</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-38" value="zh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-38">Ж</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-39" value="z">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-39">З</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-40" value="i">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-40">И</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-41" value="y">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-41">Й</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-42" value="k">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-42">К</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-43" value="l">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-43">Л</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-44" value="m">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-44">М</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-45" value="n">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-45">Н</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-46" value="o">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-46">О</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-47" value="p">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-47">П</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-48" value="r">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-48">Р</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-49" value="s">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-49">С</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-50" value="t">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-50">Т</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-51" value="u">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-51">У</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-52" value="f">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-52">Ф</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-53" value="kh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-53">Х</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-54" value="c">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-54">Ц</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-55" value="ch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-55">Ч</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-56" value="sh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-56">Ш</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-57" value="shch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-57">Щ</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-58" value="e">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-58">Э</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-59" value="yu">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-59">Ю</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-60" value="ya">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-60">Я</label>
+                        </li>
                       </ul>
-                    </li>
-                  </ul>
+                      <div class="step-2__dropdown-country-list">
+                        <ul class="countries">
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австралия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австрия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Азербайджан</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Албания</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Алжир</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Ангола</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Андорра</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Антигуа и Барбуда</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Аргентина</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Армения</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Афганистан</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="step-2__dropdown-close" aria-label="Закрыть выпадающее меню"></button>
+                  </div>
                   <div class="step-2__close-box">
                     <span class="step-2__flag step-2__flag--active step-2__flag--active-czech"></span>
-                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                    <span class="step-2__btn">
+                      <svg class="step-2__svg-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                        <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                        C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                        L5.2,4.5z"/>
+                      </svg>
+                    </span>
                   </div>
                 </div>
                 <div class="step-2__paragraph">
-                  <ul class="step-2__select">
-                    <li class="step-2__option">
-                      <span class="step-2__option-selected">Выберите страну</span>
-                      <ul class="step-2__dropdown">
-                        <li class="step-2__dropdown-option">Босния и Герцеговина</li>
-                        <li class="step-2__dropdown-option">Чехословакия</li>
-                        <li class="step-2__dropdown-option">Германия</li>
-                        <li class="step-2__dropdown-option">Франция</li>
+                  <div class="step-2__select">
+                    <span class="step-2__option-selected">Выберите страну</span>
+                    <div class="step-2__dropdown">
+                      <ul class="step-2__dropdown-alphabet alphabet alphabet--direction">
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-61" value="a" checked>
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-61">А</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-62" value="b">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-62">Б</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-63" value="v">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-63">В</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-64" value="g">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-64">Г</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-65" value="d">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-65">Д</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-66" value="ye">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-66">Е</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-67" value="jo">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-67">Ё</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-68" value="zh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-68">Ж</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-69" value="z">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-69">З</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-70" value="i">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-70">И</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-71" value="y">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-71">Й</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-72" value="k">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-72">К</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-73" value="l">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-73">Л</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-74" value="m">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-74">М</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-75" value="n">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-75">Н</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-76" value="o">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-76">О</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-77" value="p">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-77">П</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-78" value="r">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-78">Р</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-79" value="s">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-79">С</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-80" value="t">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-80">Т</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-81" value="u">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-81">У</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-82" value="f">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-82">Ф</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-83" value="kh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-83">Х</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-84" value="c">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-84">Ц</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-85" value="ch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-85">Ч</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-86" value="sh">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-86">Ш</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-87" value="shch">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-87">Щ</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-88" value="e">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-88">Э</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-89" value="yu">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-89">Ю</label>
+                        </li>
+                        <li class="alphabet__item alphabet__item--direction">
+                          <input class="alphabet__input visually-hidden" type="radio" name="alphabet-radio" id="alphabet-90" value="ya">
+                          <label class="alphabet__label alphabet__label--direction" for="alphabet-90">Я</label>
+                        </li>
                       </ul>
-                    </li>
-                  </ul>
-                  <div class="step-2__close-box">
+                      <div class="step-2__dropdown-country-list">
+                        <ul class="countries">
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австралия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Австрия</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Азербайджан</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Албания</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Алжир</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Ангола</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Андорра</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Антигуа и Барбуда</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Аргентина</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Армения</a>
+                          </li>
+                          <li class="countries__item">
+                            <a class="countries__link" href="islands/australia.html">Афганистан</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <button class="step-2__dropdown-close step-2__dropdown-close--active" aria-label="Закрыть выпадающее меню"></button>
+                  </div>
+                  <div class="step-2__close-box step-2__close-box--passive">
                     <span class="step-2__flag"></span>
-                    <span class="step-2__btn">Удалить</span><!-- Заменить текст на aria -->
+                    <span class="step-2__btn">
+                      <svg class="step-2__svg-close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 9" style="enable-background:new 0 0 9 9;" xml:space="preserve">
+                        <path d="M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2
+                        C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2
+                        L5.2,4.5z"/>
+                      </svg>
+                    </span>
                   </div>
                 </div>
                 <div class="step-2__btn-box">
@@ -624,13 +1115,13 @@
                 <div class="add-plan__step-text-item">
                   <ul class="add-plan__step-indicator">
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Даты</a>
+                      <a class="add-plan__step-indicator-link" href="#step1">Даты</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link" href="#">Маршрут</a>
+                      <a class="add-plan__step-indicator-link" href="#step2">Маршрут</a>
                     </li>
                     <li class="add-plan__step-indicator-item">
-                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#">Развлечения</a>
+                      <a class="add-plan__step-indicator-link add-plan__step-indicator-link--active" href="#step3">Развлечения</a>
                     </li>
                   </ul>
                 </div>
@@ -638,7 +1129,8 @@
               <div class="add-plan__step-notes">
                 <p class="step-3__paragraph">
                   <span class="step-3__paragraph-name step-3__paragraph-name--bosnia">Босния и Герцеговина</span>
-                  <textarea class="step-3__area step-3__area--start" placeholder="План действий" rows="10"></textarea>
+                  <textarea class="step-3__area step-3__area--start step-3__area--error" placeholder="План действий" rows="10"></textarea>
+                  <span class="step-3__text-error">Это поле должно быть заполнено</span>
                 </p>
                 <p class="step-3__paragraph">
                   <span class="step-3__paragraph-name step-3__paragraph-name--czech">Чехословакия</span>
@@ -696,7 +1188,7 @@
                 </a>
               </li>
               <li class="our-socials__item">
-                <a class="our-socials__link our-socials__link--yellow"  title="Инстаграм" aria-label="Инстаграм">
+                <a class="our-socials__link our-socials__link--yellow" href="instagram.com" title="Инстаграм" aria-label="Инстаграм">
                   <svg class="our-socials__icon our-socials__icon--blue our-socials__icon--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                     <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                       M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>

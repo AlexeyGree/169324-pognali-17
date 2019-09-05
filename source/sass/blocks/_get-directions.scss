@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 62px;
+  padding-bottom: 34px;
   background-color: $yellow;
   border-radius: 0 0 28px 28px;
 }
@@ -48,13 +48,47 @@
 
 .get-directions__btn {
   border: 3px solid $darkblue;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $darkblue;
+  }
+
+  &:hover > .get-directions__svg,
+  &:focus > .get-directions__svg {
+    fill: $white;
+  }
+
+  &:active {
+    color: transparentize($white, 0.7);
+  }
+
+  &:active > .get-directions__svg {
+    opacity: 0.3;
+  }
+}
+
+.get-directions__svg {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+  height: 14px;
+  margin-top: -7px;
+  fill: $darkblue-lightest;
 }
 
 .get-directions__map {
   position: relative;
   z-index: -1;
   width: 100%;
-  height: 564px;
+  height: 343px;
   margin-top: -30px;
   overflow: hidden;
 }

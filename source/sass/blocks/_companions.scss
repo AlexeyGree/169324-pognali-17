@@ -25,10 +25,19 @@
   box-sizing: border-box;
   background-color: $white;
   border-radius: 20px;
-  overflow: hidden;
+  // overflow: hidden;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 20px 0 transparentize($black, 0.92);
+    transition: box-shadow 0.3s;
+  }
+
+  &:hover .avatar {
+    transform: scale(1.1);
   }
 }
 
@@ -44,6 +53,7 @@
   line-height: 20px;
   text-decoration: none;
   color: $darkblue-lightest;
+  transition: all 0.3s;
 
   &::after {
     content: "";
@@ -54,10 +64,20 @@
     height: 6px;
     background-color: $lightpink;
     border-radius: 50%;
+    transition: all 0.3s;
   }
 
   &--active::after {
     background-color: $green;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -121,7 +141,7 @@
 }
 
 .companions__level-num {
-  padding-top: 5px;
+  // padding-top: 5px;
   background-color: transparent;
   border: 3px solid #ff8d30;
   border-radius: 50%;
@@ -147,6 +167,7 @@
   text-align: center;
   color: $darkblue-lightest;
   background-color: transparent;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -160,6 +181,21 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &::after {
+    content: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.3;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -169,6 +205,7 @@
     padding-right: 25px;
     padding-bottom: 20px;
     padding-left: 35px;
+    overflow: visible;
 
     &:last-child {
       margin-bottom: 0;

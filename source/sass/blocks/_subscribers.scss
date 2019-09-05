@@ -5,24 +5,65 @@
 
 .subscribers__item-btn {
   @include visually-hidden;
+  transition: all 0.3s;
 }
 
 .subscribers__like {
   position: absolute;
   bottom: 4px;
   left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 31px;
   height: 31px;
+  box-sizing: border-box;
+  padding-right: 0.6px;
   background-color: $lightblue;
-  background-image: url("../img/heart.svg");
-  background-position: 56% 56%;
-  background-repeat: no-repeat;
-  background-size: 60%;
   border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/heart.svg");
+    background-position: 56% 56%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: all 0.3s;
+  }
 
   &--active {
     background-color: $lightestpink;
+  }
+
+  &--active::before {
     background-image: url("../img/heart-active.svg");
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $asphalt;
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--active:hover {
+    background-color: $lightestpink-darker;
+  }
+
+  &--active:active::before {
+    opacity: 0.3;
   }
 }
 
@@ -40,7 +81,7 @@
     height: auto;
     margin: 0;
     border: 0;
-    padding: 11px;
+    padding: 7px;
     padding-left: 28px;
     padding-right: 28px;
     padding-bottom: 7px;
@@ -52,9 +93,16 @@
     position: static;
     bottom: auto;
     left: auto;
-    display: inline-block;
+    // display: inline-block;
     width: 50px;
     height: 50px;
+    padding-right: 1px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      background-size: 50%;
+    }
   }
 
   .subscribers__amount {

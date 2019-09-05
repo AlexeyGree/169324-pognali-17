@@ -38,6 +38,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $darkblue-lightest;
+  cursor: pointer;
 }
 
 .step-1__people {
@@ -67,6 +68,7 @@
   font-weight: 400;
   line-height: 15px;
   color: $darkgrey;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -82,11 +84,31 @@
     background-size: 40%;
     border: 1px solid $lightestblue;
     border-radius: 3px;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    border: 1px solid $lightblue-dark;
+  }
+
+  &:active::before {
+    background-color: $asphalt;
+    border: 1px solid $asphalt;
   }
 }
 
-.step-1__check:checked + .step-1__child::before {
-  background-image: url("../img/tick.svg");
+.step-1__check:focus + .step-1__child::before {
+  border: 1px solid $lightblue-dark;
+}
+
+.step-1__check:checked {
+  & + .step-1__child::before {
+    background-image: url("../img/tick.svg");
+  }
+
+  & + .step-1__child:active::before {
+    opacity: 0.3;
+  }
 }
 
 .step-1__month-slider {

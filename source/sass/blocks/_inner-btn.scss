@@ -32,7 +32,8 @@
 
   &:active {
     background-color: $orange-lightness;
-    color: transparentize($darkblue, 0.7);
+    // color: transparentize($darkblue, 0.7);
+    color: transparentize($darkblue-lightest, 0.7);
   }
 }
 

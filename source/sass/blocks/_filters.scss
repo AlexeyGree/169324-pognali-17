@@ -73,6 +73,8 @@
   line-height: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &::after {
     content: "";
@@ -103,10 +105,12 @@
 
   &:hover,
   &:focus {
+    outline: none;
     opacity: 0.6;
   }
 
   &:active {
+    outline: none;
     opacity: 0.3;
   }
 }
@@ -137,13 +141,17 @@
   color: $darkblue-lightest;
   background-color: $darkestasphalt;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &:hover,
   &:focus {
+    outline: none;
     background-color: $darkasphalt0;
   }
 
   &:active {
+    outline: none;
     color: transparentize($darkblue-lightest, 0.7);
     background-color: $darkasphalt0;
   }
@@ -241,6 +249,7 @@
       background-image: url("../img/close.svg");
       background-position: center;
       background-repeat: no-repeat;
+      transition: all 0.3s;
     }
 
     &:active::before {

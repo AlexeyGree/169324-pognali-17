@@ -30,12 +30,40 @@
   line-height: 36px;
   color: $darkblue-light;
 
-  &--top {
-    color: $white;
-  }
+  // &--top {
+  //   color: $white;
+  // }
 
   &--scroll {
     color: $darkblue-light;
+  }
+}
+
+.navigation__link--top {
+  display: inline-block;
+  color: $white;
+  overflow: hidden;
+
+  &:hover .navigation__link--top-span,
+  &:focus .navigation__link--top-span {
+    transform: translateY(-100%);
+  }
+
+  &:active .navigation__link--top-span::before {
+    color: transparentize($yellow, 0.7);
+  }
+}
+
+.navigation__link--top-span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    color: $yellow;
   }
 }
 

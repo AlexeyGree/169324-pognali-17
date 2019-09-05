@@ -1,6 +1,7 @@
 .avatar {
   width: 100%;
   height: auto;
+  transition: transform 0.3s;
 
   &--tablet {
     @include visually-hidden;
@@ -22,6 +23,7 @@
       padding: 0;
       clip: auto;
       overflow: visible;
+      object-fit: cover;
     }
 
     &--mobile {

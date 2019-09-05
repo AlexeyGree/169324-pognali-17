@@ -21,10 +21,12 @@
   height: 45px;
   box-sizing: border-box;
   border-radius: 50%;
+  transition: all 0.3s;
 }
 
 .our-socials__link--yellow {
   background-color: $yellow;
+  transition: all 0.3s;
 
   &:hover,
   &:focus {
@@ -36,11 +38,13 @@
   &:focus path,
   &:focus circle {
     fill: $white;
+    transition: all 0.3s;
   }
 
   &:active path,
   &:active circle {
     fill: transparentize($white, 0.7);
+    transition: all 0.3s;
   }
 }
 

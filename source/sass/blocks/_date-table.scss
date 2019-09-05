@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
   width: calc(100% / 7);
+  height: 32px;
   margin: 0;
   padding: 7px 8px;
   box-sizing: border-box;
@@ -34,6 +35,16 @@
   line-height: 18px;
   color: transparentize($darkgrey, 0.7);
   border: 1px solid $lightestblue;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $darkblue-lightest;
+    border: 1px solid $orange-darkest;
+    box-shadow: inset 0 0 0 1px $orange-darkest;
+  }
 }
 
 .date-table__head {
@@ -42,6 +53,18 @@
   border: none;
 
   &--weekend {
+    color: $orange-darkest;
+  }
+
+  &:hover,
+  &:focus {
+    color: $darkgrey;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  &--weekend:hover,
+  &--weekend:focus {
     color: $orange-darkest;
   }
 }
@@ -53,7 +76,7 @@
 
 .date-table__selected {
   color: $white;
-  background-color: $darkblue-lightest;
+  background-color: $darkestblue;
 }
 
 .date-table__active {
@@ -67,6 +90,11 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 3px $orange-darkest;
+    }
   }
 
   .date-table__head {
@@ -100,6 +128,11 @@
 
     &:nth-child(7)::after {
       content: "с";
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
     }
   }
 

@@ -2,13 +2,13 @@
   position: relative;
   z-index: 10;
   padding-top: 308px;
-  padding-bottom: 80px;
+  padding-bottom: 82px;
   box-sizing: border-box;
   background-color: $darkblue-light;
   background-image:
     url("../img/about-mobile@1x.png"),
     url("../img/about-us-blue-mobile.png");
-  background-position: center bottom, -14px 270px;
+  background-position: 57% 102.7%, -17px 278px;
   background-repeat: no-repeat, no-repeat;
   border-radius: 0 0 28px 28px;
 }
@@ -21,7 +21,7 @@
 
 .about-us__headline {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 .about-us__text {

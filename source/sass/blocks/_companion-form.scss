@@ -25,6 +25,8 @@
   text-transform: uppercase;
   line-height: 18px;
   color: $darkblue-lightest;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &::before {
     content: "";
@@ -38,6 +40,14 @@
     background-repeat: no-repeat;
     transform: rotate(-90deg);
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion-form__sublist,
@@ -50,6 +60,20 @@
   color: $darkblue;
   background-color: $white;
   border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 3px 10px 0 transparentize($black, 0.92);
+  }
+
+  &:active {
+    outline: none;
+    background-color: $darkyellow;
+    box-shadow: none;
+  }
 }
 
 @media screen and (min-width: 768px) {

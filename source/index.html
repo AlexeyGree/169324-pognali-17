@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/pognali-index-mobile.jpg");
+      }
+      /* Планшет */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/pognali-index-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/pognali-index-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body class="page">
 
@@ -32,13 +58,19 @@
             </button>
             <ul class="header__top-navigation navigation navigation--top">
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="about-us.html">О сервисе</a>
+                <a class="navigation__link navigation__link--top" href="about-us.html">
+                  <span class="navigation__link--top-span" data-hover="О сервисе">О сервисе</span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="directions.html">Направления</a>
+                <a class="navigation__link navigation__link--top" href="directions.html">
+                  <span class="navigation__link--top-span" data-hover="Направления">Направления</span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--top" href="companions.html">Попутчики</a>
+                <a class="navigation__link navigation__link--top" href="companions.html">
+                  <span class="navigation__link--top-span" data-hover="Попутчики">Попутчики</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -77,7 +109,7 @@
           </div>
         </div>
       </div>
-      <nav class="dropdown layout">
+      <!-- <nav class="dropdown layout">
         <ul class="dropdown__navigation navigation navigation--drop">
           <li class="navigation__item">
             <a class="navigation__link" href="about-us.html">О сервисе</a>
@@ -168,26 +200,34 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="header__mid">
         <div class="header__bg"></div>
         <div class="header__mid-layout layout">
-          <p class="header__lead">В путешествие с крутыми попутчиками</p>
+          <p class="header__lead">В путешествие с крутыми попутчиками!</p>
           <div class="header__mid-box">
             <div class="header__box header__box--mid">
               <ul class="header__box-our-contacts our-contacts">
                 <li class="our-contacts__item">
                   <a class="header__box-our-contacts-link our-contacts__link phone" href="tel:8-800-555-86-28" aria-label="Наш телефон">8 800 555-86-28
                     <span class="our-contacts__icon our-contacts__icon--blue-orange phone__icon">
-                      <svg class="our-contacts__phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                      <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                        c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                        c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                        c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                        M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                        c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                        c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                      <svg class="our-contacts__phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:rgba(22, 28, 54, 1);}
+                        </style>
+                        <g>
+                          <g id="UrwUhy_1_">
+                            <g>
+                              <path class="st0" d="M12.6,18c-0.3,0-0.5,0-0.8,0c-3.6-0.4-6.2-2.1-8.1-4.3C1.8,11.6,0.3,8.8,0,5c0-0.3,0-0.7,0-1
+                                c0.1-0.7,0.4-1.1,0.8-1.5C1.2,2,2,1.4,2.6,1.3c0.5,0,1.3,0.3,1.6,0.8c0.3,0.4,0.4,1.2,0.6,1.8c0.1,0.6,0.4,1.4,0.4,2
+                                C5,6.8,3.9,7.2,3.5,7.8c1.1,2.8,3,4.8,5.4,6.2c0.6-0.3,1.2-1.4,2-1.4c0.3,0,0.7,0.2,1,0.3c0.3,0.1,0.6,0.2,1,0.4
+                                c0.5,0.2,1.4,0.5,1.7,0.9c0.3,0.4,0.5,1.2,0.4,1.7C14.9,16.7,13.4,17.7,12.6,18z"/>
+                            </g>
+                          </g>
+                          <path class="st0" d="M9.1,1.1c4.3,0,7.8,3.6,7.8,8H18c0-5-4-9.1-8.9-9.1L9.1,1.1z"/>
+                          <path class="st0" d="M9.1,6.9V8c0.6,0,1,0.5,1,1.1h1.1C11.2,7.9,10.3,6.9,9.1,6.9z"/>
+                          <path class="st0" d="M9.1,4.6c2.4,0,4.4,2,4.4,4.5h1.2c0-3.1-2.5-5.7-5.5-5.7V4.6L9.1,4.6z"/>
+                        </g>
                       </svg>
                     </span>
                   </a>
@@ -195,11 +235,23 @@
                 <li class="our-contacts__item">
                   <a class="header__box-our-contacts-link our-contacts__link email" href="mailto:mail@htmlacademy.ru" aria-label="Наша почта">mail@htmlacademy.ru
                     <span class="our-contacts__icon our-contacts__icon--blue-yellow email__icon">
-                      <svg class="our-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                      <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                        c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                        L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                        c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                      <svg class="our-contacts__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+                        <style type="text/css">
+                          .st0{fill:rgba(22, 28, 54, 1);}
+                        </style>
+                        <g>
+                          <g>
+                            <g>
+                              <path class="st0" d="M14.9,1.8c1.2-1,0.9-1.8-0.7-1.8H3.7C2.2,0,1.9,0.8,3.1,1.8l3.7,3.1c1.2,1,3.2,1,4.4,0L14.9,1.8z"/>
+                            </g>
+                            <g>
+                              <path class="st0" d="M11.9,7.1c-1.2,1-2.2,1.8-2.2,1.8c0,0,0,0,0,0C9.6,9,9.5,9,9.4,9c0,0-0.1,0-0.1,0C9.2,9.1,9.1,9.1,9,9.1
+                                c0,0,0,0,0,0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c-0.1,0-0.2,0-0.3-0.1c0,0-0.1,0-0.1,0C8.5,9,8.4,9,8.3,8.9c0,0,0,0,0,0
+                                c0,0-1-0.8-2.2-1.8L2.2,3.8C1,2.8,0,3.3,0,4.8v6.3C0,12.7,1.3,14,2.8,14h12.3c1.6,0,2.8-1.3,2.8-2.8V4.8c0-1.6-1-2-2.2-1
+                                L11.9,7.1z"/>
+                            </g>
+                          </g>
+                        </g>
                       </svg>
                     </span>
                   </a>
@@ -360,18 +412,21 @@
                 </ul>
                 <ul class="companions-short__flags flags">
                   <li class="flags__item">
+                    <span class="flags__tooltip">Шри&nbsp;-&nbsp;Ланка</span>
                     <a class="flags__link flags__link--sri-lanka" href="#">Шри-Ланка</a>
                   </li>
                   <li class="flags__item">
+                    <span class="flags__tooltip">Таиланд</span>
                     <a class="flags__link flags__link--thailand" href="#">Таиланд</a>
                   </li>
                   <li class="flags__item">
+                    <span class="flags__tooltip">Сейшелы</span>
                     <a class="flags__link flags__link--seychelles" href="#">Сейшелы</a>
                   </li>
                 </ul>
                 <ul class="companions-short__transport transport">
                   <li class="transport__item transport__item--plane transport__item--active">
-                    <span>Авиатранспорт</span>
+                    <span class="transport__tooltip">Авиаперелет</span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                       <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                         c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
@@ -383,7 +438,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--bus">
-                    <span>Наземный транспорт</span>
+                    <span class="transport__tooltip">Автотранспорт</span>
                     <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                       <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                         c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
@@ -393,7 +448,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--bicycle">
-                    <span>Велотранспорт</span>
+                    <span class="transport__tooltip">Велосипед</span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                       <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
                         S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
@@ -403,7 +458,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--run">
-                    <span>Попутный транспорт</span>
+                    <span class="transport__tooltip">Пешком</span>
                     <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                       <g>
                         <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
@@ -428,7 +483,7 @@
             </li>
             <li class="companions-short__item">
               <div class="companions-short__item-text companions-box companions-box--main">
-                <a class="companions-short__link" href="#">Петя Демин</a>
+                <a class="companions-short__link companions-short__link--active" href="#">Петя Демин</a>
                 <ul class="companions-short__tags tags">
                   <li class="tags__item">
                     <a class="tags__link" href="#">#бургер</a>
@@ -448,15 +503,17 @@
                 </ul>
                 <ul class="companions-short__flags flags">
                   <li class="flags__item">
+                    <span class="flags__tooltip">Бельгия</span>
                     <a class="flags__link flags__link--belgium" href="#">Бельгия</a>
                   </li>
                   <li class="flags__item">
+                    <span class="flags__tooltip">Чехия</span>
                     <a class="flags__link flags__link--czech" href="#">Чехия</a>
                   </li>
                 </ul>
                 <ul class="companions-short__transport transport">
                   <li class="transport__item transport__item--plane transport__item--active">
-                    <span>Авиатранспорт</span>
+                    <span class="transport__tooltip">Авиаперелет</span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                       <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                         c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
@@ -468,7 +525,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--bus transport__item--active">
-                    <span>Наземный транспорт</span>
+                    <span class="transport__tooltip">Автотранспорт</span>
                     <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                       <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                         c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
@@ -478,7 +535,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--bicycle">
-                    <span>Велотранспорт</span>
+                    <span class="transport__tooltip">Велосипед</span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                       <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
                         S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
@@ -488,7 +545,7 @@
                       </svg>
                   </li>
                   <li class="transport__item transport__item--run transport__item--active">
-                    <span>Попутный транспорт</span>
+                    <span class="transport__tooltip">Пешком</span>
                     <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                       <g>
                         <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
@@ -539,7 +596,7 @@
             </li>
           </ul>
           <a class="prices__btn prices__btn--open" href="business-prices.html">Показать тарифы для бизнеса</a>
-          <div class="prices__business">
+          <!-- <div class="prices__business">
             <h3 class="prices__headline headline">Бизнес-тарифы</h3>
             <ul class="prices__list prices__list--business">
               <li class="prices__item">
@@ -560,14 +617,14 @@
               </li>
             </ul>
             <a class="prices__btn prices__btn--close" href="#">Закрыть окно</a>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <section class="sign-in">
         <div class="sign-in__layout layout">
           <h2 class="visually-hidden">Регистрация</h2>
-          <p class="sign-in__headline headline">Зарегистрировались?</p>
+          <p class="sign-in__headline headline">Заинтересовались?</p>
           <p class="sign-in__text text text--color-white">Зарегистрируйтесь, это быстро и бесплатно!</p>
           <p class="sign-in__text text text--color-white">Уже зарегистрированы? Тогда скорее <a class="sign-in__link" href="authorization.html">авторизуйтесь.</a></p>
           <form class="sign-in__form" action="https://echo.htmlacademy.ru">
@@ -616,7 +673,12 @@
         <div class="get-directions__layout layout">
           <p class="get-directions__text text text--color-blue text--bold">ул. Большая Конюшенная, 19/8</p>
           <div class="get-directions__box">
-            <a class="get-directions__btn btn" href="get-directions.html">Проложить маршрут</a>
+            <a class="get-directions__btn btn" href="get-directions.html">
+              <span>Проложить маршрут</span>
+              <svg class="get-directions__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 14" style="enable-background:new 0 0 10 14;" xml:space="preserve">
+              <polygon points="0,14 0,0.1 10,7.1 "/>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="get-directions__map">
@@ -668,7 +730,7 @@
               </a>
             </li>
             <li class="our-socials__item">
-              <a class="our-socials__link our-socials__link--yellow"  title="Инстаграм" aria-label="Инстаграм">
+              <a class="our-socials__link our-socials__link--yellow" href="instagram.com" title="Инстаграм" aria-label="Инстаграм">
                 <svg class="our-socials__icon our-socials__icon--blue our-socials__icon--instagram" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                   <path class="st0" d="M17,1.5c2.5,0,4.5,2,4.5,4.5v11c0,2.5-2,4.5-4.5,4.5H6c-2.5,0-4.5-2-4.5-4.5V6c0-2.5,2-4.5,4.5-4.5L17,1.5
                     M17,0H6C2.7,0,0,2.7,0,6v11c0,3.3,2.7,6,6,6h11c3.3,0,6-2.7,6-6V6C23,2.7,20.3,0,17,0L17,0z"/>

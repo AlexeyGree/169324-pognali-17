@@ -58,6 +58,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: transparentize($black, 0.7);
+  transition: all 0.3s;
 
   &:hover,
   &:focus {

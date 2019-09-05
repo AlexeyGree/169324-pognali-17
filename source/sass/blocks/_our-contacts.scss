@@ -54,11 +54,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
-  margin-top: -22.5px;
-
+  // width: 45px;
+  // height: 45px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
   border-radius: 50%;
+  transition: all 0.3s;
 
   svg {
     display: block;
@@ -80,6 +82,7 @@
 
   path {
     fill: $yellow;
+    transition: all 0.3s;
   }
 }
 
@@ -88,6 +91,7 @@
 
   path {
     fill: $yellow;
+    transition: all 0.3s;
   }
 }
 
@@ -96,6 +100,7 @@
 
   path {
     fill: $darkblue;
+    transition: all 0.3s;
   }
 }
 
@@ -104,6 +109,7 @@
 
   path {
     fill: $darkblue;
+    transition: all 0.3s;
   }
 }
 

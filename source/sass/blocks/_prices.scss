@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: -30px;
-  padding-top: 80px;
+  padding-top: 66px;
   padding-bottom: 15px;
   box-sizing: border-box;
   background-color: $lightblue;
@@ -55,8 +55,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   border-top: 1px solid $grey;
 
   &:last-child {
@@ -132,14 +132,29 @@
   text-align: center;
   line-height: 24px;
   text-decoration: none;
-  color: $darkblue;
+  transition: all 0.3s;
+
+  &--open {
+    margin-top: 5px;
+    color: $blue;
+  }
 
   &--close {
     width: 100%;
     margin-top: 35px;
     box-sizing: border-box;
     text-transform: uppercase;
+    color: $darkblue-lightest;
     background-color: $whiteblue;
+  }
+
+  &--close:hover,
+  &--close:focus {
+    background-color: $lightblue;
+  }
+
+  &--close:active {
+    color: transparentize($darkblue-lightest, 0.7);
   }
 }
 
@@ -250,7 +265,7 @@
       width: 67px;
       height: 67px;
       margin-top: -33.5px;
-      padding-top: 8px;
+      // padding-top: 8px;
       font-size: 28px;
       font-weight: 200;
       line-height: 33px;
@@ -283,11 +298,43 @@
       height: 67px;
       margin-top: -33.5px;
       background-color: $asphalt;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      margin-top: -33px;
+      background-color: transparent;
       background-image: url("../img/business.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 30%;
       border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      color: transparentize($blue, 0.3);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 0.7;
+    }
+
+    &:active {
+      color: transparentize($blue, 0.7);
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -354,6 +401,10 @@
     padding-left: 160px;
 
     &::before {
+      left: 70px;
+    }
+
+    &::after {
       left: 70px;
     }
   }

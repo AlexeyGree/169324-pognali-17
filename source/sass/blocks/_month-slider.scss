@@ -34,12 +34,13 @@
   width: 9px;
   height: 16px;
   margin-top: -8px;
-
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &--back {
     left: 0;
@@ -49,6 +50,15 @@
   &--next {
     right: 0;
     background-image: url("../img/month-arrow-right.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 

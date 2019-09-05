@@ -22,7 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   // background-color: $white;
-  border: 1px solid $darkasphalt;
+  // border: 1px solid $darkasphalt;
 }
 
 .alphabet__label {
@@ -31,6 +31,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   // padding: 7px 8px;
   font-size: 14px;
   font-family: "bloggersans", "Arial", sans-serif;
@@ -38,7 +39,10 @@
   line-height: 18px;
   color: $darkblue-lightest;
   background-color: $white;
+  // border: 1px solid $darkasphalt;
+  border: 1px solid $lightestblue;
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     color: transparentize($darkblue-lightest, 0.4);
@@ -56,7 +60,16 @@
 .alphabet__input:checked {
   & + .alphabet__label {
     color: $white;
-    background-color: $darkblue-light;
+    // background-color: $darkblue-light;
+    // border: 1px solid $darkblue-light;
+    background-color: $darkblue-lightest;
+    border: 1px solid $darkblue-lightest;
+  }
+
+  & + .alphabet__label--direction {
+    color: $white;
+    background-color: $darkblue-lightest;
+    border: 1px solid $darkblue-lightest;
   }
 }
 
@@ -65,12 +78,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .alphabet--direction {
+    width: calc(100% - 212px);
+    padding: 34px 27px;
+  }
+
   .alphabet__item {
     display: flex;
     justify-content: flex-start;
     height: auto;
     margin: 15px 0;
-    border: none;
+    // border: none;
 
     &--excess-tablet {
       @include visually-hidden;
@@ -92,6 +110,14 @@
     &:nth-last-child(6) {
       margin-bottom: 0;
     }
+
+    &--direction {
+      justify-content: center;
+      align-items: center;
+      width: calc(100% / 6);
+      height: 70px;
+      margin: 0;
+    }
   }
 
   .alphabet__label {
@@ -102,10 +128,26 @@
     line-height: 60px;
     background-color: transparent;
     color: transparentize($darkblue-lightest, 0.8);
+    border: none;
 
     &:hover {
       color: transparentize($darkblue-lightest, 0.4);
       background-color: transparent;
+    }
+
+    &--direction {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $darkblue-lightest;
+      border: 1px solid $darkasphalt;
+    }
+
+    &--direction:hover {
+      color: transparentize($darkblue-lightest, 0.4);
+      border: 1px solid $lightblue-darkest;
     }
   }
 
@@ -120,6 +162,13 @@
     & + .alphabet__label {
       color: $darkblue-lightest;
       background-color: transparent;
+      border: none;
+    }
+
+    & + .alphabet__label--direction {
+      color: $white;
+      background-color: $darkblue-lightest;
+      border: 1px solid $darkblue-lightest;
     }
   }
 }
@@ -135,6 +184,10 @@
     width: calc(100% / 6);
     margin: 34px 0;
 
+    &:nth-child(6) {
+      margin-top: 0;
+    }
+
     &:nth-last-child(7),
     &:nth-last-child(8) {
       margin-bottom: 0;
@@ -142,6 +195,20 @@
 
     &--excess-desktop {
       @include visually-hidden;
+    }
+
+    &--direction {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    &--direction:nth-last-child(1),
+    &--direction:nth-last-child(2),
+    &--direction:nth-last-child(3),
+    &--direction:nth-last-child(4),
+    &--direction:nth-last-child(5),
+    &--direction:nth-last-child(6) {
+      margin-bottom: 0;
     }
   }
 
@@ -151,6 +218,12 @@
 
     &:hover {
       color: $darkblue-lightest;
+    }
+
+    &--direction {
+      max-width: 60px;
+      margin-bottom: 0;
+      border-radius: 3px;
     }
   }
 
@@ -163,6 +236,10 @@
   .alphabet__input:checked {
     & + .alphabet__label {
       color: $darkblue-lightest;
+    }
+
+    & + .alphabet__label--direction {
+      color: $white;
     }
   }
 
